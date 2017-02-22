@@ -12,7 +12,7 @@ function Ready(){
 			'offset': 0,
 			'count': 100,
 			'version': 5.62
-		});
+		}, function(){console.log('CALLBACK');});
 		console.log('callMethod groups.get');
 		console.log(groups);
 	}, function() { 
