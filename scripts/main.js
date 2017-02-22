@@ -2,9 +2,10 @@ var groups;
 document.addEventListener('DOMContentLoaded', Ready);
 
 function Ready(){
+	VK.client()	
 	VK.init(function() { 
   		console.log('vk API initialization succeeded.');
-		groups = VK.api('groups.get', {
+		VK.api('groups.get', {
 			'user_id': 140286227,
 			'extended': true,
 			'filter': 0,
@@ -12,7 +13,10 @@ function Ready(){
 			'offset': 0,
 			'count': 100,
 			'version': 5.62
-		}, function(){console.log('CALLBACK');});
+		}, function(data){
+			console.log(data);
+			groups = data;
+		});
 		console.log('callMethod groups.get');
 		console.log(groups);
 	}, function() { 
