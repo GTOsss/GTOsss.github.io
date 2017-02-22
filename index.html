@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Чат по группам</title>
+		<meta name="keywords" content="чат, группы, чат по группам, чат по интересам">
+		<meta name="description" content="Чат по группам, здесь можно найти много собеседников по своим интересам.">
+		<link href="styles/main.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="namegroup"></div>
+		<div class="layer-chat">
+			<textarea class="messagebox"></textarea>
+			<textarea class="input-text" ></textarea>
+			<button class="button-send">Отправить</button>
+		</div>
+	</body>
+	
+	<script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
+	<script type="text/javascript"> 
+		console.log(VK);
+		VK.init(function() { 
+		  console.log('vk API initialization succeeded.');
+		}, function() { 
+		  console.error('Error vk API initialization.');
+		}, '5.62'); 
+	</script>
+	<script src="scripts/main.js"></script>
+</html>

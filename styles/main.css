@@ -1,0 +1,53 @@
+.namegroup {
+	background-color: #888888;
+	width: 60%;
+	height: 140px;
+	margin: 20px auto 0 auto;
+}
+
+.layer-chat {
+/*	display: block;*/
+	position: relative;
+	background-color: #727272;
+	width: 80%;
+	height: 400px;
+	margin: 20px auto 20px auto;
+	
+}
+
+.messagebox {
+	position: absolute;
+	width: 98%;
+	height: 74%;
+	margin: 1% 1% 1% 1%;
+	background: #e0e0e0;
+	resize: none;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.layer-chat > .input-text {
+	position: absolute;
+	bottom: 0;
+	resize: none;
+	width: 80%;
+	height: 18%;
+	font-size: 16px;
+	background: #a2a2a2;
+	padding: 8px;
+	bottom: 2%;
+	left: 1%;
+	box-sizing: border-box;
+}
+
+.layer-chat > .button-send {
+	position: absolute;
+	bottom: 2%;
+	right: 1%;
+	width: 15%;
+	height: 18%;
+	box-sizing: border-box;
+	font-size: 22px;
+	color: #151515;
+	background-color: #a0a0a0;
+}
