@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', Ready);
 function Ready(){
 	VK.init(function() { 
   		console.log('vk API initialization succeeded.');
-		groups = VK.('groups.get', {
+		groups = VK.api('groups.get', {
 			'user_id': 140286227,
 			'extended': true,
 			'filter': 0,
