@@ -2,7 +2,6 @@ var groups;
 document.addEventListener('DOMContentLoaded', Ready);
 
 function Ready(){
-	VK.client()	
 	VK.init(function() { 
   		console.log('vk API initialization succeeded.');
 		VK.api('groups.get', {
