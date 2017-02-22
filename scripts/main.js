@@ -9,6 +9,4 @@ function Ready(){
 	}, function() { 
 		console.error('Error vk API initialization.');
 	}, '5.62'); 
-	
-
 }
