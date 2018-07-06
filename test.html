@@ -6,29 +6,36 @@
     margin: 0;
   }
 
-  h1 {
-    height: 10vh;
-    margin: 0;
-  }
-
   .wrap {
     background-color: grey;
   }
 
   .inner-scroll {
     background-color: white;
-    height: 90vh;
+    height: 100vh;
     overflow-y: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+  }
+
+  button {
+    padding: 20px 50px;
   }
 </style>
 <body>
 <div class="wrap">
-  <h1>TITLE</h1>
   <div class="inner-scroll">
-    test
+    <button>top</button>
+    display: flex;
+    <br>
+    flex-direction: column;
+    <br>
+    justify-content: space-between;
+    <br>
+    align-items: center;
+    <button>bottom</button>
   </div>
 </div>
 </body></html>
