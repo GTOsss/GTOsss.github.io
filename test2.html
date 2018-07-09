@@ -1,32 +1,38 @@
 <!DOCTYPE html><html lang='en' class=''>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style class="cp-pen-styles">
-body,
-html {
-  padding: 0;
-  margin: 0;
-}
+  body,
+  html {
+    padding: 0;
+    margin: 0;
+  }
 
-h1 {
-  height: 50px;
-  margin: 0;
-}
+  .wrap {
+    background-color: grey;
+  }
 
-.wrap {
-  background-color: grey;
-}
+  .inner-scroll {
+    background-color: white;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+  }
 
-.inner-scroll {
-  background-color: white;
-  height: 90vh;
-  overflow-y: auto;
-}
+  button {
+    width: 100%;
+    background-color: #5bc0de;
+    position: fixed;
+    bottom: 0;
+    border: none;
+    height: 50px;
+  }
 </style>
-<body>
-<div class="wrap">
-  <h1>TITLE</h1>
+<body><div class="wrap">
   <div class="inner-scroll">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quis maiores doloremque blanditiis, corrupti provident illo perferendis delectus consequatur nam perspiciatis aut, distinctio rem veritatis earum et nostrum amet. Ipsum veritatis obcaecati dolor blanditiis dolorem repellat, eveniet neque asperiores tempora minus facilis reiciendis ad totam possimus! Corrupti quas reiciendis ex dicta a aspernatur cum assumenda distinctio possimus sit saepe, facere vero beatae consequatur maxime explicabo eaque, magnam soluta quod! Vel deleniti id reiciendis ad perspiciatis debitis mollitia molestiae! Quam praesentium illo tenetur nobis, ipsa sunt expedita ea numquam, incidunt voluptates quod dicta? Necessitatibus itaque inventore, repellat quam quidem vel a ea voluptatum libero doloribus pariatur nisi et error, nesciunt veritatis repellendus. Molestiae cumque veritatis fugiat, eum perspiciatis odio voluptate, ut voluptatibus iste, odit vero velit nulla obcaecati repellat quaerat laudantium laboriosam dolor nihil facere! Illum eveniet magni harum quos repudiandae officiis maxime officia dolore aspernatur voluptate. Maxime impedit aut beatae?
-	Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quis maiores doloremque blanditiis, corrupti provident illo perferendis delectus consequatur nam perspiciatis aut, distinctio rem veritatis earum et nostrum amet. Ipsum veritatis obcaecati dolor blanditiis dolorem repellat, eveniet neque asperiores tempora minus facilis reiciendis ad totam possimus! Corrupti quas reiciendis ex dicta a aspernatur cum assumenda distinctio possimus sit saepe, facere vero beatae consequatur maxime explicabo eaque, magnam soluta quod! Vel deleniti id reiciendis ad perspiciatis debitis mollitia molestiae! Quam praesentium illo tenetur nobis, ipsa sunt expedita ea numquam, incidunt voluptates quod dicta? Necessitatibus itaque inventore, repellat quam quidem vel a ea voluptatum libero doloribus pariatur nisi et error, nesciunt veritatis repellendus. Molestiae cumque veritatis fugiat, eum perspiciatis odio voluptate, ut voluptatibus iste, odit vero velit nulla obcaecati repellat quaerat laudantium laboriosam dolor nihil facere! Illum eveniet magni harum quos repudiandae officiis maxime officia dolore aspernatur voluptate. Maxime impedit aut beatae?
   </div>
+  <button>bottom</button>
 </div>
 </body></html>
