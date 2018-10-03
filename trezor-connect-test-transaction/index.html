@@ -15,7 +15,7 @@
 <button onclick="sendTransaction(0.05)">Send 0.005 eth</button>
 <div id="root"></div>
 <script>
-  console.log('v 4');
+  console.log('v 5');
   window.EthereumTx = ethereumjs.Tx;
 
   const addHexPrefix = (value) => `0x${value}`;
@@ -61,7 +61,7 @@
     console.log('to/recipient have eth:', web3.fromWei(toWalletBalance.toString(10), 'ether'));
 
     let nonce = await asyncRequest(web3.eth.getTransactionCount, trezorAdress.address);
-    nonce = (nonce + 1).toString();
+    nonce = (nonce + 2).toString();
     console.log('nonce:', nonce);
 
     const trezorSignParams = {
