@@ -15,13 +15,13 @@
 <button onclick="sendTransaction(0.05)">Send 0.005 eth</button>
 <div id="root"></div>
 <script>
-  console.log('v 1');
+  console.log('v 2');
   window.EthereumTx = ethereumjs.Tx;
 
   const addHexPrefix = (value) => `0x${value}`;
 
-  const asyncRequest = (method, arg) => new Promise((resolve, reject) => {
-    method(arg, (error, result) => {
+  const asyncRequest = (method, ...args) => new Promise((resolve, reject) => {
+    method(...args, (error, result) => {
       if (error) {
         reject(error);
       } else {
@@ -53,6 +53,7 @@
 
     console.log('trezorAdress:', trezorAdress);
     console.log('transaction cost:', getTransactionCostInWei(gasPrice, gasLimit));
+    console.log('transaction sum:', getTransactionCostInWei(gasPrice, gasLimit) + currentValue);
 
     const fromWalletBalance = await asyncRequest(web3.eth.getBalance, trezorAdress.address);
     console.log('from/sender have eth:', web3.fromWei(fromWalletBalance.toString(10), 'ether'));
@@ -90,7 +91,6 @@
       ...signedTr.payload,
     };
 
-
     const tx = new EthereumTx(rawTx);
 
     const senderInTx = `0x${tx.from.toString('hex')}`;
@@ -98,7 +98,7 @@
 
     let balanceSenderInTx = await asyncRequest(web3.eth.getBalance, senderInTx);
     balanceSenderInTx = web3.fromWei(balanceSenderInTx.toString(10), 'ether');
-    console.log('from/sender balance :', balanceSenderInTx);
+    console.log('from/sender in tx balance :', balanceSenderInTx);
 
     const serializedTx = tx.serialize();
     web3.eth.sendRawTransaction(`0x${serializedTx.toString('hex')}`, (err, hash) => {
