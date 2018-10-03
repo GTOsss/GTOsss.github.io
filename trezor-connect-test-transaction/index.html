@@ -7,116 +7,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
   <script src="https://connect.trezor.io/5/trezor-connect.js"></script>
-  <script src ="https://cdnjs.cloudflare.com/ajax/libs/bignumber.js/7.2.1/bignumber.js"></script>
-  <script src ="./ethereumTx.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bignumber.js/7.2.1/bignumber.js"></script>
+  <script src="./ethereumTx.js"></script>
 </head>
 
 <body>
-  <button onclick="sendTransaction(0.05)">Send 0.005 eth</button>
+<button onclick="sendTransaction(0.05)">Send 0.005 eth</button>
 <div id="root"></div>
-  <script>
-    window.EthereumTx = ethereumjs.Tx;
-    const fixHexValue = (value) => (value.length % 2 ? `0${value}` : value);
+<script>
+  window.EthereumTx = ethereumjs.Tx;
+  const fixHexValue = (value) => (value.length % 2 ? `0${value}` : value);
 
-    const addHexPrefix = (value) => `0x${value}`;
+  const addHexPrefix = (value) => `0x${value}`;
 
-    const asyncRequest = (method, arg) => new Promise((resolve, reject) => {
-      method(arg, (error, result) => {
-        if (error) {
-          reject(error);
-        } else {
-          resolve(result);
-        }
-      });
+  const asyncRequest = (method, arg) => new Promise((resolve, reject) => {
+    method(arg, (error, result) => {
+      if (error) {
+        reject(error);
+      } else {
+        resolve(result);
+      }
     });
+  });
 
-   const sendTransaction = async (value) => {
-     window.web3 = new Web3(new Web3.providers
-       .HttpProvider('https://kovan.infura.io/v3/adde26ec7b994797923aae6cdea28a63'));
-     const addressN = "m/44'/1'/0'/0";
-     const gasPrice = new BigNumber(web3.toWei('20', 'gwei'));
-     const gasLimit = new BigNumber(21000);
-     const to = '0x5a938517b029c256e6f2f18d99558f01a0208cb2';
-     const currentValue = web3.toHex(web3.toWei(value, 'ether'));
-     const chainId = 42;
+  const getTransactionCostInWei = (gasPrice, gasLimit) => {
+    const constTransactionInWei = gasLimit.multipliedBy(gasPrice).toString(10);
+    return web3.fromWei(constTransactionInWei, 'ether');
+  };
 
-     const constTransactionInWei = gasLimit.multipliedBy(gasPrice).toString(10);
-     const constTransactionInEther = web3.fromWei(constTransactionInWei, 'ether');
-     console.log('cost transaction: ', constTransactionInEther);
+  sendTransaction = async (value) => {
+    window.web3 = new Web3(new Web3.providers
+      .HttpProvider('https://kovan.infura.io/v3/adde26ec7b994797923aae6cdea28a63'));
+    const addressN = "m/44'/1'/0'/0/0";
+    const gasPrice = new BigNumber(web3.toWei('20', 'gwei'));
+    const gasLimit = new BigNumber(21000);
+    const to = '0x5a938517b029c256e6f2f18d99558f01a0208cb2';
+    const currentValue = web3.toHex(web3.toWei(value, 'ether'));
+    const chainId = 42;
 
-     let ethAddresses = await TrezorConnect.ethereumGetAddress({
-       bundle: Array.from({ length: 1 }).map((el, i) => (
-         { path: `${addressN}/${i}`, showOnTrezor: false }
-       )),
-     });
-     ethAddresses = ethAddresses.payload;
+    console.log(addressN);
+    let trezorAdress = await TrezorConnect.ethereumGetAddress({
+      path: addressN
+    });
+    trezorAdress = trezorAdress.payload;
 
-     const promiseBalances = ethAddresses
-       .map((el) => asyncRequest(web3.eth.getBalance, el.address));
-     let balances = await Promise.all(promiseBalances);
-     balances = balances.map((el, i) => ({
-       address: ethAddresses[i].address,
-       balance: web3.fromWei(el.toString(10), 'ether'),
-       path: `${addressN}/${i}`,
-     }));
+    console.log('trezorAdress:', trezorAdress);
+    console.log('transaction cost:', getTransactionCostInWei(gasPrice, gasLimit));
 
-     console.log({ balances });
+    const fromWalletBalance = await asyncRequest(web3.eth.getBalance, trezorAdress.address);
+    console.log('from/sender have eth:', web3.fromWei(fromWalletBalance.toString(10), 'ether'));
+    const toWalletBalance = await asyncRequest(web3.eth.getBalance, to);
+    console.log('to/recipient have eth:', web3.fromWei(toWalletBalance.toString(10), 'ether'));
 
-     const toWalletBalance = await asyncRequest(web3.eth.getBalance, to);
-     console.log({ "'to'/recipient have eth:": web3.fromWei(toWalletBalance.toString(10), 'ether') });
+    const nonce = (web3.eth.getTransactionCount(trezorAdress.address) + 1).toString();
 
-     let nonce = web3.eth.getTransactionCount(balances[0].address) + 1;
-     nonce = nonce.toString();
-     console.log({ nonce });
-     const trezorSignParams = {
-       path: `${addressN}`,
-       transaction: {
-         to,
-         value: currentValue,
-         chainId,
-         nonce,
-         gasPrice: addHexPrefix(gasPrice.toString(16)),
-         gasLimit: addHexPrefix(gasLimit.toString(16)),
-       },
-     };
+    const trezorSignParams = {
+      path: addressN,
+      transaction: {
+        to,
+        value: currentValue,
+        chainId,
+        nonce,
+        gasPrice: addHexPrefix(gasPrice.toString(16)),
+        gasLimit: addHexPrefix(gasLimit.toString(16)),
+      },
+    };
 
-     console.log({ trezorSignParams });
-     const signedTr = await TrezorConnect.ethereumSignTransaction(trezorSignParams);
+    console.log('trezorSignParams:', trezorSignParams);
+    const signedTr = await TrezorConnect.ethereumSignTransaction(trezorSignParams);
 
-     if (signedTr.payload.error) {
-       throw signedTr.payload.error;
-     }
+    if (signedTr.payload.error) {
+      throw signedTr.payload.error;
+    }
 
-     const rawTx = {
-       nonce: trezorSignParams.transaction.nonce,
-       gasPrice: trezorSignParams.transaction.gasPrice,
-       gasLimit: trezorSignParams.transaction.gasLimit,
-       to: trezorSignParams.transaction.to,
-       value: trezorSignParams.transaction.value,
-       chainId: trezorSignParams.transaction.chainId,
-       ...signedTr.payload,
-     };
+    const rawTx = {
+      nonce: trezorSignParams.transaction.nonce,
+      gasPrice: trezorSignParams.transaction.gasPrice,
+      gasLimit: trezorSignParams.transaction.gasLimit,
+      to: trezorSignParams.transaction.to,
+      value: trezorSignParams.transaction.value,
+      chainId: trezorSignParams.transaction.chainId,
+      ...signedTr.payload,
+    };
 
-     console.log({ rawTx });
+    // console.log('rawTx:', rawTx);
 
-     const tx = new EthereumTx(rawTx);
+    const tx = new EthereumTx(rawTx);
 
-     const fromInHex = tx.from.toString('hex');
-     let balanceFrom = await asyncRequest(web3.eth.getBalance, addHexPrefix(fromInHex));
-     balanceFrom = web3.fromWei(balanceFrom.toString(10), 'ether');
-     console.log({ fromInHex, balanceFrom });
-     const serializedTx = tx.serialize();
-     // console.log('serializedTx in hex:', `0x${serializedTx.toString('hex')}`);
-     web3.eth.sendRawTransaction(`0x${serializedTx.toString('hex')}`, (err, hash) => {
-       if (err) {
-         console.log(err);
-       }
-       if (!err) {
-         console.log(hash);
-       }
-     });
-   }
-  </script>
+    const senderInTx = `0x${tx.from.toString('hex')}`;
+    console.log('from/sender in tx:', senderInTx);
+
+    let balanceSenderInTx = await asyncRequest(web3.eth.getBalance, senderInTx);
+    balanceSenderInTx = web3.fromWei(balanceSenderInTx.toString(10), 'ether');
+    console.log('from/sender balance :', balanceSenderInTx);
+
+    const serializedTx = tx.serialize();
+    web3.eth.sendRawTransaction(`0x${serializedTx.toString('hex')}`, (err, hash) => {
+      if (err) {
+        console.log(err);
+      }
+      if (!err) {
+        console.log(hash);
+      }
+    });
+  }
+</script>
 </body>
 
 </html>
