@@ -53,14 +53,15 @@
 
     console.log('trezorAdress:', trezorAdress);
     console.log('transaction cost:', getTransactionCostInWei(gasPrice, gasLimit));
-    console.log('transaction sum:', getTransactionCostInWei(gasPrice, gasLimit) + currentValue);
-
+    const valueInDec = Number.parseFloat(currentValue, 16);
+    console.log('transaction sum:', getTransactionCostInWei(gasPrice, gasLimit) + valueInDec);
     const fromWalletBalance = await asyncRequest(web3.eth.getBalance, trezorAdress.address);
     console.log('from/sender have eth:', web3.fromWei(fromWalletBalance.toString(10), 'ether'));
     const toWalletBalance = await asyncRequest(web3.eth.getBalance, to);
     console.log('to/recipient have eth:', web3.fromWei(toWalletBalance.toString(10), 'ether'));
 
-    const nonce = (web3.eth.getTransactionCount(trezorAdress.address) + 1).toString();
+    let nonce = await asyncRequest(web3.eth.getTransactionCount, trezorAdress.address);
+    nonce = (nonce + 1).toString();
 
     const trezorSignParams = {
       path: addressN,
