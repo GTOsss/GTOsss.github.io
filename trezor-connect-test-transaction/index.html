@@ -15,6 +15,7 @@
 <button onclick="sendTransaction(0.05)">Send 0.005 eth</button>
 <div id="root"></div>
 <script>
+  console.log('v 1');
   window.EthereumTx = ethereumjs.Tx;
   const fixHexValue = (value) => (value.length % 2 ? `0${value}` : value);
 
