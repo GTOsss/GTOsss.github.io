@@ -15,7 +15,7 @@
 <button onclick="sendTransaction(0.05)">Send 0.005 eth</button>
 <div id="root"></div>
 <script>
-  console.log('v 3');
+  console.log('v 4');
   window.EthereumTx = ethereumjs.Tx;
 
   const addHexPrefix = (value) => `0x${value}`;
@@ -62,6 +62,7 @@
 
     let nonce = await asyncRequest(web3.eth.getTransactionCount, trezorAdress.address);
     nonce = (nonce + 1).toString();
+    console.log('nonce:', nonce);
 
     const trezorSignParams = {
       path: addressN,
