@@ -17,7 +17,6 @@
 <script>
   console.log('v 1');
   window.EthereumTx = ethereumjs.Tx;
-  const fixHexValue = (value) => (value.length % 2 ? `0${value}` : value);
 
   const addHexPrefix = (value) => `0x${value}`;
 
@@ -91,7 +90,6 @@
       ...signedTr.payload,
     };
 
-    // console.log('rawTx:', rawTx);
 
     const tx = new EthereumTx(rawTx);
 
