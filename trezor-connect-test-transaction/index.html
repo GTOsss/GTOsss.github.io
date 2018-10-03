@@ -81,7 +81,7 @@
     }
 
     const rawTx = {
-      nonce: trezorSignParams.transaction.nonce,
+      nonce: web3.toHex(trezorSignParams.transaction.nonce),
       gasPrice: trezorSignParams.transaction.gasPrice,
       gasLimit: trezorSignParams.transaction.gasLimit,
       to: trezorSignParams.transaction.to,
