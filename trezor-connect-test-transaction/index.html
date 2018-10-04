@@ -43,7 +43,7 @@
     const gasLimit = new BigNumber(21000);
     const to = '0x5a938517b029c256e6f2f18d99558f01a0208cb2';
     const currentValue = web3.toHex(web3.toWei(value, 'ether'));
-    const chainId = 42;
+    const chainId = 3;
 
     console.log(addressN);
     let trezorAdress = await TrezorConnect.ethereumGetAddress({
