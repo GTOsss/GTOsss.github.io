@@ -53,7 +53,7 @@
 
     console.log('trezorAdress:', trezorAdress);
     console.log('transaction cost:', getTransactionCostInWei(gasPrice, gasLimit));
-    const valueInDec = Number.parseFloat(currentValue, 16);
+    const valueInDec = Number.parseFloat(value, 16);
     console.log('transaction sum:', getTransactionCostInWei(gasPrice, gasLimit) + valueInDec);
     const fromWalletBalance = await asyncRequest(web3.eth.getBalance, trezorAdress.address);
     console.log('from/sender have eth:', web3.fromWei(fromWalletBalance.toString(10), 'ether'));
