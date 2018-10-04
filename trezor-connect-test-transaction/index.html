@@ -15,7 +15,7 @@
 <button onclick="sendTransaction(0.005)">Send 0.005 eth</button>
 <div id="root"></div>
 <script>
-  console.log('v 9');
+  console.log('v 10');
   window.EthereumTx = ethereumjs.Tx;
 
   const addHexPrefix = (value) => `0x${value}`;
@@ -39,7 +39,7 @@
     window.web3 = new Web3(new Web3.providers
       .HttpProvider('https://ropsten.infura.io/v3/adde26ec7b994797923aae6cdea28a63'));
     const addressN = "m/44'/1'/0'/0/0";
-    const gasPrice = new BigNumber(web3.toWei('20', 'gwei'));
+    const gasPrice = new BigNumber(web3.toWei('50', 'gwei'));
     const gasLimit = new BigNumber(21000);
     const to = '0x5a938517b029c256e6f2f18d99558f01a0208cb2';
     const currentValue = web3.toHex(web3.toWei(value, 'ether'));
