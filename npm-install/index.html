@@ -7,55 +7,78 @@
 </head>
 
 <body>
-  <textarea class="input-dependencies" name="dependencies" id="input" cols="50" rows="15" placeholder="Past here dependencies from package json"></textarea>
+<div class="wrap-inline">
+  <textarea class="input-dependencies" name="dependencies" id="input" cols="50" rows="15"
+    placeholder="Past here dependencies from package json"></textarea>
   <div class="dev-wrap">
     <input id="input-dev" type="checkbox">
     <label for="input-dev">dev</label>
   </div>
   <div id="screen" class="output-screen" title="Click for copy"></div>
+</div>
+<div class="wrap-buttons">
+  <button id="button-copy">Copy</button>
+</div>
 </body>
 
 <script>
-  const screen = document.getElementById('screen');
-  const input = document.getElementById('input');
-  const inputDev = document.getElementById('input-dev');
-  const regExp = /"(.\w.+)":/gi;
+	const screen = document.getElementById('screen');
+	const input = document.getElementById('input');
+	const inputDev = document.getElementById('input-dev');
+	const buttonCopy = document.getElementById('button-copy');
+	const regExp = /"(.\w.+)":/gi;
 
-  const copyeText = () => {
-    let aux = document.createElement("input");
-    aux.setAttribute("value", screen.innerHTML);
-    document.body.appendChild(aux);
-    aux.select();
-    document.execCommand("copy");
-    document.body.removeChild(aux);
-  };
+	const copyeText = () => {
+		let aux = document.createElement("input");
+		aux.setAttribute("value", screen.innerHTML);
+		document.body.appendChild(aux);
+		aux.select();
+		document.execCommand("copy");
+		document.body.removeChild(aux);
+	};
 
-  const updateScreen = (value, dev) => {
-    let result;
-    let strings = [];
-    while (result = regExp.exec(value)) {
-      strings.push(result[1]);
-    }
-    screen.innerHTML = `npm i --save${dev ? '-dev' : ''} ${strings.join(' ')}`;
-  };
+	const updateScreen = (value, dev) => {
+		let result;
+		let strings = [];
+		while (result = regExp.exec(value)) {
+			strings.push(result[1]);
+		}
+		screen.innerHTML = `npm i --save${dev ? '-dev' : ''} ${strings.join(' ')}`;
+	};
 
-  const onChangeInput = ({ target: { value } }) => {
-    updateScreen(value, inputDev.checked);
-  };
+	const onChangeInput = ({ target: { value } }) => {
+		updateScreen(value, inputDev.checked);
+	};
 
-  const onChangeDev = ({ target }) => {
-    updateScreen(input.value, target.checked);
-  };
+	const onChangeDev = ({ target }) => {
+		updateScreen(input.value, target.checked);
+	};
 
-  screen.addEventListener('click', copyeText);
-  inputDev.addEventListener('change', onChangeDev);
-  input.addEventListener('keyup', onChangeInput);
+	screen.addEventListener('click', copyeText);
+	buttonCopy.addEventListener('click', copyeText);
+	inputDev.addEventListener('change', onChangeDev);
+	input.addEventListener('keyup', onChangeInput);
 </script>
 
+</html>
 <style>
   body {
-    display: flex;
     font-family: 'Open Sans', sans-serif;
+  }
+
+  .wrap-buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+
+  .wrap-buttons button {
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  .wrap-inline {
+    display: flex;
   }
 
   .dev-wrap {
@@ -73,7 +96,7 @@
   }
 
   .input-dependencies {
-    font-size: 14px ;
+    font-size: 14px;
     min-width: 500px;
     max-width: 500px;
   }
@@ -86,4 +109,3 @@
     padding: 20px;
   }
 </style>
-</html>
