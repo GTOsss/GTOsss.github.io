@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<meta name="theme-color" content="#b4b4b4">
+		<title>Тестовое задание</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500,900&amp;amp;subset=cyrillic-ext">
+		<link rel="stylesheet" href="./css/main.css?v=1542639630625">
+	</head>
+	<body>
+		<section class="section-info">
+			<div class="paper-card-info"><img class="paper-card-info__avatar" src="./images/avatar.png" alt="avatar">
+				<div class="paper-card-info__wrap-inputs" id="infoInputs">
+					<input class="input" placeholder="имя" id="infoName"/>
+					<input class="input" placeholder="дата рождения" id="infoDob"/>
+					<input class="input" placeholder="город" id="infoCity"/>
+					<input class="input" placeholder="контактные данные" id="infoContacts"/><img class="stamp" id="infoStamp" src="./images/stamp.png" alt="stamp">
+				</div>
+			</div>
+			<div class="paper-card-skills">
+				<h2 class="paper-card-skills__title">Навыки</h2>
+				<div class="grid-x" id="skills">
+					<div class="cell small-6 medium-3 large-3 column-skills-checkboxes">
+						<div class="checkbox">
+							<input class="checkbox__input" type="checkbox" id="html5"/>
+							<label class="checkbox__label" for="html5">html5</label>
+						</div>
+						<div class="checkbox">
+							<input class="checkbox__input" type="checkbox" id="css3"/>
+							<label class="checkbox__label" for="css3">css3</label>
+						</div>
+						<div class="checkbox">
+							<input class="checkbox__input" type="checkbox" id="БЭМ"/>
+							<label class="checkbox__label" for="БЭМ">БЭМ</label>
+						</div>
+					</div>
+					<div class="cell small-6 medium-3 large-3 column-skills-checkboxes">
+						<div class="checkbox">
+							<input class="checkbox__input" type="checkbox" id="SASS"/>
+							<label class="checkbox__label" for="SASS">SASS</label>
+						</div>
+						<div class="checkbox">
+							<input class="checkbox__input" type="checkbox" id="LESS"/>
+							<label class="checkbox__label" for="LESS">LESS</label>
+						</div>
+						<div class="checkbox">
+							<input class="checkbox__input" type="checkbox" id="gulp"/>
+							<label class="checkbox__label" for="gulp">gulp</label>
+						</div>
+					</div>
+					<div class="cell small-6 medium-3 large-3 column-skills-checkboxes wrap-mobile-bottom-skills">
+						<div class="checkbox">
+							<input class="checkbox__input" type="checkbox" id="vanillaJS"/>
+							<label class="checkbox__label" for="vanillaJS">vanillaJS</label>
+						</div>
+						<div class="checkbox">
+							<input class="checkbox__input" type="checkbox" id="react"/>
+							<label class="checkbox__label" for="react">react</label>
+						</div>
+						<div class="checkbox">
+							<input class="checkbox__input" type="checkbox" id="jquery"/>
+							<label class="checkbox__label" for="jquery">jquery</label>
+						</div>
+					</div>
+					<div class="cell small-6 medium-3 large-3 column-skills-checkboxes wrap-mobile-bottom-skills">
+						<div class="checkbox">
+							<input class="checkbox__input" type="checkbox" id="git"/>
+							<label class="checkbox__label" for="git">git</label>
+						</div>
+						<div class="checkbox">
+							<input class="checkbox__input" type="checkbox" id="foundation"/>
+							<label class="checkbox__label" for="foundation">foundation</label>
+						</div>
+						<div class="checkbox">
+							<input class="checkbox__input" type="checkbox" id="bootstrap"/>
+							<label class="checkbox__label" for="bootstrap">bootstrap</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid-x paper-card-js-level">
+				<div class="cell small-12 medium-6 large-6 level-js-meter"><img class="level-js-meter__image-scale" src="./images/scale.png" alt="javascript scale"><img class="level-js-meter__image-arrow" id="jsScaleArrow" src="./images/arrow.png" alt="arrow"></div>
+				<div class="cell medium-6 large-6 level-js-counter">
+					<div class="level-js-counter__text">Мой уровень владения <br/> Java Script</div>
+					<div class="level-js-counter__count" id="jsLevelCount">0</div>
+				</div>
+			</div>
+		</section>
+		<script src="./js/vendor.js?v=1542639630626"></script>
+		<script src="./js/main.js?v=1542639630626"></script>
+	</body>
+</html>
