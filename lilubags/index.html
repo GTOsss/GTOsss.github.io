@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Lilubags</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Интернет магазин сумок, сумочек и кошельков.">
+    <meta name="keywords" content="">
+    <link href="/styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="modalContainer" id="modalConfirmOrder">
+      <div class="modalDialog">
+        <div class="modalContent">
+          <div class="loader modalLoader">
+            <div class="loader__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 50 47">
+                <g fill="#313D53" fill-rule="nonzero" opacity=".154">
+                  <path d="M27.42 7.735c.882-.883 1.324-1.943 1.323-3.18 0-1.236-.442-2.296-1.326-3.18C26.533.491 25.473.05 24.237.05c-1.238 0-2.297.44-3.18 1.324-.869.868-1.306 1.924-1.313 3.168-.007 1.244.432 2.308 1.315 3.192.884.883 1.947 1.321 3.192 1.315 1.243-.008 2.3-.444 3.168-1.313zM34.85 13.035c.971.972 2.148 1.458 3.533 1.46 1.384 0 2.561-.486 3.532-1.457.972-.971 1.457-2.149 1.457-3.533 0-1.383-.487-2.561-1.46-3.533-.97-.972-2.148-1.458-3.532-1.459-1.384 0-2.562.485-3.533 1.457-.971.97-1.457 2.148-1.456 3.532 0 1.384.486 2.562 1.458 3.533zM22.469 42.386a2.404 2.404 0 0 0-.728 1.766c0 .692.243 1.282.73 1.767a2.407 2.407 0 0 0 1.766.73c.692 0 1.281-.243 1.766-.729a2.406 2.406 0 0 0 .729-1.766c0-.692-.243-1.28-.73-1.767a2.409 2.409 0 0 0-1.766-.73c-.692 0-1.281.243-1.767.729zM47.926 28.24c1.074-1.074 1.611-2.37 1.61-3.885 0-1.517-.537-2.812-1.612-3.887-1.075-1.075-2.37-1.613-3.887-1.613s-2.812.536-3.886 1.61c-1.074 1.075-1.611 2.37-1.61 3.886 0 1.516.538 2.812 1.613 3.887 1.075 1.075 2.37 1.613 3.886 1.613s2.812-.536 3.886-1.61zM10.097 40.791c.824 0 1.53-.293 2.119-.882a2.888 2.888 0 0 0 .883-2.12c0-.823-.296-1.53-.885-2.12a2.892 2.892 0 0 0-2.12-.884c-.824 0-1.53.294-2.12.883a2.886 2.886 0 0 0-.881 2.12c0 .823.295 1.53.884 2.119a2.892 2.892 0 0 0 2.12.884zM6.912 26.828c.678-.677 1.016-1.502 1.016-2.473 0-.971-.34-1.796-1.017-2.474-.678-.677-1.502-1.016-2.474-1.017-.972 0-1.795.339-2.473 1.016C1.287 22.557.95 23.38.95 24.352c0 .972.34 1.796 1.017 2.474.678.678 1.502 1.016 2.474 1.017.971 0 1.795-.338 2.472-1.015zM12.923 12.332c.78-.78 1.17-1.723 1.17-2.827C14.09 8.4 13.7 7.459 12.92 6.678a3.852 3.852 0 0 0-2.827-1.17c-1.104-.001-2.046.388-2.826 1.168-.78.78-1.17 1.723-1.17 2.827 0 1.104.391 2.046 1.172 2.827.78.78 1.722 1.17 2.826 1.17 1.105 0 2.047-.388 2.827-1.168zM42.623 42.029c1.177-1.177 1.766-2.59 1.766-4.24-.001-1.648-.59-3.062-1.769-4.24-1.178-1.178-2.59-1.767-4.24-1.768-1.648 0-3.061.589-4.239 1.766-1.177 1.178-1.766 2.59-1.765 4.239 0 1.648.59 3.062 1.768 4.24 1.178 1.178 2.591 1.767 4.24 1.768 1.649 0 3.061-.588 4.239-1.765z"></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="iconClose">
+            <svg viewbox="0 0 24 24">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Main_order_form" transform="translate(-1083.000000, -245.000000)" fill="#313D53">
+                  <path id="pop-up-close-icon" d="M1097.7151,257 L1106.49232,265.972626 C1107.16923,266.664298 1107.16923,267.787534 1106.49232,268.480372 C1105.81428,269.173209 1104.71546,269.173209 1104.03855,268.480372 L1094.99986,259.241371 L1085.9623,268.480372 C1085.28426,269.173209 1084.18544,269.173209 1083.50853,268.480372 C1082.83049,267.787534 1082.83049,266.664298 1083.50853,265.972626 L1092.28576,257 L1083.50853,248.027374 C1082.83049,247.335702 1082.83049,246.212466 1083.50853,245.519628 C1084.18544,244.826791 1085.28426,244.826791 1085.9623,245.519628 L1094.99986,254.758629 L1104.03855,245.519628 C1104.71546,244.826791 1105.81428,244.826791 1106.49232,245.519628 C1107.16923,246.212466 1107.16923,247.335702 1106.49232,248.027374 L1097.7151,257 Z"></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <h2 class="modalContent__title">Подтверждение заказа</h2>
+          <p class="modalContent__text">Пожалуйста, укажите ваши контактные данные и адрес. Мы свяжемся с вами при первой возможности.</p>
+          <form class="modalForm" id="formConfirmOrder">
+            <div class="input">
+              <label class="input__label"><span class="input__labelText"></span>
+                <input class="input__field" type="text" name="name" placeholder="Ваше имя" id=""/>
+              </label>
+            </div>
+            <div class="input">
+              <label class="input__label"><span class="input__labelText"></span>
+                <input class="input__field" type="email" name="email" placeholder="Ваш e-mail" id=""/>
+              </label>
+            </div>
+            <div class="input">
+              <label class="input__label"><span class="input__labelText"></span>
+                <input class="input__field" type="text" name="tel" placeholder="Ваш номер телефона" id=""/>
+              </label>
+            </div>
+            <div class="input">
+              <label class="input__label"><span class="input__labelText"></span>
+                <input class="input__field" type="text" name="address" placeholder="Адрес доставки" id=""/>
+              </label>
+            </div>
+            <button class="button button_theme_primary submitButton" type="submit" data-modal="">Завершить заказ
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modalContainer" id="modalThank">
+      <div class="modalDialog">
+        <div class="modalContent">
+          <div class="loader modalLoader">
+            <div class="loader__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 50 47">
+                <g fill="#313D53" fill-rule="nonzero" opacity=".154">
+                  <path d="M27.42 7.735c.882-.883 1.324-1.943 1.323-3.18 0-1.236-.442-2.296-1.326-3.18C26.533.491 25.473.05 24.237.05c-1.238 0-2.297.44-3.18 1.324-.869.868-1.306 1.924-1.313 3.168-.007 1.244.432 2.308 1.315 3.192.884.883 1.947 1.321 3.192 1.315 1.243-.008 2.3-.444 3.168-1.313zM34.85 13.035c.971.972 2.148 1.458 3.533 1.46 1.384 0 2.561-.486 3.532-1.457.972-.971 1.457-2.149 1.457-3.533 0-1.383-.487-2.561-1.46-3.533-.97-.972-2.148-1.458-3.532-1.459-1.384 0-2.562.485-3.533 1.457-.971.97-1.457 2.148-1.456 3.532 0 1.384.486 2.562 1.458 3.533zM22.469 42.386a2.404 2.404 0 0 0-.728 1.766c0 .692.243 1.282.73 1.767a2.407 2.407 0 0 0 1.766.73c.692 0 1.281-.243 1.766-.729a2.406 2.406 0 0 0 .729-1.766c0-.692-.243-1.28-.73-1.767a2.409 2.409 0 0 0-1.766-.73c-.692 0-1.281.243-1.767.729zM47.926 28.24c1.074-1.074 1.611-2.37 1.61-3.885 0-1.517-.537-2.812-1.612-3.887-1.075-1.075-2.37-1.613-3.887-1.613s-2.812.536-3.886 1.61c-1.074 1.075-1.611 2.37-1.61 3.886 0 1.516.538 2.812 1.613 3.887 1.075 1.075 2.37 1.613 3.886 1.613s2.812-.536 3.886-1.61zM10.097 40.791c.824 0 1.53-.293 2.119-.882a2.888 2.888 0 0 0 .883-2.12c0-.823-.296-1.53-.885-2.12a2.892 2.892 0 0 0-2.12-.884c-.824 0-1.53.294-2.12.883a2.886 2.886 0 0 0-.881 2.12c0 .823.295 1.53.884 2.119a2.892 2.892 0 0 0 2.12.884zM6.912 26.828c.678-.677 1.016-1.502 1.016-2.473 0-.971-.34-1.796-1.017-2.474-.678-.677-1.502-1.016-2.474-1.017-.972 0-1.795.339-2.473 1.016C1.287 22.557.95 23.38.95 24.352c0 .972.34 1.796 1.017 2.474.678.678 1.502 1.016 2.474 1.017.971 0 1.795-.338 2.472-1.015zM12.923 12.332c.78-.78 1.17-1.723 1.17-2.827C14.09 8.4 13.7 7.459 12.92 6.678a3.852 3.852 0 0 0-2.827-1.17c-1.104-.001-2.046.388-2.826 1.168-.78.78-1.17 1.723-1.17 2.827 0 1.104.391 2.046 1.172 2.827.78.78 1.722 1.17 2.826 1.17 1.105 0 2.047-.388 2.827-1.168zM42.623 42.029c1.177-1.177 1.766-2.59 1.766-4.24-.001-1.648-.59-3.062-1.769-4.24-1.178-1.178-2.59-1.767-4.24-1.768-1.648 0-3.061.589-4.239 1.766-1.177 1.178-1.766 2.59-1.765 4.239 0 1.648.59 3.062 1.768 4.24 1.178 1.178 2.591 1.767 4.24 1.768 1.649 0 3.061-.588 4.239-1.765z"></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="iconClose">
+            <svg viewbox="0 0 24 24">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Main_order_form" transform="translate(-1083.000000, -245.000000)" fill="#313D53">
+                  <path id="pop-up-close-icon" d="M1097.7151,257 L1106.49232,265.972626 C1107.16923,266.664298 1107.16923,267.787534 1106.49232,268.480372 C1105.81428,269.173209 1104.71546,269.173209 1104.03855,268.480372 L1094.99986,259.241371 L1085.9623,268.480372 C1085.28426,269.173209 1084.18544,269.173209 1083.50853,268.480372 C1082.83049,267.787534 1082.83049,266.664298 1083.50853,265.972626 L1092.28576,257 L1083.50853,248.027374 C1082.83049,247.335702 1082.83049,246.212466 1083.50853,245.519628 C1084.18544,244.826791 1085.28426,244.826791 1085.9623,245.519628 L1094.99986,254.758629 L1104.03855,245.519628 C1104.71546,244.826791 1105.81428,244.826791 1106.49232,245.519628 C1107.16923,246.212466 1107.16923,247.335702 1106.49232,248.027374 L1097.7151,257 Z"></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <h2 class="modalContent__title modalContent__title_center">Спасибо</h2>
+          <p class="modalContent__text modalContent__text_center">Наш менеджер свяжется с вами для выбора подходящего времени доставки и удобного варианта оплаты.</p>
+        </div>
+      </div>
+    </div>
+    <div class="modalContainer" id="modalReturnPolicy">
+      <div class="modalDialog">
+        <div class="modalContent">
+          <div class="loader modalLoader">
+            <div class="loader__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 50 47">
+                <g fill="#313D53" fill-rule="nonzero" opacity=".154">
+                  <path d="M27.42 7.735c.882-.883 1.324-1.943 1.323-3.18 0-1.236-.442-2.296-1.326-3.18C26.533.491 25.473.05 24.237.05c-1.238 0-2.297.44-3.18 1.324-.869.868-1.306 1.924-1.313 3.168-.007 1.244.432 2.308 1.315 3.192.884.883 1.947 1.321 3.192 1.315 1.243-.008 2.3-.444 3.168-1.313zM34.85 13.035c.971.972 2.148 1.458 3.533 1.46 1.384 0 2.561-.486 3.532-1.457.972-.971 1.457-2.149 1.457-3.533 0-1.383-.487-2.561-1.46-3.533-.97-.972-2.148-1.458-3.532-1.459-1.384 0-2.562.485-3.533 1.457-.971.97-1.457 2.148-1.456 3.532 0 1.384.486 2.562 1.458 3.533zM22.469 42.386a2.404 2.404 0 0 0-.728 1.766c0 .692.243 1.282.73 1.767a2.407 2.407 0 0 0 1.766.73c.692 0 1.281-.243 1.766-.729a2.406 2.406 0 0 0 .729-1.766c0-.692-.243-1.28-.73-1.767a2.409 2.409 0 0 0-1.766-.73c-.692 0-1.281.243-1.767.729zM47.926 28.24c1.074-1.074 1.611-2.37 1.61-3.885 0-1.517-.537-2.812-1.612-3.887-1.075-1.075-2.37-1.613-3.887-1.613s-2.812.536-3.886 1.61c-1.074 1.075-1.611 2.37-1.61 3.886 0 1.516.538 2.812 1.613 3.887 1.075 1.075 2.37 1.613 3.886 1.613s2.812-.536 3.886-1.61zM10.097 40.791c.824 0 1.53-.293 2.119-.882a2.888 2.888 0 0 0 .883-2.12c0-.823-.296-1.53-.885-2.12a2.892 2.892 0 0 0-2.12-.884c-.824 0-1.53.294-2.12.883a2.886 2.886 0 0 0-.881 2.12c0 .823.295 1.53.884 2.119a2.892 2.892 0 0 0 2.12.884zM6.912 26.828c.678-.677 1.016-1.502 1.016-2.473 0-.971-.34-1.796-1.017-2.474-.678-.677-1.502-1.016-2.474-1.017-.972 0-1.795.339-2.473 1.016C1.287 22.557.95 23.38.95 24.352c0 .972.34 1.796 1.017 2.474.678.678 1.502 1.016 2.474 1.017.971 0 1.795-.338 2.472-1.015zM12.923 12.332c.78-.78 1.17-1.723 1.17-2.827C14.09 8.4 13.7 7.459 12.92 6.678a3.852 3.852 0 0 0-2.827-1.17c-1.104-.001-2.046.388-2.826 1.168-.78.78-1.17 1.723-1.17 2.827 0 1.104.391 2.046 1.172 2.827.78.78 1.722 1.17 2.826 1.17 1.105 0 2.047-.388 2.827-1.168zM42.623 42.029c1.177-1.177 1.766-2.59 1.766-4.24-.001-1.648-.59-3.062-1.769-4.24-1.178-1.178-2.59-1.767-4.24-1.768-1.648 0-3.061.589-4.239 1.766-1.177 1.178-1.766 2.59-1.765 4.239 0 1.648.59 3.062 1.768 4.24 1.178 1.178 2.591 1.767 4.24 1.768 1.649 0 3.061-.588 4.239-1.765z"></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="iconClose">
+            <svg viewbox="0 0 24 24">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Main_order_form" transform="translate(-1083.000000, -245.000000)" fill="#313D53">
+                  <path id="pop-up-close-icon" d="M1097.7151,257 L1106.49232,265.972626 C1107.16923,266.664298 1107.16923,267.787534 1106.49232,268.480372 C1105.81428,269.173209 1104.71546,269.173209 1104.03855,268.480372 L1094.99986,259.241371 L1085.9623,268.480372 C1085.28426,269.173209 1084.18544,269.173209 1083.50853,268.480372 C1082.83049,267.787534 1082.83049,266.664298 1083.50853,265.972626 L1092.28576,257 L1083.50853,248.027374 C1082.83049,247.335702 1082.83049,246.212466 1083.50853,245.519628 C1084.18544,244.826791 1085.28426,244.826791 1085.9623,245.519628 L1094.99986,254.758629 L1104.03855,245.519628 C1104.71546,244.826791 1105.81428,244.826791 1106.49232,245.519628 C1107.16923,246.212466 1107.16923,247.335702 1106.49232,248.027374 L1097.7151,257 Z"></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <h2 class="modalContent__title modalContent__title_center">Условия возврата</h2>
+          <p class="modalContent__text modalContent__text_center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, veniam.</p>
+        </div>
+      </div>
+    </div>
+    <div class="modalContainer modalContainer_theme_productView" id="productItem">
+      <div class="modalDialog modalDialog_theme_productView">
+        <div class="modalContent modalContent_theme_productView">
+          <div class="loader modalLoader">
+            <div class="loader__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 50 47">
+                <g fill="#313D53" fill-rule="nonzero" opacity=".154">
+                  <path d="M27.42 7.735c.882-.883 1.324-1.943 1.323-3.18 0-1.236-.442-2.296-1.326-3.18C26.533.491 25.473.05 24.237.05c-1.238 0-2.297.44-3.18 1.324-.869.868-1.306 1.924-1.313 3.168-.007 1.244.432 2.308 1.315 3.192.884.883 1.947 1.321 3.192 1.315 1.243-.008 2.3-.444 3.168-1.313zM34.85 13.035c.971.972 2.148 1.458 3.533 1.46 1.384 0 2.561-.486 3.532-1.457.972-.971 1.457-2.149 1.457-3.533 0-1.383-.487-2.561-1.46-3.533-.97-.972-2.148-1.458-3.532-1.459-1.384 0-2.562.485-3.533 1.457-.971.97-1.457 2.148-1.456 3.532 0 1.384.486 2.562 1.458 3.533zM22.469 42.386a2.404 2.404 0 0 0-.728 1.766c0 .692.243 1.282.73 1.767a2.407 2.407 0 0 0 1.766.73c.692 0 1.281-.243 1.766-.729a2.406 2.406 0 0 0 .729-1.766c0-.692-.243-1.28-.73-1.767a2.409 2.409 0 0 0-1.766-.73c-.692 0-1.281.243-1.767.729zM47.926 28.24c1.074-1.074 1.611-2.37 1.61-3.885 0-1.517-.537-2.812-1.612-3.887-1.075-1.075-2.37-1.613-3.887-1.613s-2.812.536-3.886 1.61c-1.074 1.075-1.611 2.37-1.61 3.886 0 1.516.538 2.812 1.613 3.887 1.075 1.075 2.37 1.613 3.886 1.613s2.812-.536 3.886-1.61zM10.097 40.791c.824 0 1.53-.293 2.119-.882a2.888 2.888 0 0 0 .883-2.12c0-.823-.296-1.53-.885-2.12a2.892 2.892 0 0 0-2.12-.884c-.824 0-1.53.294-2.12.883a2.886 2.886 0 0 0-.881 2.12c0 .823.295 1.53.884 2.119a2.892 2.892 0 0 0 2.12.884zM6.912 26.828c.678-.677 1.016-1.502 1.016-2.473 0-.971-.34-1.796-1.017-2.474-.678-.677-1.502-1.016-2.474-1.017-.972 0-1.795.339-2.473 1.016C1.287 22.557.95 23.38.95 24.352c0 .972.34 1.796 1.017 2.474.678.678 1.502 1.016 2.474 1.017.971 0 1.795-.338 2.472-1.015zM12.923 12.332c.78-.78 1.17-1.723 1.17-2.827C14.09 8.4 13.7 7.459 12.92 6.678a3.852 3.852 0 0 0-2.827-1.17c-1.104-.001-2.046.388-2.826 1.168-.78.78-1.17 1.723-1.17 2.827 0 1.104.391 2.046 1.172 2.827.78.78 1.722 1.17 2.826 1.17 1.105 0 2.047-.388 2.827-1.168zM42.623 42.029c1.177-1.177 1.766-2.59 1.766-4.24-.001-1.648-.59-3.062-1.769-4.24-1.178-1.178-2.59-1.767-4.24-1.768-1.648 0-3.061.589-4.239 1.766-1.177 1.178-1.766 2.59-1.765 4.239 0 1.648.59 3.062 1.768 4.24 1.178 1.178 2.591 1.767 4.24 1.768 1.649 0 3.061-.588 4.239-1.765z"></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="iconClose">
+            <svg viewbox="0 0 24 24">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Main_order_form" transform="translate(-1083.000000, -245.000000)" fill="#313D53">
+                  <path id="pop-up-close-icon" d="M1097.7151,257 L1106.49232,265.972626 C1107.16923,266.664298 1107.16923,267.787534 1106.49232,268.480372 C1105.81428,269.173209 1104.71546,269.173209 1104.03855,268.480372 L1094.99986,259.241371 L1085.9623,268.480372 C1085.28426,269.173209 1084.18544,269.173209 1083.50853,268.480372 C1082.83049,267.787534 1082.83049,266.664298 1083.50853,265.972626 L1092.28576,257 L1083.50853,248.027374 C1082.83049,247.335702 1082.83049,246.212466 1083.50853,245.519628 C1084.18544,244.826791 1085.28426,244.826791 1085.9623,245.519628 L1094.99986,254.758629 L1104.03855,245.519628 C1104.71546,244.826791 1105.81428,244.826791 1106.49232,245.519628 C1107.16923,246.212466 1107.16923,247.335702 1106.49232,248.027374 L1097.7151,257 Z"></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="productTile productTile_theme_fullScreen">
+            <div class="productTile__product">
+              <div class="productTile__productInner">
+                <div class="productTile__imageWrap">
+                  <div class="productTile__imageScreen"><img class="productTile__image" src="/images/img1.JPG"/></div>
+                  <div class="productTile__imagePrice">2999 ₽</div>
+                  <div class="productTile__imageArrows productTile_disable_left">
+                    <button class="horizontalAngle productTile__arrow productTile__arrow_dir_left horizontalAngle_theme_rectangle " id="">
+                      <svg width="7px" height="12px" viewbox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                          <g id="Main_Carousel" transform="translate(-490.000000, -2324.000000)" fill-rule="nonzero" stroke="#313D53" stroke-width="1.5">
+                            <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                              <g id="Product-cards" transform="translate(0.000000, 446.000000)">
+                                <g id="card-1" transform="translate(0.000000, 3.000000)">
+                                  <g id="content" transform="translate(22.000000, 275.000000)">
+                                    <g id="Photo-navigation" transform="translate(339.000000, 0.000000)">
+                                      <g id="Arrows" transform="translate(10.000000, 10.000000)">
+                                        <polyline id="left_arrow_inactive" transform="translate(2.500000, 5.000000) scale(-1, 1) translate(-2.500000, -5.000000) " points="0 0 5 5 0 10"></polyline>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                    </button>
+                    <button class="horizontalAngle productTile__arrow productTile__arrow_dir_right horizontalAngle_theme_rectangle " id="">
+                      <svg width="7px" height="12px" viewbox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                          <g id="Main_Carousel" transform="translate(-490.000000, -2324.000000)" fill-rule="nonzero" stroke="#313D53" stroke-width="1.5">
+                            <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                              <g id="Product-cards" transform="translate(0.000000, 446.000000)">
+                                <g id="card-1" transform="translate(0.000000, 3.000000)">
+                                  <g id="content" transform="translate(22.000000, 275.000000)">
+                                    <g id="Photo-navigation" transform="translate(339.000000, 0.000000)">
+                                      <g id="Arrows" transform="translate(10.000000, 10.000000)">
+                                        <polyline id="left_arrow_inactive" transform="translate(2.500000, 5.000000) scale(-1, 1) translate(-2.500000, -5.000000) " points="0 0 5 5 0 10"></polyline>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="productTile__info">
+                  <div class="productTile__infoTitle">Рюкзак-трансформер</div>
+                  <div class="productTile__infoDescription"><b class="productTile__infoLabel">Размер:</b><span class="productTile__infoValue">&nbsp;32*26*12см</span></div>
+                  <div class="productTile__infoDescription"><b class="productTile__infoLabel">Материал:</b><span class="productTile__infoValue">&nbsp;эко-кожа</span></div>
+                  <div class="productTile__infoDescription"><b class="productTile__infoLabel">Цвет:</b><span class="productTile__infoValue">&nbsp;сине-золотой, розголд, черный.</span></div>
+                  <div class="productTile__footer">
+                    <div class="iconText iconText_theme_addToBasket addProductToBasket">
+                      <div class="iconText__icon">
+                        <div class="basket"><span class="basket__circle"></span>
+                          <div class="basket__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="34px" width="34px" viewbox="0 0 34 34">
+                              <path fill="#FFF" d="M24,24.27,23.34,12a.65.65,0,0,0-.65-.62h-1.9v-.6a3.78,3.78,0,0,0-7.55,0v.6h-1.9a.66.66,0,0,0-.66.62L10,24.3a.62.62,0,0,0,.18.48.63.63,0,0,0,.47.2H23.34a.65.65,0,0,0,.65-.64ZM14.16,14a.69.69,0,1,1,.7-.69A.69.69,0,0,1,14.16,14Zm4.69-2.61H15.17v-.6a1.84,1.84,0,0,1,3.68,0Zm1,2.61a.69.69,0,1,1,.7-.69A.69.69,0,0,1,19.86,14Z"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="iconText__text">Добавить в корзину</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modalContainer modalContainer_theme_mobileFilters" id="mobileFilters">
+      <div class="modalDialog modalDialog_theme_mobileFilters">
+        <div class="modalContent modalContent_theme_mobileFilters">
+          <div class="loader modalLoader">
+            <div class="loader__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 50 47">
+                <g fill="#313D53" fill-rule="nonzero" opacity=".154">
+                  <path d="M27.42 7.735c.882-.883 1.324-1.943 1.323-3.18 0-1.236-.442-2.296-1.326-3.18C26.533.491 25.473.05 24.237.05c-1.238 0-2.297.44-3.18 1.324-.869.868-1.306 1.924-1.313 3.168-.007 1.244.432 2.308 1.315 3.192.884.883 1.947 1.321 3.192 1.315 1.243-.008 2.3-.444 3.168-1.313zM34.85 13.035c.971.972 2.148 1.458 3.533 1.46 1.384 0 2.561-.486 3.532-1.457.972-.971 1.457-2.149 1.457-3.533 0-1.383-.487-2.561-1.46-3.533-.97-.972-2.148-1.458-3.532-1.459-1.384 0-2.562.485-3.533 1.457-.971.97-1.457 2.148-1.456 3.532 0 1.384.486 2.562 1.458 3.533zM22.469 42.386a2.404 2.404 0 0 0-.728 1.766c0 .692.243 1.282.73 1.767a2.407 2.407 0 0 0 1.766.73c.692 0 1.281-.243 1.766-.729a2.406 2.406 0 0 0 .729-1.766c0-.692-.243-1.28-.73-1.767a2.409 2.409 0 0 0-1.766-.73c-.692 0-1.281.243-1.767.729zM47.926 28.24c1.074-1.074 1.611-2.37 1.61-3.885 0-1.517-.537-2.812-1.612-3.887-1.075-1.075-2.37-1.613-3.887-1.613s-2.812.536-3.886 1.61c-1.074 1.075-1.611 2.37-1.61 3.886 0 1.516.538 2.812 1.613 3.887 1.075 1.075 2.37 1.613 3.886 1.613s2.812-.536 3.886-1.61zM10.097 40.791c.824 0 1.53-.293 2.119-.882a2.888 2.888 0 0 0 .883-2.12c0-.823-.296-1.53-.885-2.12a2.892 2.892 0 0 0-2.12-.884c-.824 0-1.53.294-2.12.883a2.886 2.886 0 0 0-.881 2.12c0 .823.295 1.53.884 2.119a2.892 2.892 0 0 0 2.12.884zM6.912 26.828c.678-.677 1.016-1.502 1.016-2.473 0-.971-.34-1.796-1.017-2.474-.678-.677-1.502-1.016-2.474-1.017-.972 0-1.795.339-2.473 1.016C1.287 22.557.95 23.38.95 24.352c0 .972.34 1.796 1.017 2.474.678.678 1.502 1.016 2.474 1.017.971 0 1.795-.338 2.472-1.015zM12.923 12.332c.78-.78 1.17-1.723 1.17-2.827C14.09 8.4 13.7 7.459 12.92 6.678a3.852 3.852 0 0 0-2.827-1.17c-1.104-.001-2.046.388-2.826 1.168-.78.78-1.17 1.723-1.17 2.827 0 1.104.391 2.046 1.172 2.827.78.78 1.722 1.17 2.826 1.17 1.105 0 2.047-.388 2.827-1.168zM42.623 42.029c1.177-1.177 1.766-2.59 1.766-4.24-.001-1.648-.59-3.062-1.769-4.24-1.178-1.178-2.59-1.767-4.24-1.768-1.648 0-3.061.589-4.239 1.766-1.177 1.178-1.766 2.59-1.765 4.239 0 1.648.59 3.062 1.768 4.24 1.178 1.178 2.591 1.767 4.24 1.768 1.649 0 3.061-.588 4.239-1.765z"></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="iconClose">
+            <svg viewbox="0 0 24 24">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Main_order_form" transform="translate(-1083.000000, -245.000000)" fill="#313D53">
+                  <path id="pop-up-close-icon" d="M1097.7151,257 L1106.49232,265.972626 C1107.16923,266.664298 1107.16923,267.787534 1106.49232,268.480372 C1105.81428,269.173209 1104.71546,269.173209 1104.03855,268.480372 L1094.99986,259.241371 L1085.9623,268.480372 C1085.28426,269.173209 1084.18544,269.173209 1083.50853,268.480372 C1082.83049,267.787534 1082.83049,266.664298 1083.50853,265.972626 L1092.28576,257 L1083.50853,248.027374 C1082.83049,247.335702 1082.83049,246.212466 1083.50853,245.519628 C1084.18544,244.826791 1085.28426,244.826791 1085.9623,245.519628 L1094.99986,254.758629 L1104.03855,245.519628 C1104.71546,244.826791 1105.81428,244.826791 1106.49232,245.519628 C1107.16923,246.212466 1107.16923,247.335702 1106.49232,248.027374 L1097.7151,257 Z"></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="accordion">
+            <button class="accordion__button"><span class="accordion__label">Материал</span>
+              <div class="accordion__icon">
+                <svg width="12px" height="7px" viewbox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch-->
+                  <title>filter_down_arrow</title>
+                  <desc>Created with Sketch.</desc>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Main_Carousel" transform="translate(-255.000000, -1866.000000)" fill="#313D53">
+                      <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                        <g id="Filter-section" transform="translate(0.000000, 168.000000)">
+                          <g id="filter-main" transform="translate(0.000000, 70.000000)">
+                            <g id="Group-17" transform="translate(40.000000, 0.000000)">
+                              <g id="material" transform="translate(0.000000, 33.000000)">
+                                <path id="filter_down_arrow" d="M100.999929,8.8793143 L96.4811515,4.25981408 C96.1421289,3.91339531 95.5927179,3.91339531 95.254267,4.25981408 C94.9152443,4.60623286 94.9152443,5.16785118 95.254267,5.51368676 L100.368763,10.7420442 C100.542562,10.9199192 100.771817,11.0044827 100.999929,10.9998171 C101.22804,11.0044827 101.457295,10.9199192 101.631665,10.7420442 L106.746162,5.51368676 C107.084613,5.16785118 107.084613,4.60623286 106.746162,4.25981408 C106.407139,3.91339531 105.857728,3.91339531 105.519277,4.25981408 L100.999929,8.8793143 Z"></path>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </button>
+            <div class="accordion__contentWrap">
+              <div class="accordion__content">
+                <ul class="checkboxList checkboxList_theme_mobileFilters" id="materialSelectMobile">
+                  <li class="checkboxList__item">
+                    <div class="checkbox checkbox_theme_listItem ">
+                      <label class="checkbox__label"><span class="checkbox__labelText">Кожа</span>
+                        <input class="checkbox__input" type="checkbox" data-value="Leather"/>
+                        <div class="checkbox__icon">
+                          <div class="checkbox__iconInner">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewbox="0 0 10 8">
+                              <path fill="#313D53" fill-rule="evenodd" d="M8.822.223l-5.414 5.96-2.23-2.46a.646.646 0 0 0-.976 0 .816.816 0 0 0 0 1.074L2.906 7.78c.138.152.32.225.502.22a.656.656 0 0 0 .503-.22l5.887-6.481a.816.816 0 0 0 0-1.075.646.646 0 0 0-.976 0z"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                  </li>
+                  <li class="checkboxList__item">
+                    <div class="checkbox checkbox_theme_listItem ">
+                      <label class="checkbox__label"><span class="checkbox__labelText">Эко кожа</span>
+                        <input class="checkbox__input" type="checkbox" data-value="Eco leather"/>
+                        <div class="checkbox__icon">
+                          <div class="checkbox__iconInner">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewbox="0 0 10 8">
+                              <path fill="#313D53" fill-rule="evenodd" d="M8.822.223l-5.414 5.96-2.23-2.46a.646.646 0 0 0-.976 0 .816.816 0 0 0 0 1.074L2.906 7.78c.138.152.32.225.502.22a.656.656 0 0 0 .503-.22l5.887-6.481a.816.816 0 0 0 0-1.075.646.646 0 0 0-.976 0z"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <button class="accordion__button"><span class="accordion__label">Цвет</span>
+              <div class="accordion__icon">
+                <svg width="12px" height="7px" viewbox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch-->
+                  <title>filter_down_arrow</title>
+                  <desc>Created with Sketch.</desc>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Main_Carousel" transform="translate(-255.000000, -1866.000000)" fill="#313D53">
+                      <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                        <g id="Filter-section" transform="translate(0.000000, 168.000000)">
+                          <g id="filter-main" transform="translate(0.000000, 70.000000)">
+                            <g id="Group-17" transform="translate(40.000000, 0.000000)">
+                              <g id="material" transform="translate(0.000000, 33.000000)">
+                                <path id="filter_down_arrow" d="M100.999929,8.8793143 L96.4811515,4.25981408 C96.1421289,3.91339531 95.5927179,3.91339531 95.254267,4.25981408 C94.9152443,4.60623286 94.9152443,5.16785118 95.254267,5.51368676 L100.368763,10.7420442 C100.542562,10.9199192 100.771817,11.0044827 100.999929,10.9998171 C101.22804,11.0044827 101.457295,10.9199192 101.631665,10.7420442 L106.746162,5.51368676 C107.084613,5.16785118 107.084613,4.60623286 106.746162,4.25981408 C106.407139,3.91339531 105.857728,3.91339531 105.519277,4.25981408 L100.999929,8.8793143 Z"></path>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </button>
+            <div class="accordion__contentWrap">
+              <div class="accordion__content">
+                <ul class="checkboxList checkboxList_theme_mobileFilters" id="colorSelectMobile">
+                  <li class="checkboxList__item">
+                    <div class="checkbox checkbox_theme_listItem ">
+                      <label class="checkbox__label"><span class="checkbox__labelText">Белый</span>
+                        <input class="checkbox__input" type="checkbox" data-value="White"/>
+                        <div class="checkbox__icon">
+                          <div class="checkbox__iconInner">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewbox="0 0 10 8">
+                              <path fill="#313D53" fill-rule="evenodd" d="M8.822.223l-5.414 5.96-2.23-2.46a.646.646 0 0 0-.976 0 .816.816 0 0 0 0 1.074L2.906 7.78c.138.152.32.225.502.22a.656.656 0 0 0 .503-.22l5.887-6.481a.816.816 0 0 0 0-1.075.646.646 0 0 0-.976 0z"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                  </li>
+                  <li class="checkboxList__item">
+                    <div class="checkbox checkbox_theme_listItem ">
+                      <label class="checkbox__label"><span class="checkbox__labelText">Черный</span>
+                        <input class="checkbox__input" type="checkbox" data-value="Black"/>
+                        <div class="checkbox__icon">
+                          <div class="checkbox__iconInner">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewbox="0 0 10 8">
+                              <path fill="#313D53" fill-rule="evenodd" d="M8.822.223l-5.414 5.96-2.23-2.46a.646.646 0 0 0-.976 0 .816.816 0 0 0 0 1.074L2.906 7.78c.138.152.32.225.502.22a.656.656 0 0 0 .503-.22l5.887-6.481a.816.816 0 0 0 0-1.075.646.646 0 0 0-.976 0z"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                  </li>
+                  <li class="checkboxList__item">
+                    <div class="checkbox checkbox_theme_listItem ">
+                      <label class="checkbox__label"><span class="checkbox__labelText">Красный</span>
+                        <input class="checkbox__input" type="checkbox" data-value="Red"/>
+                        <div class="checkbox__icon">
+                          <div class="checkbox__iconInner">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewbox="0 0 10 8">
+                              <path fill="#313D53" fill-rule="evenodd" d="M8.822.223l-5.414 5.96-2.23-2.46a.646.646 0 0 0-.976 0 .816.816 0 0 0 0 1.074L2.906 7.78c.138.152.32.225.502.22a.656.656 0 0 0 .503-.22l5.887-6.481a.816.816 0 0 0 0-1.075.646.646 0 0 0-.976 0z"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                  </li>
+                  <li class="checkboxList__item">
+                    <div class="checkbox checkbox_theme_listItem ">
+                      <label class="checkbox__label"><span class="checkbox__labelText">Зеленый</span>
+                        <input class="checkbox__input" type="checkbox" data-value="Green"/>
+                        <div class="checkbox__icon">
+                          <div class="checkbox__iconInner">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewbox="0 0 10 8">
+                              <path fill="#313D53" fill-rule="evenodd" d="M8.822.223l-5.414 5.96-2.23-2.46a.646.646 0 0 0-.976 0 .816.816 0 0 0 0 1.074L2.906 7.78c.138.152.32.225.502.22a.656.656 0 0 0 .503-.22l5.887-6.481a.816.816 0 0 0 0-1.075.646.646 0 0 0-.976 0z"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <button class="accordion__button"><span class="accordion__label">Цена</span>
+              <div class="accordion__icon">
+                <svg width="12px" height="7px" viewbox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch-->
+                  <title>filter_down_arrow</title>
+                  <desc>Created with Sketch.</desc>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Main_Carousel" transform="translate(-255.000000, -1866.000000)" fill="#313D53">
+                      <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                        <g id="Filter-section" transform="translate(0.000000, 168.000000)">
+                          <g id="filter-main" transform="translate(0.000000, 70.000000)">
+                            <g id="Group-17" transform="translate(40.000000, 0.000000)">
+                              <g id="material" transform="translate(0.000000, 33.000000)">
+                                <path id="filter_down_arrow" d="M100.999929,8.8793143 L96.4811515,4.25981408 C96.1421289,3.91339531 95.5927179,3.91339531 95.254267,4.25981408 C94.9152443,4.60623286 94.9152443,5.16785118 95.254267,5.51368676 L100.368763,10.7420442 C100.542562,10.9199192 100.771817,11.0044827 100.999929,10.9998171 C101.22804,11.0044827 101.457295,10.9199192 101.631665,10.7420442 L106.746162,5.51368676 C107.084613,5.16785118 107.084613,4.60623286 106.746162,4.25981408 C106.407139,3.91339531 105.857728,3.91339531 105.519277,4.25981408 L100.999929,8.8793143 Z"></path>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </button>
+            <div class="accordion__contentWrap">
+              <div class="accordion__content">
+                <div class="mobileFilterPrice">
+                  <div class="input input_theme_listItem">
+                    <label class="input__label"><span class="input__labelText">Цена от</span>
+                      <input class="input__field" type="" name="priceFrom" placeholder="" id="inputPriceFromMobile"/>
+                    </label>
+                  </div>
+                  <div class="input input_theme_listItem">
+                    <label class="input__label"><span class="input__labelText">до</span>
+                      <input class="input__field" type="" name="priceTo" placeholder="" id="inputPriceToMobile"/>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="checkbox checkbox_theme_listItem transformCheckboxMobile">
+            <label class="checkbox__label"><span class="checkbox__labelText">Трансформер</span>
+              <input class="checkbox__input" type="checkbox" id="checkboxTransformerMobile"/>
+              <div class="checkbox__icon">
+                <div class="checkbox__iconInner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewbox="0 0 10 8">
+                    <path fill="#313D53" fill-rule="evenodd" d="M8.822.223l-5.414 5.96-2.23-2.46a.646.646 0 0 0-.976 0 .816.816 0 0 0 0 1.074L2.906 7.78c.138.152.32.225.502.22a.656.656 0 0 0 .503-.22l5.887-6.481a.816.816 0 0 0 0-1.075.646.646 0 0 0-.976 0z"></path>
+                  </svg>
+                </div>
+              </div>
+            </label>
+          </div>
+          <button class="button button_theme_primary mobileFiltersSubmit" type="button" data-modal="">Показать результаты
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modalContainer modalContainer_theme_basket" id="modalForBasket">
+      <div class="modalDialog modalDialog_theme_basket">
+        <div class="modalContent modalContent_theme_basket">
+          <div class="loader modalLoader">
+            <div class="loader__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 50 47">
+                <g fill="#313D53" fill-rule="nonzero" opacity=".154">
+                  <path d="M27.42 7.735c.882-.883 1.324-1.943 1.323-3.18 0-1.236-.442-2.296-1.326-3.18C26.533.491 25.473.05 24.237.05c-1.238 0-2.297.44-3.18 1.324-.869.868-1.306 1.924-1.313 3.168-.007 1.244.432 2.308 1.315 3.192.884.883 1.947 1.321 3.192 1.315 1.243-.008 2.3-.444 3.168-1.313zM34.85 13.035c.971.972 2.148 1.458 3.533 1.46 1.384 0 2.561-.486 3.532-1.457.972-.971 1.457-2.149 1.457-3.533 0-1.383-.487-2.561-1.46-3.533-.97-.972-2.148-1.458-3.532-1.459-1.384 0-2.562.485-3.533 1.457-.971.97-1.457 2.148-1.456 3.532 0 1.384.486 2.562 1.458 3.533zM22.469 42.386a2.404 2.404 0 0 0-.728 1.766c0 .692.243 1.282.73 1.767a2.407 2.407 0 0 0 1.766.73c.692 0 1.281-.243 1.766-.729a2.406 2.406 0 0 0 .729-1.766c0-.692-.243-1.28-.73-1.767a2.409 2.409 0 0 0-1.766-.73c-.692 0-1.281.243-1.767.729zM47.926 28.24c1.074-1.074 1.611-2.37 1.61-3.885 0-1.517-.537-2.812-1.612-3.887-1.075-1.075-2.37-1.613-3.887-1.613s-2.812.536-3.886 1.61c-1.074 1.075-1.611 2.37-1.61 3.886 0 1.516.538 2.812 1.613 3.887 1.075 1.075 2.37 1.613 3.886 1.613s2.812-.536 3.886-1.61zM10.097 40.791c.824 0 1.53-.293 2.119-.882a2.888 2.888 0 0 0 .883-2.12c0-.823-.296-1.53-.885-2.12a2.892 2.892 0 0 0-2.12-.884c-.824 0-1.53.294-2.12.883a2.886 2.886 0 0 0-.881 2.12c0 .823.295 1.53.884 2.119a2.892 2.892 0 0 0 2.12.884zM6.912 26.828c.678-.677 1.016-1.502 1.016-2.473 0-.971-.34-1.796-1.017-2.474-.678-.677-1.502-1.016-2.474-1.017-.972 0-1.795.339-2.473 1.016C1.287 22.557.95 23.38.95 24.352c0 .972.34 1.796 1.017 2.474.678.678 1.502 1.016 2.474 1.017.971 0 1.795-.338 2.472-1.015zM12.923 12.332c.78-.78 1.17-1.723 1.17-2.827C14.09 8.4 13.7 7.459 12.92 6.678a3.852 3.852 0 0 0-2.827-1.17c-1.104-.001-2.046.388-2.826 1.168-.78.78-1.17 1.723-1.17 2.827 0 1.104.391 2.046 1.172 2.827.78.78 1.722 1.17 2.826 1.17 1.105 0 2.047-.388 2.827-1.168zM42.623 42.029c1.177-1.177 1.766-2.59 1.766-4.24-.001-1.648-.59-3.062-1.769-4.24-1.178-1.178-2.59-1.767-4.24-1.768-1.648 0-3.061.589-4.239 1.766-1.177 1.178-1.766 2.59-1.765 4.239 0 1.648.59 3.062 1.768 4.24 1.178 1.178 2.591 1.767 4.24 1.768 1.649 0 3.061-.588 4.239-1.765z"></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="iconClose">
+            <svg viewbox="0 0 24 24">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Main_order_form" transform="translate(-1083.000000, -245.000000)" fill="#313D53">
+                  <path id="pop-up-close-icon" d="M1097.7151,257 L1106.49232,265.972626 C1107.16923,266.664298 1107.16923,267.787534 1106.49232,268.480372 C1105.81428,269.173209 1104.71546,269.173209 1104.03855,268.480372 L1094.99986,259.241371 L1085.9623,268.480372 C1085.28426,269.173209 1084.18544,269.173209 1083.50853,268.480372 C1082.83049,267.787534 1082.83049,266.664298 1083.50853,265.972626 L1092.28576,257 L1083.50853,248.027374 C1082.83049,247.335702 1082.83049,246.212466 1083.50853,245.519628 C1084.18544,244.826791 1085.28426,244.826791 1085.9623,245.519628 L1094.99986,254.758629 L1104.03855,245.519628 C1104.71546,244.826791 1105.81428,244.826791 1106.49232,245.519628 C1107.16923,246.212466 1107.16923,247.335702 1106.49232,248.027374 L1097.7151,257 Z"></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/scripts/bundle.js"></script>
+  </body>
+</html>
+<header class="header">
+  <div class="header__mobile-menu" id="mobileMenu" data-active-class="header__mobile-menu--active">
+    <div class="mobile-menu">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link anchorLink" href="#catalog">Каталог </a></li>
+        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link anchorLink" href="#news">Новинки</a></li>
+        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link modalCall" href="#" data-modal="modalReturnPolicy">Условия возврата</a></li>
+      </ul>
+      <div class="mobile-menu__icons">
+        <div class="mobile-menu__icons-item"><a class="instagramLink" href="https://www.instagram.com/rukzak_lilu/?hl=ru" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+              <g fill="none" fill-rule="evenodd">
+                <circle cx="12" cy="12" r="12" fill="#313D53"></circle>
+                <path fill="#FFF" d="M16.125 18h-8.25A1.875 1.875 0 0 1 6 16.125v-8.25C6 6.84 6.84 6 7.875 6h8.25C17.16 6 18 6.84 18 7.875v8.25C18 17.16 17.16 18 16.125 18zM12 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm4.5-1.75a.75.75 0 0 0-.75-.75h-.5a.75.75 0 0 0-.75.75v.5c0 .414.336.75.75.75h.5a.75.75 0 0 0 .75-.75v-.5zm0 2.75h-1.162c.095.319.162.65.162 1a3.5 3.5 0 1 1-7 0c0-.35.067-.681.162-1H7.5v4.75c0 .415.336.75.75.75h7.5a.75.75 0 0 0 .75-.75V11z"></path>
+              </g>
+            </svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <div class="navbar__mobile-button">
+        <button id="mobileMenuToggle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24px" height="24px">
+            <g fill="#000000">
+              <g fill="#000000">
+                <path d="M491.318,235.318H20.682C9.26,235.318,0,244.577,0,256s9.26,20.682,20.682,20.682h470.636				c11.423,0,20.682-9.259,20.682-20.682C512,244.578,502.741,235.318,491.318,235.318z"></path>
+              </g>
+            </g>
+            <g fill="#000000">
+              <g fill="#000000">
+                <path d="M491.318,78.439H20.682C9.26,78.439,0,87.699,0,99.121c0,11.422,9.26,20.682,20.682,20.682h470.636				c11.423,0,20.682-9.26,20.682-20.682C512,87.699,502.741,78.439,491.318,78.439z"></path>
+              </g>
+            </g>
+            <g fill="#000000">
+              <g fill="#000000">
+                <path d="M491.318,392.197H20.682C9.26,392.197,0,401.456,0,412.879s9.26,20.682,20.682,20.682h470.636				c11.423,0,20.682-9.259,20.682-20.682S502.741,392.197,491.318,392.197z"></path>
+              </g>
+            </g>
+          </svg>
+        </button>
+      </div>
+      <div class="navbar__main">
+        <div class="navbar__logo"><a class="anchorLink" href="#navbar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="92" height="44" viewbox="0 0 92 44">
+              <g fill="none" fill-rule="evenodd">
+                <text fill="#313131" font-family="AbrilFatface-Regular, Abril Fatface" font-size="23.467" font-weight="700">
+                  <tspan x="0" y="29.693">Lilubags</tspan>
+                </text>
+                <path fill="#BDB4F0" d="M0 41.067h42.24v2.347H0z"></path>
+                <path fill="#161616" d="M42.24 42.24h49.28v1.173H42.24z" opacity=".147"></path>
+                <g>
+                  <path fill="#BDB4F0" d="M49.28 0h42.24v2.347H49.28z"></path>
+                  <path fill="#161616" d="M0 0h49.28v1.173H0z" opacity=".147"></path>
+                </g>
+              </g>
+            </svg></a></div>
+        <ul class="navbar__list">
+          <li class="navbar__listItem"><a class="navbar__listLink anchorLink" href="#catalog">Каталог</a></li>
+          <li class="navbar__listItem"><a class="navbar__listLink anchorLink" href="#news">Новинки</a></li>
+          <li class="navbar__listItem"><a class="navbar__listLink modalCall" href="#" data-modal="modalReturnPolicy">Условия возврата</a></li>
+        </ul>
+      </div>
+      <div class="navbar__right">
+        <div class="navbar__contacts">
+          <div class="navbar__groupItem">
+            <div class="navbar__phoneWrap">
+              <div class="iconText iconText_theme_header-phone">
+                <div class="iconText__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 18 18">
+                    <g fill="#313131" fill-rule="evenodd">
+                      <path d="M13.672 11.896c-.587-.58-1.32-.58-1.904 0-.446.442-.891.884-1.329 1.333-.12.123-.22.15-.367.067-.288-.157-.595-.284-.872-.456-1.29-.813-2.372-1.857-3.33-3.032-.475-.583-.898-1.208-1.194-1.912-.06-.142-.049-.236.067-.352.446-.43.88-.872 1.318-1.313.61-.614.61-1.332-.004-1.95-.348-.352-.696-.696-1.044-1.048-.36-.359-.715-.722-1.078-1.077-.587-.573-1.32-.573-1.905.003-.449.442-.88.895-1.336 1.329-.423.4-.636.89-.68 1.463-.072.932.156 1.811.478 2.668.659 1.774 1.662 3.35 2.878 4.794a17.808 17.808 0 0 0 5.898 4.614c1.033.501 2.103.887 3.267.95.8.045 1.497-.157 2.054-.782.382-.426.812-.815 1.216-1.223.6-.607.603-1.34.008-1.939-.711-.714-1.426-1.426-2.14-2.137zM12.958 8.914l1.38-.236a6.172 6.172 0 0 0-1.725-3.33 6.139 6.139 0 0 0-3.517-1.755L8.9 4.98a4.763 4.763 0 0 1 2.724 1.358 4.762 4.762 0 0 1 1.333 2.575zM15.117 2.911A10.182 10.182 0 0 0 9.279 0l-.195 1.388a8.829 8.829 0 0 1 5.045 2.515 8.822 8.822 0 0 1 2.473 4.771l1.381-.235a10.257 10.257 0 0 0-2.866-5.528z"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="iconText__text">+7 (962) 485 60 88</div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar__groupItem">
+            <div class="navbar__socialIcon"><a class="instagramLink" href="https://www.instagram.com/rukzak_lilu/?hl=ru" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+                  <g fill="none" fill-rule="evenodd">
+                    <circle cx="12" cy="12" r="12" fill="#313D53"></circle>
+                    <path fill="#FFF" d="M16.125 18h-8.25A1.875 1.875 0 0 1 6 16.125v-8.25C6 6.84 6.84 6 7.875 6h8.25C17.16 6 18 6.84 18 7.875v8.25C18 17.16 17.16 18 16.125 18zM12 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm4.5-1.75a.75.75 0 0 0-.75-.75h-.5a.75.75 0 0 0-.75.75v.5c0 .414.336.75.75.75h.5a.75.75 0 0 0 .75-.75v-.5zm0 2.75h-1.162c.095.319.162.65.162 1a3.5 3.5 0 1 1-7 0c0-.35.067-.681.162-1H7.5v4.75c0 .415.336.75.75.75h7.5a.75.75 0 0 0 .75-.75V11z"></path>
+                  </g>
+                </svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="headerBasket headerBasket_withAnimateItems" id="headerBasket">
+          <button class="headerBasket__button">
+            <div class="iconText iconText_theme_basket">
+              <div class="iconText__icon">
+                <div class="basket"><span class="basket__circle" id="iconBasketActive"></span>
+                  <div class="basket__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="34px" width="34px" viewbox="0 0 34 34">
+                      <path fill="#FFF" d="M24,24.27,23.34,12a.65.65,0,0,0-.65-.62h-1.9v-.6a3.78,3.78,0,0,0-7.55,0v.6h-1.9a.66.66,0,0,0-.66.62L10,24.3a.62.62,0,0,0,.18.48.63.63,0,0,0,.47.2H23.34a.65.65,0,0,0,.65-.64ZM14.16,14a.69.69,0,1,1,.7-.69A.69.69,0,0,1,14.16,14Zm4.69-2.61H15.17v-.6a1.84,1.84,0,0,1,3.68,0Zm1,2.61a.69.69,0,1,1,.7-.69A.69.69,0,0,1,19.86,14Z"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="iconText__text">Корзина</div>
+            </div>
+          </button>
+          <div class="headerBasket__panelWrap">
+            <div class="headerBasket__panel" id="basketPanel">
+              <div class="headerBasket__title">Ваш заказ</div>
+              <div id="wrapProducts">
+                <div class="headerBasket__product" id="basketItem">
+                  <div class="containerReturn">
+                    <div class="innerContainerReturn">
+                      <div class="containerReturn__question">Хотите удалить товар?</div>
+                      <div class="containerReturn__buttonAgree">Удалить</div>
+                      <div class="containerReturn__buttonCancel">Вернуть</div>
+                    </div>
+                  </div>
+                  <div class="headerBasket__wrapImage"><img class="headerBasket__image" src="/images/img1.JPG"></div>
+                  <div class="headerBasket__wrapInfo">
+                    <div class="headerBasket__productTitle">Стильный рюкзак с цепочкой</div>
+                    <div class="headerBasket__description">Сине-золотой</div>
+                    <div class="headerBasket__productBottomGroup"><span class="headerBasket__price">2999</span>
+                      <div class="headerBasket__counter">
+                        <button class="headerBasket__counterButton buttonMinusItem">-</button><span class="headerBasket__counterValue">1</span>
+                        <button class="headerBasket__counterButton buttonPlusItem">+</button>
+                      </div>
+                      <div class="iconText headerBasket__iconText_theme_remove headerBasket__removeProduct">
+                        <div class="iconText__icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewbox="0 0 25 25">
+                            <g fill="none" fill-rule="nonzero" opacity=".5">
+                              <circle cx="12.5" cy="12.5" r="12.5" fill="#313D53"></circle>
+                              <g fill="#FFF">
+                                <path d="M7.926 18.681c0 .172.15.311.335.311h8.487c.184 0 .334-.139.334-.31V8.611H7.926v10.07zm6.459-8.355h1.254v6.775h-1.254v-6.775zm-2.508 0h1.254v6.775h-1.254v-6.775zm-2.507 0h1.253v6.775H9.37v-6.775zM15.322 6.428V5.311c0-.172-.15-.311-.334-.311H10.02c-.184 0-.334.14-.334.31V6.818H7.35c-.185 0-.334.139-.334.31v.786c0 .172.15.311.334.311h10.31c.185 0 .335-.14.335-.31v-.787c0-.171-.15-.31-.335-.31h-2.337v-.389zm-1.253.325h-3.13V6.165h3.13v.587z"></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="iconText__text">Удалить</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="headerBasket__footer">
+                <div class="headerBasket__rowSum"><span class="headerBasket__sumLabel">Итого:</span><span class="headerBasket__sumValue" id="basketSumValue">0</span></div>
+                <button class="button button_theme_primary headerBasket__footerButton modalCall" id="basketSubmit" data-modal="modalConfirmOrder" disabled>Завершить покупку</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="main">
+  <section class="intro"><img class="intro__image" src="/images/girl-x3.png" alt="lilubags сумочки">
+    <div class="intro__leftGroup">
+      <h1 class="intro__title" id="introTitle">Рюкзачки, сумочки <br /> и кошельки</h1>
+      <div class="intro__info" id="introInfo">Отправка в любой город, самовывоз Н.Новгород</div>
+      <div class="intro__buttonContainer">
+        <button class="button button_theme_primary intro__button" type="button" data-modal="">В каталог
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="news" id="news">
+    <div class="news__container">
+      <div class="news_header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="24" viewbox="0 0 102 24">
+          <path fill="none" fill-rule="evenodd" stroke="#EDE2C8" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M2 2l19.6 20L41.2 2l19.6 20L80.4 2 100 22"></path>
+        </svg>
+        <h2 class="news__title">	Новинки</h2>
+      </div>
+      <div class="slider">
+        <div class="slider__itemWrap">
+          <div class="slider__itemInner">
+            <div class="slider__wrapImage"><img class="slider__image" src="/images/img1.JPG"></div>
+            <div class="slider__itemInfoBackground"></div>
+            <div class="slider__itemInfo">
+              <div class="slider__itemInfoInner">
+                <div class="slider__itemInfoTitle">Рюкзак-трансформер</div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Размер:</b><span class="slider__itemInfoValue">&nbsp;32*26*12см</span></div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Материал:</b><span class="slider__itemInfoValue">&nbsp;эко-кожа</span></div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Цвет:</b><span class="slider__itemInfoValue">&nbsp;сине-золотой, розголд, черный.</span></div>
+                <button class="button button_theme_primary slider__button modalCall" type="button" data-modal="productItem">Просмотр
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__itemWrap">
+          <div class="slider__itemInner">
+            <div class="slider__wrapImage"><img class="slider__image" src="/images/img1.JPG"></div>
+            <div class="slider__itemInfoBackground"></div>
+            <div class="slider__itemInfo">
+              <div class="slider__itemInfoInner">
+                <div class="slider__itemInfoTitle">Рюкзак-трансформер</div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Размер:</b><span class="slider__itemInfoValue">&nbsp;32*26*12см</span></div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Материал:</b><span class="slider__itemInfoValue">&nbsp;эко-кожа</span></div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Цвет:</b><span class="slider__itemInfoValue">&nbsp;сине-золотой, розголд, черный.</span></div>
+                <button class="button button_theme_primary slider__button modalCall" type="button" data-modal="productItem">Просмотр
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__itemWrap">
+          <div class="slider__itemInner">
+            <div class="slider__wrapImage"><img class="slider__image" src="/images/img1.JPG"></div>
+            <div class="slider__itemInfoBackground"></div>
+            <div class="slider__itemInfo">
+              <div class="slider__itemInfoInner">
+                <div class="slider__itemInfoTitle">Рюкзак-трансформер</div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Размер:</b><span class="slider__itemInfoValue">&nbsp;32*26*12см</span></div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Материал:</b><span class="slider__itemInfoValue">&nbsp;эко-кожа</span></div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Цвет:</b><span class="slider__itemInfoValue">&nbsp;сине-золотой, розголд, черный.</span></div>
+                <button class="button button_theme_primary slider__button modalCall" type="button" data-modal="productItem">Просмотр
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__itemWrap">
+          <div class="slider__itemInner">
+            <div class="slider__wrapImage"><img class="slider__image" src="/images/img1.JPG"></div>
+            <div class="slider__itemInfoBackground"></div>
+            <div class="slider__itemInfo">
+              <div class="slider__itemInfoInner">
+                <div class="slider__itemInfoTitle">Рюкзак-трансформер</div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Размер:</b><span class="slider__itemInfoValue">&nbsp;32*26*12см</span></div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Материал:</b><span class="slider__itemInfoValue">&nbsp;эко-кожа</span></div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Цвет:</b><span class="slider__itemInfoValue">&nbsp;сине-золотой, розголд, черный.</span></div>
+                <button class="button button_theme_primary slider__button modalCall" type="button" data-modal="productItem">Просмотр
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__itemWrap">
+          <div class="slider__itemInner">
+            <div class="slider__wrapImage"><img class="slider__image" src="/images/img1.JPG"></div>
+            <div class="slider__itemInfoBackground"></div>
+            <div class="slider__itemInfo">
+              <div class="slider__itemInfoInner">
+                <div class="slider__itemInfoTitle">Рюкзак-трансформер</div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Размер:</b><span class="slider__itemInfoValue">&nbsp;32*26*12см</span></div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Материал:</b><span class="slider__itemInfoValue">&nbsp;эко-кожа</span></div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Цвет:</b><span class="slider__itemInfoValue">&nbsp;сине-золотой, розголд, черный.</span></div>
+                <button class="button button_theme_primary slider__button modalCall" type="button" data-modal="productItem">Просмотр
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__itemWrap">
+          <div class="slider__itemInner">
+            <div class="slider__wrapImage"><img class="slider__image" src="/images/img1.JPG"></div>
+            <div class="slider__itemInfoBackground"></div>
+            <div class="slider__itemInfo">
+              <div class="slider__itemInfoInner">
+                <div class="slider__itemInfoTitle">Рюкзак-трансформер</div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Размер:</b><span class="slider__itemInfoValue">&nbsp;32*26*12см</span></div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Материал:</b><span class="slider__itemInfoValue">&nbsp;эко-кожа</span></div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Цвет:</b><span class="slider__itemInfoValue">&nbsp;сине-золотой, розголд, черный.</span></div>
+                <button class="button button_theme_primary slider__button modalCall" type="button" data-modal="productItem">Просмотр
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__itemWrap">
+          <div class="slider__itemInner">
+            <div class="slider__wrapImage"><img class="slider__image" src="/images/img1.JPG"></div>
+            <div class="slider__itemInfoBackground"></div>
+            <div class="slider__itemInfo">
+              <div class="slider__itemInfoInner">
+                <div class="slider__itemInfoTitle">Рюкзак-трансформер</div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Размер:</b><span class="slider__itemInfoValue">&nbsp;32*26*12см</span></div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Материал:</b><span class="slider__itemInfoValue">&nbsp;эко-кожа</span></div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Цвет:</b><span class="slider__itemInfoValue">&nbsp;сине-золотой, розголд, черный.</span></div>
+                <button class="button button_theme_primary slider__button modalCall" type="button" data-modal="productItem">Просмотр
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__itemWrap">
+          <div class="slider__itemInner">
+            <div class="slider__wrapImage"><img class="slider__image" src="/images/img1.JPG"></div>
+            <div class="slider__itemInfoBackground"></div>
+            <div class="slider__itemInfo">
+              <div class="slider__itemInfoInner">
+                <div class="slider__itemInfoTitle">Рюкзак-трансформер</div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Размер:</b><span class="slider__itemInfoValue">&nbsp;32*26*12см</span></div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Материал:</b><span class="slider__itemInfoValue">&nbsp;эко-кожа</span></div>
+                <div class="slider__itemInfoDescription"><b class="slider__itemInfoLabel">Цвет:</b><span class="slider__itemInfoValue">&nbsp;сине-золотой, розголд, черный.</span></div>
+                <button class="button button_theme_primary slider__button modalCall" type="button" data-modal="productItem">Просмотр
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider__buttons">
+        <button class="horizontalAngle slider__horizontalAngle prev slick-prev horizontalAngle_theme_circle " id="sliderArrowLeft">
+          <svg width="7px" height="12px" viewbox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+              <g id="Main_Carousel" transform="translate(-490.000000, -2324.000000)" fill-rule="nonzero" stroke="#313D53" stroke-width="1.5">
+                <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                  <g id="Product-cards" transform="translate(0.000000, 446.000000)">
+                    <g id="card-1" transform="translate(0.000000, 3.000000)">
+                      <g id="content" transform="translate(22.000000, 275.000000)">
+                        <g id="Photo-navigation" transform="translate(339.000000, 0.000000)">
+                          <g id="Arrows" transform="translate(10.000000, 10.000000)">
+                            <polyline id="left_arrow_inactive" transform="translate(2.500000, 5.000000) scale(-1, 1) translate(-2.500000, -5.000000) " points="0 0 5 5 0 10"></polyline>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </button>
+        <button class="horizontalAngle slider__horizontalAngle slider__horizontalAngle_dir_right horizontalAngle_theme_circle " id="sliderArrowRight">
+          <svg width="7px" height="12px" viewbox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+              <g id="Main_Carousel" transform="translate(-490.000000, -2324.000000)" fill-rule="nonzero" stroke="#313D53" stroke-width="1.5">
+                <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                  <g id="Product-cards" transform="translate(0.000000, 446.000000)">
+                    <g id="card-1" transform="translate(0.000000, 3.000000)">
+                      <g id="content" transform="translate(22.000000, 275.000000)">
+                        <g id="Photo-navigation" transform="translate(339.000000, 0.000000)">
+                          <g id="Arrows" transform="translate(10.000000, 10.000000)">
+                            <polyline id="left_arrow_inactive" transform="translate(2.500000, 5.000000) scale(-1, 1) translate(-2.500000, -5.000000) " points="0 0 5 5 0 10"></polyline>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="catalog" id="catalog">
+    <div class="catalog__container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="102" height="24" viewbox="0 0 102 24">
+        <path fill="none" fill-rule="evenodd" stroke="#EDE2C8" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M2 2l19.6 20L41.2 2l19.6 20L80.4 2 100 22"></path>
+      </svg>
+      <h2 class="catalog__title">Каталог</h2>
+      <ul class="tabs">
+        <li class="productType tabs__tab tabs__tab_active" data-type="backpacks">Рюкзаки</li>
+        <li class="productType tabs__tab" data-type="bags">Сумки</li>
+        <li class="productType tabs__tab" data-type="handbags">Сумочки</li>
+        <li class="productType tabs__tab" data-type="wallets">Кошельки</li>
+      </ul>
+      <div class="mobileFiltersPanel">
+        <button class="mobileFiltersPanel__button mobileFiltersPanel__button_theme_open modalCall" data-modal="mobileFilters">Фильтр</button>
+        <button class="mobileFiltersPanel__button mobileFiltersPanel__button_theme_reset iconText_theme_filter" id="buttonResetFiltersMobile">
+          <div class="iconText__icon">
+            <div class=" undefined">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20">
+                <g fill="none" fill-rule="evenodd" opacity=".5">
+                  <circle cx="10" cy="10" r="10" fill="#313D53" fill-rule="nonzero"></circle>
+                  <path fill="#FFF" d="M10.905 10l2.926 2.99a.6.6 0 0 1 0 .837.57.57 0 0 1-.818 0L10 10.747l-3.013 3.08a.57.57 0 0 1-.817 0 .6.6 0 0 1 0-.836L9.095 10 6.17 7.01a.6.6 0 0 1 0-.837.57.57 0 0 1 .817 0L10 9.253l3.013-3.08a.57.57 0 0 1 .818 0 .6.6 0 0 1 0 .836L10.905 10z"></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="iconText__text">Сбросить фильтр</div>
+        </button>
+      </div>
+      <ul class="catalog__filters">
+        <li class="catalog__filter">
+          <div class="dropdown">
+            <button class="dropdown__button"><span class="dropdown__buttonText">Материал</span><i class="dropdown__icon">
+                <svg width="12px" height="7px" viewbox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch-->
+                  <title>filter_down_arrow</title>
+                  <desc>Created with Sketch.</desc>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Main_Carousel" transform="translate(-255.000000, -1866.000000)" fill="#313D53">
+                      <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                        <g id="Filter-section" transform="translate(0.000000, 168.000000)">
+                          <g id="filter-main" transform="translate(0.000000, 70.000000)">
+                            <g id="Group-17" transform="translate(40.000000, 0.000000)">
+                              <g id="material" transform="translate(0.000000, 33.000000)">
+                                <path id="filter_down_arrow" d="M100.999929,8.8793143 L96.4811515,4.25981408 C96.1421289,3.91339531 95.5927179,3.91339531 95.254267,4.25981408 C94.9152443,4.60623286 94.9152443,5.16785118 95.254267,5.51368676 L100.368763,10.7420442 C100.542562,10.9199192 100.771817,11.0044827 100.999929,10.9998171 C101.22804,11.0044827 101.457295,10.9199192 101.631665,10.7420442 L106.746162,5.51368676 C107.084613,5.16785118 107.084613,4.60623286 106.746162,4.25981408 C106.407139,3.91339531 105.857728,3.91339531 105.519277,4.25981408 L100.999929,8.8793143 Z"></path>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></i></button>
+            <div class="dropdown__panel dropdown__panelBottom">
+              <ul class="checkboxList" id="materialSelect">
+                <li class="checkboxList__item">
+                  <div class="checkbox checkbox_theme_listItem ">
+                    <label class="checkbox__label"><span class="checkbox__labelText">Кожа</span>
+                      <input class="checkbox__input" type="checkbox" data-value="Leather">
+                      <div class="checkbox__icon">
+                        <div class="checkbox__iconInner">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewbox="0 0 10 8">
+                            <path fill="#313D53" fill-rule="evenodd" d="M8.822.223l-5.414 5.96-2.23-2.46a.646.646 0 0 0-.976 0 .816.816 0 0 0 0 1.074L2.906 7.78c.138.152.32.225.502.22a.656.656 0 0 0 .503-.22l5.887-6.481a.816.816 0 0 0 0-1.075.646.646 0 0 0-.976 0z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+                <li class="checkboxList__item">
+                  <div class="checkbox checkbox_theme_listItem ">
+                    <label class="checkbox__label"><span class="checkbox__labelText">Эко кожа</span>
+                      <input class="checkbox__input" type="checkbox" data-value="Eco leather">
+                      <div class="checkbox__icon">
+                        <div class="checkbox__iconInner">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewbox="0 0 10 8">
+                            <path fill="#313D53" fill-rule="evenodd" d="M8.822.223l-5.414 5.96-2.23-2.46a.646.646 0 0 0-.976 0 .816.816 0 0 0 0 1.074L2.906 7.78c.138.152.32.225.502.22a.656.656 0 0 0 .503-.22l5.887-6.481a.816.816 0 0 0 0-1.075.646.646 0 0 0-.976 0z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__filter">
+          <div class="dropdown">
+            <button class="dropdown__button"><span class="dropdown__buttonText">Цвет</span><i class="dropdown__icon">
+                <svg width="12px" height="7px" viewbox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch-->
+                  <title>filter_down_arrow</title>
+                  <desc>Created with Sketch.</desc>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Main_Carousel" transform="translate(-255.000000, -1866.000000)" fill="#313D53">
+                      <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                        <g id="Filter-section" transform="translate(0.000000, 168.000000)">
+                          <g id="filter-main" transform="translate(0.000000, 70.000000)">
+                            <g id="Group-17" transform="translate(40.000000, 0.000000)">
+                              <g id="material" transform="translate(0.000000, 33.000000)">
+                                <path id="filter_down_arrow" d="M100.999929,8.8793143 L96.4811515,4.25981408 C96.1421289,3.91339531 95.5927179,3.91339531 95.254267,4.25981408 C94.9152443,4.60623286 94.9152443,5.16785118 95.254267,5.51368676 L100.368763,10.7420442 C100.542562,10.9199192 100.771817,11.0044827 100.999929,10.9998171 C101.22804,11.0044827 101.457295,10.9199192 101.631665,10.7420442 L106.746162,5.51368676 C107.084613,5.16785118 107.084613,4.60623286 106.746162,4.25981408 C106.407139,3.91339531 105.857728,3.91339531 105.519277,4.25981408 L100.999929,8.8793143 Z"></path>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></i></button>
+            <div class="dropdown__panel dropdown__panelBottom">
+              <ul class="checkboxList" id="colorSelect">
+                <li class="checkboxList__item">
+                  <div class="checkbox checkbox_theme_listItem ">
+                    <label class="checkbox__label"><span class="checkbox__labelText">Белый</span>
+                      <input class="checkbox__input" type="checkbox" data-value="White">
+                      <div class="checkbox__icon">
+                        <div class="checkbox__iconInner">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewbox="0 0 10 8">
+                            <path fill="#313D53" fill-rule="evenodd" d="M8.822.223l-5.414 5.96-2.23-2.46a.646.646 0 0 0-.976 0 .816.816 0 0 0 0 1.074L2.906 7.78c.138.152.32.225.502.22a.656.656 0 0 0 .503-.22l5.887-6.481a.816.816 0 0 0 0-1.075.646.646 0 0 0-.976 0z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+                <li class="checkboxList__item">
+                  <div class="checkbox checkbox_theme_listItem ">
+                    <label class="checkbox__label"><span class="checkbox__labelText">Черный</span>
+                      <input class="checkbox__input" type="checkbox" data-value="Black">
+                      <div class="checkbox__icon">
+                        <div class="checkbox__iconInner">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewbox="0 0 10 8">
+                            <path fill="#313D53" fill-rule="evenodd" d="M8.822.223l-5.414 5.96-2.23-2.46a.646.646 0 0 0-.976 0 .816.816 0 0 0 0 1.074L2.906 7.78c.138.152.32.225.502.22a.656.656 0 0 0 .503-.22l5.887-6.481a.816.816 0 0 0 0-1.075.646.646 0 0 0-.976 0z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+                <li class="checkboxList__item">
+                  <div class="checkbox checkbox_theme_listItem ">
+                    <label class="checkbox__label"><span class="checkbox__labelText">Красный</span>
+                      <input class="checkbox__input" type="checkbox" data-value="Red">
+                      <div class="checkbox__icon">
+                        <div class="checkbox__iconInner">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewbox="0 0 10 8">
+                            <path fill="#313D53" fill-rule="evenodd" d="M8.822.223l-5.414 5.96-2.23-2.46a.646.646 0 0 0-.976 0 .816.816 0 0 0 0 1.074L2.906 7.78c.138.152.32.225.502.22a.656.656 0 0 0 .503-.22l5.887-6.481a.816.816 0 0 0 0-1.075.646.646 0 0 0-.976 0z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+                <li class="checkboxList__item">
+                  <div class="checkbox checkbox_theme_listItem ">
+                    <label class="checkbox__label"><span class="checkbox__labelText">Зеленый</span>
+                      <input class="checkbox__input" type="checkbox" data-value="Green">
+                      <div class="checkbox__icon">
+                        <div class="checkbox__iconInner">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewbox="0 0 10 8">
+                            <path fill="#313D53" fill-rule="evenodd" d="M8.822.223l-5.414 5.96-2.23-2.46a.646.646 0 0 0-.976 0 .816.816 0 0 0 0 1.074L2.906 7.78c.138.152.32.225.502.22a.656.656 0 0 0 .503-.22l5.887-6.481a.816.816 0 0 0 0-1.075.646.646 0 0 0-.976 0z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__filter">
+          <div class="catalog__filterPrice">
+            <div class="input">
+              <label class="input__label"><span class="input__labelText">Цена от</span>
+                <input class="input__field" type="" name="priceFrom" placeholder="" id="inputPriceFrom">
+              </label>
+            </div>
+            <div class="input">
+              <label class="input__label"><span class="input__labelText">до</span>
+                <input class="input__field" type="" name="priceTo" placeholder="" id="inputPriceTo">
+              </label>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__filter">
+          <div class="checkbox  ">
+            <label class="checkbox__label"><span class="checkbox__labelText">Трансформер</span>
+              <input class="checkbox__input" type="checkbox" id="checkboxTransformer">
+              <div class="checkbox__icon">
+                <div class="checkbox__iconInner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewbox="0 0 10 8">
+                    <path fill="#313D53" fill-rule="evenodd" d="M8.822.223l-5.414 5.96-2.23-2.46a.646.646 0 0 0-.976 0 .816.816 0 0 0 0 1.074L2.906 7.78c.138.152.32.225.502.22a.656.656 0 0 0 .503-.22l5.887-6.481a.816.816 0 0 0 0-1.075.646.646 0 0 0-.976 0z"></path>
+                  </svg>
+                </div>
+              </div>
+            </label>
+          </div>
+        </li>
+        <li class="catalog__filter">
+          <button class="iconText_theme_filter" id="buttonResetFilters">
+            <div class="iconText__icon">
+              <div class=" undefined">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20">
+                  <g fill="none" fill-rule="evenodd" opacity=".5">
+                    <circle cx="10" cy="10" r="10" fill="#313D53" fill-rule="nonzero"></circle>
+                    <path fill="#FFF" d="M10.905 10l2.926 2.99a.6.6 0 0 1 0 .837.57.57 0 0 1-.818 0L10 10.747l-3.013 3.08a.57.57 0 0 1-.817 0 .6.6 0 0 1 0-.836L9.095 10 6.17 7.01a.6.6 0 0 1 0-.837.57.57 0 0 1 .817 0L10 9.253l3.013-3.08a.57.57 0 0 1 .818 0 .6.6 0 0 1 0 .836L10.905 10z"></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div class="iconText__text">Сбросить фильтр</div>
+          </button>
+        </li>
+      </ul>
+      <div class="tags" id="tagsFilter">
+        <div class="tags__tag" id="tag"><span class="tags__tagValue"></span>
+          <div class="tags__icon circleClose_theme_minimize">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20">
+              <g fill="none" fill-rule="evenodd" opacity=".5">
+                <circle cx="10" cy="10" r="10" fill="#313D53" fill-rule="nonzero"></circle>
+                <path fill="#FFF" d="M10.905 10l2.926 2.99a.6.6 0 0 1 0 .837.57.57 0 0 1-.818 0L10 10.747l-3.013 3.08a.57.57 0 0 1-.817 0 .6.6 0 0 1 0-.836L9.095 10 6.17 7.01a.6.6 0 0 1 0-.837.57.57 0 0 1 .817 0L10 9.253l3.013-3.08a.57.57 0 0 1 .818 0 .6.6 0 0 1 0 .836L10.905 10z"></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="productTile" id="productTile">
+        <div class="productTile__product">
+          <div class="productTile__productInner">
+            <div class="productTile__imageWrap">
+              <div class="productTile__imageScreen"><img class="productTile__image" src="/images/img1.JPG"></div>
+              <div class="productTile__imagePrice">2999 ₽</div>
+              <div class="productTile__imageArrows productTile_disable_left">
+                <button class="horizontalAngle productTile__arrow productTile__arrow_dir_left horizontalAngle_theme_rectangle " id="">
+                  <svg width="7px" height="12px" viewbox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                      <g id="Main_Carousel" transform="translate(-490.000000, -2324.000000)" fill-rule="nonzero" stroke="#313D53" stroke-width="1.5">
+                        <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                          <g id="Product-cards" transform="translate(0.000000, 446.000000)">
+                            <g id="card-1" transform="translate(0.000000, 3.000000)">
+                              <g id="content" transform="translate(22.000000, 275.000000)">
+                                <g id="Photo-navigation" transform="translate(339.000000, 0.000000)">
+                                  <g id="Arrows" transform="translate(10.000000, 10.000000)">
+                                    <polyline id="left_arrow_inactive" transform="translate(2.500000, 5.000000) scale(-1, 1) translate(-2.500000, -5.000000) " points="0 0 5 5 0 10"></polyline>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button class="horizontalAngle productTile__arrow productTile__arrow_dir_right horizontalAngle_theme_rectangle " id="">
+                  <svg width="7px" height="12px" viewbox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                      <g id="Main_Carousel" transform="translate(-490.000000, -2324.000000)" fill-rule="nonzero" stroke="#313D53" stroke-width="1.5">
+                        <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                          <g id="Product-cards" transform="translate(0.000000, 446.000000)">
+                            <g id="card-1" transform="translate(0.000000, 3.000000)">
+                              <g id="content" transform="translate(22.000000, 275.000000)">
+                                <g id="Photo-navigation" transform="translate(339.000000, 0.000000)">
+                                  <g id="Arrows" transform="translate(10.000000, 10.000000)">
+                                    <polyline id="left_arrow_inactive" transform="translate(2.500000, 5.000000) scale(-1, 1) translate(-2.500000, -5.000000) " points="0 0 5 5 0 10"></polyline>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="productTile__info">
+              <div class="productTile__infoTitle">Рюкзак-трансформер</div>
+              <div class="productTile__infoDescription"><b class="productTile__infoLabel">Размер:</b><span class="productTile__infoValue">&nbsp;32*26*12см</span></div>
+              <div class="productTile__infoDescription"><b class="productTile__infoLabel">Материал:</b><span class="productTile__infoValue">&nbsp;эко-кожа</span></div>
+              <div class="productTile__infoDescription"><b class="productTile__infoLabel">Цвет:</b><span class="productTile__infoValue">&nbsp;сине-золотой, розголд, черный.</span></div>
+              <div class="productTile__footer">
+                <div class="iconText iconText_theme_addToBasket addProductToBasket">
+                  <div class="iconText__icon">
+                    <div class="basket"><span class="basket__circle"></span>
+                      <div class="basket__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="34px" width="34px" viewbox="0 0 34 34">
+                          <path fill="#FFF" d="M24,24.27,23.34,12a.65.65,0,0,0-.65-.62h-1.9v-.6a3.78,3.78,0,0,0-7.55,0v.6h-1.9a.66.66,0,0,0-.66.62L10,24.3a.62.62,0,0,0,.18.48.63.63,0,0,0,.47.2H23.34a.65.65,0,0,0,.65-.64ZM14.16,14a.69.69,0,1,1,.7-.69A.69.69,0,0,1,14.16,14Zm4.69-2.61H15.17v-.6a1.84,1.84,0,0,1,3.68,0Zm1,2.61a.69.69,0,1,1,.7-.69A.69.69,0,0,1,19.86,14Z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="iconText__text">Добавить в корзину</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="productTile__product">
+          <div class="productTile__productInner">
+            <div class="productTile__imageWrap">
+              <div class="productTile__imageScreen"><img class="productTile__image" src="/images/img2.JPG"></div>
+              <div class="productTile__imagePrice">2999 ₽</div>
+              <div class="productTile__imageArrows productTile_disable_left">
+                <button class="horizontalAngle productTile__arrow productTile__arrow_dir_left horizontalAngle_theme_rectangle " id="">
+                  <svg width="7px" height="12px" viewbox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                      <g id="Main_Carousel" transform="translate(-490.000000, -2324.000000)" fill-rule="nonzero" stroke="#313D53" stroke-width="1.5">
+                        <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                          <g id="Product-cards" transform="translate(0.000000, 446.000000)">
+                            <g id="card-1" transform="translate(0.000000, 3.000000)">
+                              <g id="content" transform="translate(22.000000, 275.000000)">
+                                <g id="Photo-navigation" transform="translate(339.000000, 0.000000)">
+                                  <g id="Arrows" transform="translate(10.000000, 10.000000)">
+                                    <polyline id="left_arrow_inactive" transform="translate(2.500000, 5.000000) scale(-1, 1) translate(-2.500000, -5.000000) " points="0 0 5 5 0 10"></polyline>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button class="horizontalAngle productTile__arrow productTile__arrow_dir_right horizontalAngle_theme_rectangle " id="">
+                  <svg width="7px" height="12px" viewbox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                      <g id="Main_Carousel" transform="translate(-490.000000, -2324.000000)" fill-rule="nonzero" stroke="#313D53" stroke-width="1.5">
+                        <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                          <g id="Product-cards" transform="translate(0.000000, 446.000000)">
+                            <g id="card-1" transform="translate(0.000000, 3.000000)">
+                              <g id="content" transform="translate(22.000000, 275.000000)">
+                                <g id="Photo-navigation" transform="translate(339.000000, 0.000000)">
+                                  <g id="Arrows" transform="translate(10.000000, 10.000000)">
+                                    <polyline id="left_arrow_inactive" transform="translate(2.500000, 5.000000) scale(-1, 1) translate(-2.500000, -5.000000) " points="0 0 5 5 0 10"></polyline>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="productTile__info">
+              <div class="productTile__infoTitle">Рюкзак-трансформер</div>
+              <div class="productTile__infoDescription"><b class="productTile__infoLabel">Размер:</b><span class="productTile__infoValue">&nbsp;32*26*12см</span></div>
+              <div class="productTile__infoDescription"><b class="productTile__infoLabel">Материал:</b><span class="productTile__infoValue">&nbsp;эко-кожа</span></div>
+              <div class="productTile__infoDescription"><b class="productTile__infoLabel">Цвет:</b><span class="productTile__infoValue">&nbsp;сине-золотой, розголд, черный.</span></div>
+              <div class="productTile__footer">
+                <div class="iconText iconText_theme_addToBasket addProductToBasket">
+                  <div class="iconText__icon">
+                    <div class="basket"><span class="basket__circle"></span>
+                      <div class="basket__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="34px" width="34px" viewbox="0 0 34 34">
+                          <path fill="#FFF" d="M24,24.27,23.34,12a.65.65,0,0,0-.65-.62h-1.9v-.6a3.78,3.78,0,0,0-7.55,0v.6h-1.9a.66.66,0,0,0-.66.62L10,24.3a.62.62,0,0,0,.18.48.63.63,0,0,0,.47.2H23.34a.65.65,0,0,0,.65-.64ZM14.16,14a.69.69,0,1,1,.7-.69A.69.69,0,0,1,14.16,14Zm4.69-2.61H15.17v-.6a1.84,1.84,0,0,1,3.68,0Zm1,2.61a.69.69,0,1,1,.7-.69A.69.69,0,0,1,19.86,14Z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="iconText__text">Добавить в корзину</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="productTile__product">
+          <div class="productTile__productInner">
+            <div class="productTile__imageWrap">
+              <div class="productTile__imageScreen"><img class="productTile__image" src="/images/img3.JPG"></div>
+              <div class="productTile__imagePrice">2999 ₽</div>
+              <div class="productTile__imageArrows productTile_disable_left">
+                <button class="horizontalAngle productTile__arrow productTile__arrow_dir_left horizontalAngle_theme_rectangle " id="">
+                  <svg width="7px" height="12px" viewbox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                      <g id="Main_Carousel" transform="translate(-490.000000, -2324.000000)" fill-rule="nonzero" stroke="#313D53" stroke-width="1.5">
+                        <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                          <g id="Product-cards" transform="translate(0.000000, 446.000000)">
+                            <g id="card-1" transform="translate(0.000000, 3.000000)">
+                              <g id="content" transform="translate(22.000000, 275.000000)">
+                                <g id="Photo-navigation" transform="translate(339.000000, 0.000000)">
+                                  <g id="Arrows" transform="translate(10.000000, 10.000000)">
+                                    <polyline id="left_arrow_inactive" transform="translate(2.500000, 5.000000) scale(-1, 1) translate(-2.500000, -5.000000) " points="0 0 5 5 0 10"></polyline>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button class="horizontalAngle productTile__arrow productTile__arrow_dir_right horizontalAngle_theme_rectangle " id="">
+                  <svg width="7px" height="12px" viewbox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                      <g id="Main_Carousel" transform="translate(-490.000000, -2324.000000)" fill-rule="nonzero" stroke="#313D53" stroke-width="1.5">
+                        <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                          <g id="Product-cards" transform="translate(0.000000, 446.000000)">
+                            <g id="card-1" transform="translate(0.000000, 3.000000)">
+                              <g id="content" transform="translate(22.000000, 275.000000)">
+                                <g id="Photo-navigation" transform="translate(339.000000, 0.000000)">
+                                  <g id="Arrows" transform="translate(10.000000, 10.000000)">
+                                    <polyline id="left_arrow_inactive" transform="translate(2.500000, 5.000000) scale(-1, 1) translate(-2.500000, -5.000000) " points="0 0 5 5 0 10"></polyline>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="productTile__info">
+              <div class="productTile__infoTitle">Рюкзак-трансформер</div>
+              <div class="productTile__infoDescription"><b class="productTile__infoLabel">Размер:</b><span class="productTile__infoValue">&nbsp;32*26*12см</span></div>
+              <div class="productTile__infoDescription"><b class="productTile__infoLabel">Материал:</b><span class="productTile__infoValue">&nbsp;эко-кожа</span></div>
+              <div class="productTile__infoDescription"><b class="productTile__infoLabel">Цвет:</b><span class="productTile__infoValue">&nbsp;сине-золотой, розголд, черный.</span></div>
+              <div class="productTile__footer">
+                <div class="iconText iconText_theme_addToBasket addProductToBasket">
+                  <div class="iconText__icon">
+                    <div class="basket"><span class="basket__circle"></span>
+                      <div class="basket__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="34px" width="34px" viewbox="0 0 34 34">
+                          <path fill="#FFF" d="M24,24.27,23.34,12a.65.65,0,0,0-.65-.62h-1.9v-.6a3.78,3.78,0,0,0-7.55,0v.6h-1.9a.66.66,0,0,0-.66.62L10,24.3a.62.62,0,0,0,.18.48.63.63,0,0,0,.47.2H23.34a.65.65,0,0,0,.65-.64ZM14.16,14a.69.69,0,1,1,.7-.69A.69.69,0,0,1,14.16,14Zm4.69-2.61H15.17v-.6a1.84,1.84,0,0,1,3.68,0Zm1,2.61a.69.69,0,1,1,.7-.69A.69.69,0,0,1,19.86,14Z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="iconText__text">Добавить в корзину</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="productTile__product">
+          <div class="productTile__productInner">
+            <div class="productTile__imageWrap">
+              <div class="productTile__imageScreen"><img class="productTile__image" src="/images/img4.JPG"></div>
+              <div class="productTile__imagePrice">2999 ₽</div>
+              <div class="productTile__imageArrows productTile_disable_left">
+                <button class="horizontalAngle productTile__arrow productTile__arrow_dir_left horizontalAngle_theme_rectangle " id="">
+                  <svg width="7px" height="12px" viewbox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                      <g id="Main_Carousel" transform="translate(-490.000000, -2324.000000)" fill-rule="nonzero" stroke="#313D53" stroke-width="1.5">
+                        <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                          <g id="Product-cards" transform="translate(0.000000, 446.000000)">
+                            <g id="card-1" transform="translate(0.000000, 3.000000)">
+                              <g id="content" transform="translate(22.000000, 275.000000)">
+                                <g id="Photo-navigation" transform="translate(339.000000, 0.000000)">
+                                  <g id="Arrows" transform="translate(10.000000, 10.000000)">
+                                    <polyline id="left_arrow_inactive" transform="translate(2.500000, 5.000000) scale(-1, 1) translate(-2.500000, -5.000000) " points="0 0 5 5 0 10"></polyline>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button class="horizontalAngle productTile__arrow productTile__arrow_dir_right horizontalAngle_theme_rectangle " id="">
+                  <svg width="7px" height="12px" viewbox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                      <g id="Main_Carousel" transform="translate(-490.000000, -2324.000000)" fill-rule="nonzero" stroke="#313D53" stroke-width="1.5">
+                        <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                          <g id="Product-cards" transform="translate(0.000000, 446.000000)">
+                            <g id="card-1" transform="translate(0.000000, 3.000000)">
+                              <g id="content" transform="translate(22.000000, 275.000000)">
+                                <g id="Photo-navigation" transform="translate(339.000000, 0.000000)">
+                                  <g id="Arrows" transform="translate(10.000000, 10.000000)">
+                                    <polyline id="left_arrow_inactive" transform="translate(2.500000, 5.000000) scale(-1, 1) translate(-2.500000, -5.000000) " points="0 0 5 5 0 10"></polyline>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="productTile__info">
+              <div class="productTile__infoTitle">Рюкзак-трансформер</div>
+              <div class="productTile__infoDescription"><b class="productTile__infoLabel">Размер:</b><span class="productTile__infoValue">&nbsp;32*26*12см</span></div>
+              <div class="productTile__infoDescription"><b class="productTile__infoLabel">Материал:</b><span class="productTile__infoValue">&nbsp;эко-кожа</span></div>
+              <div class="productTile__infoDescription"><b class="productTile__infoLabel">Цвет:</b><span class="productTile__infoValue">&nbsp;сине-золотой, розголд, черный.</span></div>
+              <div class="productTile__footer">
+                <div class="iconText iconText_theme_addToBasket addProductToBasket">
+                  <div class="iconText__icon">
+                    <div class="basket"><span class="basket__circle"></span>
+                      <div class="basket__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="34px" width="34px" viewbox="0 0 34 34">
+                          <path fill="#FFF" d="M24,24.27,23.34,12a.65.65,0,0,0-.65-.62h-1.9v-.6a3.78,3.78,0,0,0-7.55,0v.6h-1.9a.66.66,0,0,0-.66.62L10,24.3a.62.62,0,0,0,.18.48.63.63,0,0,0,.47.2H23.34a.65.65,0,0,0,.65-.64ZM14.16,14a.69.69,0,1,1,.7-.69A.69.69,0,0,1,14.16,14Zm4.69-2.61H15.17v-.6a1.84,1.84,0,0,1,3.68,0Zm1,2.61a.69.69,0,1,1,.7-.69A.69.69,0,0,1,19.86,14Z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="iconText__text">Добавить в корзину</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="productTile__product">
+          <div class="productTile__productInner">
+            <div class="productTile__imageWrap">
+              <div class="productTile__imageScreen"><img class="productTile__image" src="/images/img5.JPG"></div>
+              <div class="productTile__imagePrice">2999 ₽</div>
+              <div class="productTile__imageArrows productTile_disable_left">
+                <button class="horizontalAngle productTile__arrow productTile__arrow_dir_left horizontalAngle_theme_rectangle " id="">
+                  <svg width="7px" height="12px" viewbox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                      <g id="Main_Carousel" transform="translate(-490.000000, -2324.000000)" fill-rule="nonzero" stroke="#313D53" stroke-width="1.5">
+                        <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                          <g id="Product-cards" transform="translate(0.000000, 446.000000)">
+                            <g id="card-1" transform="translate(0.000000, 3.000000)">
+                              <g id="content" transform="translate(22.000000, 275.000000)">
+                                <g id="Photo-navigation" transform="translate(339.000000, 0.000000)">
+                                  <g id="Arrows" transform="translate(10.000000, 10.000000)">
+                                    <polyline id="left_arrow_inactive" transform="translate(2.500000, 5.000000) scale(-1, 1) translate(-2.500000, -5.000000) " points="0 0 5 5 0 10"></polyline>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button class="horizontalAngle productTile__arrow productTile__arrow_dir_right horizontalAngle_theme_rectangle " id="">
+                  <svg width="7px" height="12px" viewbox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                      <g id="Main_Carousel" transform="translate(-490.000000, -2324.000000)" fill-rule="nonzero" stroke="#313D53" stroke-width="1.5">
+                        <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                          <g id="Product-cards" transform="translate(0.000000, 446.000000)">
+                            <g id="card-1" transform="translate(0.000000, 3.000000)">
+                              <g id="content" transform="translate(22.000000, 275.000000)">
+                                <g id="Photo-navigation" transform="translate(339.000000, 0.000000)">
+                                  <g id="Arrows" transform="translate(10.000000, 10.000000)">
+                                    <polyline id="left_arrow_inactive" transform="translate(2.500000, 5.000000) scale(-1, 1) translate(-2.500000, -5.000000) " points="0 0 5 5 0 10"></polyline>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="productTile__info">
+              <div class="productTile__infoTitle">Рюкзак-трансформер</div>
+              <div class="productTile__infoDescription"><b class="productTile__infoLabel">Размер:</b><span class="productTile__infoValue">&nbsp;32*26*12см</span></div>
+              <div class="productTile__infoDescription"><b class="productTile__infoLabel">Материал:</b><span class="productTile__infoValue">&nbsp;эко-кожа</span></div>
+              <div class="productTile__infoDescription"><b class="productTile__infoLabel">Цвет:</b><span class="productTile__infoValue">&nbsp;сине-золотой, розголд, черный.</span></div>
+              <div class="productTile__footer">
+                <div class="iconText iconText_theme_addToBasket addProductToBasket">
+                  <div class="iconText__icon">
+                    <div class="basket"><span class="basket__circle"></span>
+                      <div class="basket__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="34px" width="34px" viewbox="0 0 34 34">
+                          <path fill="#FFF" d="M24,24.27,23.34,12a.65.65,0,0,0-.65-.62h-1.9v-.6a3.78,3.78,0,0,0-7.55,0v.6h-1.9a.66.66,0,0,0-.66.62L10,24.3a.62.62,0,0,0,.18.48.63.63,0,0,0,.47.2H23.34a.65.65,0,0,0,.65-.64ZM14.16,14a.69.69,0,1,1,.7-.69A.69.69,0,0,1,14.16,14Zm4.69-2.61H15.17v-.6a1.84,1.84,0,0,1,3.68,0Zm1,2.61a.69.69,0,1,1,.7-.69A.69.69,0,0,1,19.86,14Z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="iconText__text">Добавить в корзину</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="productTile__product">
+          <div class="productTile__productInner">
+            <div class="productTile__imageWrap">
+              <div class="productTile__imageScreen"><img class="productTile__image" src="/images/img6.JPG"></div>
+              <div class="productTile__imagePrice">2999 ₽</div>
+              <div class="productTile__imageArrows productTile_disable_left">
+                <button class="horizontalAngle productTile__arrow productTile__arrow_dir_left horizontalAngle_theme_rectangle " id="">
+                  <svg width="7px" height="12px" viewbox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                      <g id="Main_Carousel" transform="translate(-490.000000, -2324.000000)" fill-rule="nonzero" stroke="#313D53" stroke-width="1.5">
+                        <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                          <g id="Product-cards" transform="translate(0.000000, 446.000000)">
+                            <g id="card-1" transform="translate(0.000000, 3.000000)">
+                              <g id="content" transform="translate(22.000000, 275.000000)">
+                                <g id="Photo-navigation" transform="translate(339.000000, 0.000000)">
+                                  <g id="Arrows" transform="translate(10.000000, 10.000000)">
+                                    <polyline id="left_arrow_inactive" transform="translate(2.500000, 5.000000) scale(-1, 1) translate(-2.500000, -5.000000) " points="0 0 5 5 0 10"></polyline>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button class="horizontalAngle productTile__arrow productTile__arrow_dir_right horizontalAngle_theme_rectangle " id="">
+                  <svg width="7px" height="12px" viewbox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                      <g id="Main_Carousel" transform="translate(-490.000000, -2324.000000)" fill-rule="nonzero" stroke="#313D53" stroke-width="1.5">
+                        <g id="Catalog-section" transform="translate(120.000000, 1591.000000)">
+                          <g id="Product-cards" transform="translate(0.000000, 446.000000)">
+                            <g id="card-1" transform="translate(0.000000, 3.000000)">
+                              <g id="content" transform="translate(22.000000, 275.000000)">
+                                <g id="Photo-navigation" transform="translate(339.000000, 0.000000)">
+                                  <g id="Arrows" transform="translate(10.000000, 10.000000)">
+                                    <polyline id="left_arrow_inactive" transform="translate(2.500000, 5.000000) scale(-1, 1) translate(-2.500000, -5.000000) " points="0 0 5 5 0 10"></polyline>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="productTile__info">
+              <div class="productTile__infoTitle">Рюкзак-трансформер</div>
+              <div class="productTile__infoDescription"><b class="productTile__infoLabel">Размер:</b><span class="productTile__infoValue">&nbsp;32*26*12см</span></div>
+              <div class="productTile__infoDescription"><b class="productTile__infoLabel">Материал:</b><span class="productTile__infoValue">&nbsp;эко-кожа</span></div>
+              <div class="productTile__infoDescription"><b class="productTile__infoLabel">Цвет:</b><span class="productTile__infoValue">&nbsp;сине-золотой, розголд, черный.</span></div>
+              <div class="productTile__footer">
+                <div class="iconText iconText_theme_addToBasket addProductToBasket">
+                  <div class="iconText__icon">
+                    <div class="basket"><span class="basket__circle"></span>
+                      <div class="basket__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="34px" width="34px" viewbox="0 0 34 34">
+                          <path fill="#FFF" d="M24,24.27,23.34,12a.65.65,0,0,0-.65-.62h-1.9v-.6a3.78,3.78,0,0,0-7.55,0v.6h-1.9a.66.66,0,0,0-.66.62L10,24.3a.62.62,0,0,0,.18.48.63.63,0,0,0,.47.2H23.34a.65.65,0,0,0,.65-.64ZM14.16,14a.69.69,0,1,1,.7-.69A.69.69,0,0,1,14.16,14Zm4.69-2.61H15.17v-.6a1.84,1.84,0,0,1,3.68,0Zm1,2.61a.69.69,0,1,1,.7-.69A.69.69,0,0,1,19.86,14Z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="iconText__text">Добавить в корзину</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="loader catalogLoader">
+        <div class="loader__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 50 47">
+            <g fill="#313D53" fill-rule="nonzero" opacity=".154">
+              <path d="M27.42 7.735c.882-.883 1.324-1.943 1.323-3.18 0-1.236-.442-2.296-1.326-3.18C26.533.491 25.473.05 24.237.05c-1.238 0-2.297.44-3.18 1.324-.869.868-1.306 1.924-1.313 3.168-.007 1.244.432 2.308 1.315 3.192.884.883 1.947 1.321 3.192 1.315 1.243-.008 2.3-.444 3.168-1.313zM34.85 13.035c.971.972 2.148 1.458 3.533 1.46 1.384 0 2.561-.486 3.532-1.457.972-.971 1.457-2.149 1.457-3.533 0-1.383-.487-2.561-1.46-3.533-.97-.972-2.148-1.458-3.532-1.459-1.384 0-2.562.485-3.533 1.457-.971.97-1.457 2.148-1.456 3.532 0 1.384.486 2.562 1.458 3.533zM22.469 42.386a2.404 2.404 0 0 0-.728 1.766c0 .692.243 1.282.73 1.767a2.407 2.407 0 0 0 1.766.73c.692 0 1.281-.243 1.766-.729a2.406 2.406 0 0 0 .729-1.766c0-.692-.243-1.28-.73-1.767a2.409 2.409 0 0 0-1.766-.73c-.692 0-1.281.243-1.767.729zM47.926 28.24c1.074-1.074 1.611-2.37 1.61-3.885 0-1.517-.537-2.812-1.612-3.887-1.075-1.075-2.37-1.613-3.887-1.613s-2.812.536-3.886 1.61c-1.074 1.075-1.611 2.37-1.61 3.886 0 1.516.538 2.812 1.613 3.887 1.075 1.075 2.37 1.613 3.886 1.613s2.812-.536 3.886-1.61zM10.097 40.791c.824 0 1.53-.293 2.119-.882a2.888 2.888 0 0 0 .883-2.12c0-.823-.296-1.53-.885-2.12a2.892 2.892 0 0 0-2.12-.884c-.824 0-1.53.294-2.12.883a2.886 2.886 0 0 0-.881 2.12c0 .823.295 1.53.884 2.119a2.892 2.892 0 0 0 2.12.884zM6.912 26.828c.678-.677 1.016-1.502 1.016-2.473 0-.971-.34-1.796-1.017-2.474-.678-.677-1.502-1.016-2.474-1.017-.972 0-1.795.339-2.473 1.016C1.287 22.557.95 23.38.95 24.352c0 .972.34 1.796 1.017 2.474.678.678 1.502 1.016 2.474 1.017.971 0 1.795-.338 2.472-1.015zM12.923 12.332c.78-.78 1.17-1.723 1.17-2.827C14.09 8.4 13.7 7.459 12.92 6.678a3.852 3.852 0 0 0-2.827-1.17c-1.104-.001-2.046.388-2.826 1.168-.78.78-1.17 1.723-1.17 2.827 0 1.104.391 2.046 1.172 2.827.78.78 1.722 1.17 2.826 1.17 1.105 0 2.047-.388 2.827-1.168zM42.623 42.029c1.177-1.177 1.766-2.59 1.766-4.24-.001-1.648-.59-3.062-1.769-4.24-1.178-1.178-2.59-1.767-4.24-1.768-1.648 0-3.061.589-4.239 1.766-1.177 1.178-1.766 2.59-1.765 4.239 0 1.648.59 3.062 1.768 4.24 1.178 1.178 2.591 1.767 4.24 1.768 1.649 0 3.061-.588 4.239-1.765z"></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__grid">
+      <div class="footer__leftGroup"><a class="anchorLink" href="#navbar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="92" height="44" viewbox="0 0 92 44">
+            <g fill="none" fill-rule="evenodd">
+              <text fill="#FFFFFF" font-family="AbrilFatface-Regular, Abril Fatface" font-size="23.467" font-weight="700">
+                <tspan x="0" y="29.693">Lilubags</tspan>
+              </text>
+              <path fill="#BDB4F0" d="M0 41.067h42.24v2.347H0z"></path>
+              <path fill="#9e98c4" d="M42.24 42.24h49.28v1.173H42.24z" opacity=".147"></path>
+              <g>
+                <path fill="#BDB4F0" d="M49.28 0h42.24v2.347H49.28z"></path>
+                <path fill="#9e98c4" d="M0 0h49.28v1.173H0z" opacity=".147"></path>
+              </g>
+            </g>
+          </svg></a></div>
+      <div class="footer__centerGroup"><a class="instagramLink" href="https://www.instagram.com/rukzak_lilu/?hl=ru" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+            <g fill="none" fill-rule="evenodd">
+              <circle cx="12" cy="12" r="12" fill="#fff"></circle>
+              <path fill="#313d53" d="M16.125 18h-8.25A1.875 1.875 0 0 1 6 16.125v-8.25C6 6.84 6.84 6 7.875 6h8.25C17.16 6 18 6.84 18 7.875v8.25C18 17.16 17.16 18 16.125 18zM12 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm4.5-1.75a.75.75 0 0 0-.75-.75h-.5a.75.75 0 0 0-.75.75v.5c0 .414.336.75.75.75h.5a.75.75 0 0 0 .75-.75v-.5zm0 2.75h-1.162c.095.319.162.65.162 1a3.5 3.5 0 1 1-7 0c0-.35.067-.681.162-1H7.5v4.75c0 .415.336.75.75.75h7.5a.75.75 0 0 0 .75-.75V11z"></path>
+            </g>
+          </svg></a><span class="footer__thinText">ИП Елшанский ОГРНИП318527500121698</span>
+        <div class="iconText footer__iconText">
+          <div class="iconText__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 18 18">
+              <g fill="#fff" fill-rule="evenodd">
+                <path d="M13.672 11.896c-.587-.58-1.32-.58-1.904 0-.446.442-.891.884-1.329 1.333-.12.123-.22.15-.367.067-.288-.157-.595-.284-.872-.456-1.29-.813-2.372-1.857-3.33-3.032-.475-.583-.898-1.208-1.194-1.912-.06-.142-.049-.236.067-.352.446-.43.88-.872 1.318-1.313.61-.614.61-1.332-.004-1.95-.348-.352-.696-.696-1.044-1.048-.36-.359-.715-.722-1.078-1.077-.587-.573-1.32-.573-1.905.003-.449.442-.88.895-1.336 1.329-.423.4-.636.89-.68 1.463-.072.932.156 1.811.478 2.668.659 1.774 1.662 3.35 2.878 4.794a17.808 17.808 0 0 0 5.898 4.614c1.033.501 2.103.887 3.267.95.8.045 1.497-.157 2.054-.782.382-.426.812-.815 1.216-1.223.6-.607.603-1.34.008-1.939-.711-.714-1.426-1.426-2.14-2.137zM12.958 8.914l1.38-.236a6.172 6.172 0 0 0-1.725-3.33 6.139 6.139 0 0 0-3.517-1.755L8.9 4.98a4.763 4.763 0 0 1 2.724 1.358 4.762 4.762 0 0 1 1.333 2.575zM15.117 2.911A10.182 10.182 0 0 0 9.279 0l-.195 1.388a8.829 8.829 0 0 1 5.045 2.515 8.822 8.822 0 0 1 2.473 4.771l1.381-.235a10.257 10.257 0 0 0-2.866-5.528z"></path>
+              </g>
+            </svg>
+          </div>
+          <div class="iconText__text">+7 (962) 485 60 88</div>
+        </div>
+      </div>
+      <div class="footer__rightGroup"><a href="https://webstap.ru/" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="145" height="45" viewbox="0 0 145 45">
+            <defs>
+              <lineargradient id="a" x1="0%" y1="50%" y2="50%">
+                <stop offset="0%" stop-color="#9E4FC9"></stop>
+                <stop offset="100%" stop-color="#6129DD"></stop>
+              </lineargradient>
+              <lineargradient id="b" x1="-.034%" y1="50%" y2="50%">
+                <stop offset="20%" stop-color="#692D8A"></stop>
+                <stop offset="100%" stop-color="#552191"></stop>
+              </lineargradient>
+            </defs>
+            <g fill="none" fill-rule="evenodd">
+              <path stroke="#FFF" stroke-width=".703" d="M48.607 42.15V.707"></path>
+              <g fill="#FFF">
+                <path d="M59.804 17.986h-2.25L53.402 5.414h2.83l2.546 8.429 2.83-8.464h1.98l2.83 8.464 2.545-8.429h2.773l-4.173 12.572h-2.25l-2.75-8.343zM82.685 17.914h-9.287v-12.5h9.09v2.3h-6.543v2.415h5.27v2.264h-5.27v3.214h6.733z"></path>
+                <path fill-rule="nonzero" d="M90.94 17.914h-6.225v-12.5h5.822a4.215 4.215 0 0 1 2.73.822 2.798 2.798 0 0 1 1.018 2.335 2.676 2.676 0 0 1-.438 1.55 2.545 2.545 0 0 1-1.118.929 3.164 3.164 0 0 1 1.769 1.093c.498.633.75 1.428.707 2.236a3.2 3.2 0 0 1-1.132 2.55 4.658 4.658 0 0 1-3.133.985zM87.262 7.557v2.75h2.864c.443.026.882-.1 1.245-.357.302-.24.471-.612.453-1a1.248 1.248 0 0 0-.453-1.029c-.361-.262-.8-.39-1.245-.364h-2.864zm0 4.879v3.278h3.197a2.339 2.339 0 0 0 1.485-.421c.362-.29.56-.742.53-1.207a1.47 1.47 0 0 0-.523-1.229 2.304 2.304 0 0 0-1.485-.428l-3.204.007z"></path>
+                <path d="M105.991 18.129a8.615 8.615 0 0 1-2.56-.386 6.058 6.058 0 0 1-1.96-.957v-.943a6.532 6.532 0 0 0 1.89 1.057c.82.307 1.69.46 2.567.45a4.48 4.48 0 0 0 2.638-.714 2.284 2.284 0 0 0 1.047-1.965 2.217 2.217 0 0 0-.707-1.657 3.17 3.17 0 0 0-.85-.521 7.194 7.194 0 0 0-.99-.393 17.622 17.622 0 0 0-1.166-.343l-1.323-.393a16.224 16.224 0 0 1-1.082-.464 3.02 3.02 0 0 1-1.203-1.007 3.231 3.231 0 0 1-.424-1.579 2.716 2.716 0 0 1 1.075-2.193 4.657 4.657 0 0 1 3.02-.892 6.692 6.692 0 0 1 3.749 1.05v.864A6.463 6.463 0 0 0 105.999 6a4.023 4.023 0 0 0-2.462.65 2.035 2.035 0 0 0-.87 1.744c.024.693.398 1.326.99 1.677.225.137.462.252.708.343.25.104.504.195.764.272l.848.25.375.107 1.16.386a6.1 6.1 0 0 1 1.075.464c.36.154.691.372.976.643.564.565.871 1.34.85 2.143a2.988 2.988 0 0 1-1.295 2.571 5.372 5.372 0 0 1-3.127.879zM117.167 17.914h-.813V6.18h-4.435v-.765h9.69v.772h-4.435z"></path>
+                <path fill-rule="nonzero" d="M121.92 17.914h-.863l5.623-12.571h.764l5.588 12.571h-.849l-1.64-3.678h-6.975l-1.648 3.678zm5.128-11.485l-3.197 7.142h6.366l-3.169-7.142zM136.279 17.914h-.814v-12.5h5.15a4.048 4.048 0 0 1 2.829.907 3.453 3.453 0 0 1 1.017 2.45c0 .922-.366 1.805-1.017 2.45a4.027 4.027 0 0 1-2.83.922h-4.335v5.771zm0-11.728v5.193h4.244a3.422 3.422 0 0 0 2.27-.715 2.684 2.684 0 0 0 .804-1.918c0-.722-.29-1.414-.804-1.917a3.428 3.428 0 0 0-2.27-.679l-4.244.036z"></path>
+                <g>
+                  <path fill-rule="nonzero" d="M56.225 30.121h-.248v-1.085h.333c.398-.639.58-1.391.516-2.143v-.329h1.881v2.493h.524v1.086h-.248v-.857h-2.78l.022.835zm.382-1.085h1.874v-2.257h-1.415v.192a3.744 3.744 0 0 1-.48 2.065h.02z"></path>
+                  <path d="M60.186 29.286h-.24v-2.743h.254v2.336l1.938-2.336h.233v2.743h-.254v-2.35zM64.224 29.336a2.244 2.244 0 0 1-.976-.193v-.257c.296.144.62.218.948.214.246.008.49-.048.707-.164a.493.493 0 0 0 .27-.436.465.465 0 0 0-.227-.407 1.088 1.088 0 0 0-.608-.15h-.453v-.236h.48a.913.913 0 0 0 .538-.136.408.408 0 0 0 .191-.342.415.415 0 0 0-.226-.379 1.228 1.228 0 0 0-.622-.129 2.329 2.329 0 0 0-.899.186v-.25c.3-.119.62-.177.941-.171.268-.01.533.057.764.193a.594.594 0 0 1 .297.514.648.648 0 0 1-.502.621.716.716 0 1 1 .283 1.314c-.274.16-.59.232-.906.208z"></path>
+                  <path fill-rule="nonzero" d="M67.124 29.336a1.202 1.202 0 0 1-.707-.236.789.789 0 0 1-.304-.657.767.767 0 0 1 .318-.643c.234-.17.518-.256.807-.243.374-.003.742.101 1.06.3V27.5c0-.519-.32-.779-.961-.779-.33.002-.65.104-.92.293v-.264c.288-.183.622-.278.962-.271.306-.016.608.074.856.257.207.177.321.44.311.714v1.214a.46.46 0 0 0 .078.286.254.254 0 0 0 .212.107.343.343 0 0 0 .156 0v.214a.505.505 0 0 1-.538-.078.517.517 0 0 1-.141-.35 1.45 1.45 0 0 1-1.189.493zm.071-.243c.213 0 .422-.054.608-.157.18-.094.336-.226.46-.386v-.45a1.785 1.785 0 0 0-.99-.321 1.123 1.123 0 0 0-.707.178.602.602 0 0 0 0 .964c.185.127.406.19.63.179v-.007zM69.89 29.286h-.24v-2.743h.254v2.336l1.938-2.336h.234v2.743h-.255v-2.35l-1.931 2.35zm.969-3.186a.893.893 0 0 1-.637-.229.768.768 0 0 1-.24-.585h.233a.56.56 0 0 0 .177.428.66.66 0 0 0 .467.165.633.633 0 0 0 .46-.172.567.567 0 0 0 .177-.428h.233a.768.768 0 0 1-.248.585.865.865 0 0 1-.629.215l.007.021z"></path>
+                  <path d="M73.349 29.286h-.255v-2.743h.255v1.207h1.881v-1.207h.255v2.743h-.255V28H73.35zM76.355 30.136h-.22l.432-1.365h.318z"></path>
+                  <path fill-rule="nonzero" d="M80.634 26.479c.375-.012.737.141.99.421a1.511 1.511 0 0 1 0 2.014 1.407 1.407 0 0 1-2.122-.128v1.628h-.254v-3.871h.254v.478a1.304 1.304 0 0 1 1.132-.542zm-.042.242a1.173 1.173 0 0 0-1.068.672v1.028c.094.201.244.37.431.486.19.126.41.193.637.193.311.01.612-.115.827-.343.22-.227.34-.533.333-.85.009-.315-.112-.62-.333-.843a1.099 1.099 0 0 0-.785-.35l-.042.007zM83.661 29.336a1.202 1.202 0 0 1-.707-.236.789.789 0 0 1-.304-.657.767.767 0 0 1 .318-.643c.234-.17.518-.256.807-.243.374-.003.742.101 1.06.3V27.5c0-.519-.32-.779-.961-.779-.33.001-.65.103-.92.293v-.264c.288-.183.622-.278.962-.271.306-.016.608.074.856.257.207.177.321.44.311.714v1.214a.46.46 0 0 0 .078.286.254.254 0 0 0 .212.107.35.35 0 0 0 .156 0v.214a.505.505 0 0 1-.538-.078.524.524 0 0 1-.141-.35 1.45 1.45 0 0 1-1.189.493zm.071-.243c.213 0 .422-.054.608-.157.18-.094.336-.226.46-.386v-.45a1.785 1.785 0 0 0-.99-.321 1.123 1.123 0 0 0-.707.178.602.602 0 0 0 0 .964c.185.127.406.19.63.179v-.007z"></path>
+                  <path d="M87 29.336a2.244 2.244 0 0 1-.976-.193v-.257c.295.144.62.218.948.214.246.008.49-.048.707-.164a.493.493 0 0 0 .269-.436.465.465 0 0 0-.227-.407 1.08 1.08 0 0 0-.608-.15h-.453v-.236h.453a.913.913 0 0 0 .538-.136.408.408 0 0 0 .19-.342.415.415 0 0 0-.226-.379 1.228 1.228 0 0 0-.622-.129 2.329 2.329 0 0 0-.898.186v-.25c.3-.119.619-.177.94-.171.268-.01.533.057.764.193a.587.587 0 0 1 .297.514.648.648 0 0 1-.502.621.716.716 0 1 1 .283 1.314 1.558 1.558 0 0 1-.877.208z"></path>
+                  <path fill-rule="nonzero" d="M90.473 26.479c.375-.012.737.141.99.421a1.511 1.511 0 0 1 0 2.014 1.407 1.407 0 0 1-2.122-.128v1.628h-.219v-3.871h.255v.478a1.304 1.304 0 0 1 1.096-.542zm-.043.242a1.173 1.173 0 0 0-1.068.672v1.028c.094.201.244.37.432.486.189.126.41.193.636.193.312.01.613-.115.828-.343.22-.227.34-.533.332-.85.01-.315-.11-.62-.332-.843a1.098 1.098 0 0 0-.828-.35v.007zM93.479 29.336a1.202 1.202 0 0 1-.707-.236.789.789 0 0 1-.304-.657.767.767 0 0 1 .318-.643c.234-.17.518-.256.806-.243.375-.003.743.101 1.061.3V27.5c0-.519-.32-.779-.962-.779-.329.001-.65.103-.92.293v-.264c.288-.183.623-.278.963-.271.306-.016.608.074.856.257.206.177.321.44.31.714v1.214a.46.46 0 0 0 .079.286.254.254 0 0 0 .212.107.35.35 0 0 0 .155 0v.214a.505.505 0 0 1-.537-.078.524.524 0 0 1-.142-.35 1.45 1.45 0 0 1-1.188.493zm.07-.243c.213 0 .423-.054.609-.157.179-.094.336-.226.46-.386v-.45a1.785 1.785 0 0 0-.99-.321 1.123 1.123 0 0 0-.708.178.602.602 0 0 0 0 .964c.186.127.406.19.63.179v-.007zM97.313 29.336a1.29 1.29 0 0 1-1.061-.486 2.079 2.079 0 0 1-.39-1.336 2.033 2.033 0 0 1 .609-1.664c.384-.265.82-.441 1.28-.514l.616-.129v.257l-.948.207a1.742 1.742 0 0 0-.976.536 1.813 1.813 0 0 0-.333 1.179c.116-.224.293-.41.51-.536.234-.136.5-.205.77-.2.34-.008.668.125.907.368.24.243.37.575.36.918.013.375-.128.74-.39 1.007a1.309 1.309 0 0 1-.954.393zm0-.243c.285.003.56-.113.757-.322.216-.216.334-.513.325-.821a.99.99 0 0 0-.318-.764 1.07 1.07 0 0 0-.75-.293 1.216 1.216 0 0 0-.75.25c-.202.15-.36.353-.46.586-.004.362.116.716.34 1 .215.251.534.388.863.371l-.007-.007zM101.74 28.921a1.489 1.489 0 0 1-2.065 0 1.49 1.49 0 0 1 0-2.021 1.475 1.475 0 0 1 2.065 0 1.475 1.475 0 0 1 0 2.021zm-1.867-.157c.222.22.523.342.835.336.312.01.614-.112.834-.336.451-.475.451-1.225 0-1.7a1.112 1.112 0 0 0-.834-.343 1.133 1.133 0 0 0-.835.343 1.252 1.252 0 0 0 0 1.7z"></path>
+                  <path d="M103.799 29.286h-.255v-2.507h-1.033v-.236h2.313v.236h-1.032zM105.758 29.286h-.255v-2.743h.255v1.15l1.415-1.15h.375l-1.521 1.236 1.726 1.507h-.382l-1.613-1.429z"></path>
+                  <path fill-rule="nonzero" d="M109.174 29.336a1.202 1.202 0 0 1-.707-.236.789.789 0 0 1-.304-.657.767.767 0 0 1 .318-.643c.234-.17.518-.256.807-.243.372-.001.737.102 1.053.3V27.5c0-.519-.32-.779-.961-.779-.33.001-.65.103-.92.293v-.264c.287-.183.622-.278.962-.271.306-.016.608.074.856.257.207.177.321.44.311.714v1.214a.46.46 0 0 0 .078.286.254.254 0 0 0 .212.107.35.35 0 0 0 .156 0v.214a.505.505 0 0 1-.538-.078.524.524 0 0 1-.141-.35 1.45 1.45 0 0 1-1.182.493zm.071-.243c.213 0 .422-.054.608-.157.187-.085.354-.209.488-.365v-.45a1.785 1.785 0 0 0-.99-.321 1.123 1.123 0 0 0-.707.179.602.602 0 0 0 0 .964c.18.113.39.168.601.157v-.007z"></path>
+                  <path d="M56.585 36.429h-.24v-2.743h.255v2.335l1.938-2.335h.233v2.743h-.255v-2.35zM61.586 36.429h-.255v-2.743h2.328v2.743h-.255V33.92h-1.84z"></path>
+                  <path fill-rule="nonzero" d="M66.07 33.621c.376-.013.738.142.99.422a1.511 1.511 0 0 1 0 2.014 1.407 1.407 0 0 1-2.121-.128v1.628h-.255v-3.871h.255v.478a1.304 1.304 0 0 1 1.131-.543zm-.042.243a1.173 1.173 0 0 0-1.068.672v1.028c.094.201.244.37.431.486.19.126.41.193.637.193.311.009.612-.116.828-.343.22-.227.339-.533.332-.85a1.156 1.156 0 0 0-.332-.843 1.098 1.098 0 0 0-.828-.35v.007zM70.534 36.064a1.489 1.489 0 0 1-2.066 0 1.49 1.49 0 0 1 0-2.021 1.475 1.475 0 0 1 2.066 0 1.475 1.475 0 0 1 0 2.021zm-1.868-.157c.223.22.523.342.835.336.312.009.614-.112.835-.336.45-.475.45-1.225 0-1.7a1.112 1.112 0 0 0-.835-.343 1.133 1.133 0 0 0-.835.343 1.252 1.252 0 0 0 0 1.7zM71.51 37.264h-.248V36.18h.333c.398-.639.58-1.391.516-2.143v-.329h1.903V36.2h.523v1.086h-.269v-.857H71.51v.835zm.382-1.085h1.874V33.92h-1.415v.193a3.744 3.744 0 0 1-.46 2.065zM76.723 36.429h-1.486v-2.743h1.373a.85.85 0 0 1 .58.185c.14.127.219.31.212.5a.586.586 0 0 1-.354.608.67.67 0 0 1 .53.714.66.66 0 0 1-.226.528.935.935 0 0 1-.63.208zm-1.231-2.493v.971h1.054a.702.702 0 0 0 .445-.128.495.495 0 0 0 0-.715.702.702 0 0 0-.445-.128h-1.054zm0 1.207v1.05h1.181c.171.01.34-.037.481-.136a.531.531 0 0 0 0-.778.751.751 0 0 0-.48-.136h-1.182z"></path>
+                  <path d="M78.703 36.429h-.24v-2.743h.254v2.335l1.917-2.335h.234v2.743h-.234v-2.35zM81.914 36.429h-.353L83.067 35l-1.365-1.264h.347l1.28 1.2v-1.25h.248v1.193l1.301-1.193h.34L83.86 34.95l1.499 1.429h-.354l-1.414-1.372v1.422h-.248V35z"></path>
+                  <path fill-rule="nonzero" d="M87.042 36.479c-.39.014-.77-.13-1.053-.4a1.371 1.371 0 0 1-.418-1.029 1.437 1.437 0 0 1 .375-1.021 1.348 1.348 0 0 1 1.556-.279c.16.083.296.209.39.364.17.264.264.57.268.886v.086h-2.334c-.007.317.122.621.354.835.245.219.564.334.89.322.31.004.613-.085.87-.257v.25c-.264.178-.58.263-.898.243zm-1.21-1.615h2.073a.994.994 0 0 0-.056-.328 1.283 1.283 0 0 0-.17-.322.808.808 0 0 0-.311-.257 1.031 1.031 0 0 0-.46-.1 1 1 0 0 0-.764.307 1.09 1.09 0 0 0-.311.7z"></path>
+                  <path d="M89.235 36.429h-.255v-2.743h.255v1.207h1.882v-1.207h.254v2.743h-.254v-1.286h-1.882zM92.659 36.429h-.241v-2.743h.24v2.335l1.939-2.335h.233v2.743h-.255v-2.35z"></path>
+                  <path fill-rule="nonzero" d="M97.115 36.479c-.39.014-.77-.13-1.054-.4a1.371 1.371 0 0 1-.418-1.029 1.437 1.437 0 0 1 .375-1.021 1.348 1.348 0 0 1 1.556-.279c.161.083.296.209.39.364.17.264.264.57.268.886v.086h-2.334c-.007.317.122.621.354.835.245.219.564.334.89.322.31.004.613-.085.87-.257v.25c-.264.178-.58.263-.897.243zm-1.21-1.615h2.073a.994.994 0 0 0-.057-.328 1.283 1.283 0 0 0-.17-.322.808.808 0 0 0-.311-.257 1.031 1.031 0 0 0-.46-.1 1 1 0 0 0-.764.307 1.09 1.09 0 0 0-.31.7z"></path>
+                  <path d="M101.79 36.479a1.344 1.344 0 0 1-1.019-.415 1.482 1.482 0 0 1 0-2.028c.269-.279.642-.43 1.026-.415.285-.003.566.071.813.215v.25a1.531 1.531 0 0 0-.756-.229 1.168 1.168 0 0 0-.856.343 1.237 1.237 0 0 0 0 1.7c.23.222.537.343.856.336.298.005.59-.085.834-.257v.257a1.524 1.524 0 0 1-.898.243z"></path>
+                  <path fill-rule="nonzero" d="M104.343 36.479a1.202 1.202 0 0 1-.707-.236.789.789 0 0 1-.304-.657.767.767 0 0 1 .318-.643c.234-.17.518-.256.807-.243.374-.003.742.101 1.06.3v-.357c0-.52-.32-.779-.961-.779-.33.001-.65.104-.92.293v-.264c.288-.184.622-.278.962-.272.306-.015.608.075.856.258.207.177.321.44.311.714v1.214a.46.46 0 0 0 .078.286.254.254 0 0 0 .212.107.343.343 0 0 0 .156 0v.214a.505.505 0 0 1-.538-.078.517.517 0 0 1-.141-.35 1.45 1.45 0 0 1-1.189.493zm.071-.243c.213 0 .422-.054.608-.157.18-.094.336-.226.46-.386v-.45a1.785 1.785 0 0 0-.99-.322 1.123 1.123 0 0 0-.707.179.602.602 0 0 0 0 .964c.185.127.406.19.63.179v-.007zM107.102 36.429h-.24v-2.743h.254v2.335l1.938-2.335h.234v2.743h-.255v-2.35l-1.931 2.35zm.969-3.186a.893.893 0 0 1-.637-.229.768.768 0 0 1-.24-.585h.233a.56.56 0 0 0 .177.428.66.66 0 0 0 .467.164.633.633 0 0 0 .46-.171.567.567 0 0 0 .177-.429h.219a.768.768 0 0 1-.248.586.865.865 0 0 1-.608.214v.022z"></path>
+                  <path d="M111.247 36.429h-.255V33.92h-1.032v-.235h2.312v.235h-1.032z"></path>
+                  <path fill-rule="nonzero" d="M115.123 36.064a1.489 1.489 0 0 1-2.065 0 1.49 1.49 0 0 1 0-2.021 1.475 1.475 0 0 1 2.065 0 1.475 1.475 0 0 1 0 2.021zm-1.867-.157c.222.22.523.342.834.336.312.009.614-.112.835-.336.45-.475.45-1.225 0-1.7a1.112 1.112 0 0 0-.835-.343 1.133 1.133 0 0 0-.834.343 1.252 1.252 0 0 0 0 1.7zM117.832 36.429h-1.485v-2.743h1.372a.85.85 0 0 1 .58.185c.141.127.219.31.212.5a.586.586 0 0 1-.354.608.67.67 0 0 1 .53.714.66.66 0 0 1-.226.528.935.935 0 0 1-.629.208zm-1.23-2.493v.971h1.053a.702.702 0 0 0 .446-.128.495.495 0 0 0 0-.715.702.702 0 0 0-.446-.128h-1.054zm0 1.207v1.05h1.18c.171.01.34-.037.481-.136a.531.531 0 0 0 0-.778.751.751 0 0 0-.48-.136H116.6z"></path>
+                </g>
+              </g>
+              <g>
+                <path fill="#FACCFF" d="M21.057.807l8.997 5.243L9.28 18.164.283 12.921z"></path>
+                <path fill="#F7A9FF" d="M30.047 16.557l8.99 5.25L18.27 33.914l-8.997-5.243z"></path>
+                <path fill="url(#a)" d="M9.28 17.45v10.486l20.774-12.107V5.336z" transform="translate(0 .714)"></path>
+                <path fill="url(#b)" d="M18.27 33.2v10.493l20.767-12.114V21.093z" transform="translate(0 .714)"></path>
+                <g stroke="#FFF" stroke-linecap="round" stroke-width="1.055">
+                  <path d="M40.169 39.1v-1.071"></path>
+                  <path stroke-dasharray="2.25" d="M40.034 35.714c-1.09-10.571-8.36-13.571-12.236-12.964a4.332 4.332 0 0 0-1.62.629"></path>
+                  <path d="M25.272 24.064c-.262.24-.51.495-.742.765"></path>
+                </g>
+                <path stroke="#FFF" stroke-linecap="round" stroke-width=".703" d="M24.516 24.921V23.85"></path>
+                <path stroke="#FFF" stroke-dasharray="2.046" stroke-linecap="round" stroke-width=".703" d="M24.459 21.779C23.561 6.87 14.196 2.02 8.488 2.22"></path>
+                <path stroke="#4B1B64" stroke-linecap="round" stroke-width=".703" d="M7.455 2.314h-.042a5.502 5.502 0 0 0-.983.257"></path>
+                <path fill="#FFF" d="M6.514.95L2.893 5.2l5.241-1.85z"></path>
+                <path fill="#7132BA" d="M.283 12.921v20.993L18.27 44.407V33.914L9.28 28.65V18.164z"></path>
+              </g>
+            </g>
+          </svg></a></div>
+    </div>
+  </div>
+</footer>
