@@ -38,7 +38,7 @@
           -ms-flex-direction: row;
               flex-direction: row;
       padding: 30px 50px 16px 50px;
-      background-image: url("../../images/backgrounds/header.jpg"); } }
+      background-image: url("../images/backgrounds/header.jpg"); } }
   @media screen and (min-width: 992px) {
     .headerInfo {
       padding: 33px 75px 18px 75px; } }
@@ -103,7 +103,7 @@
 .mainSection {
   padding: 30px 20px;
   background-color: #232323;
-  background-image: url("../../images/backgrounds/main-section.jpg");
+  background-image: url("../images/backgrounds/main-section.jpg");
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
@@ -393,7 +393,7 @@
 
 .footer {
   background-color: #232323;
-  background-image: url("../../images/backgrounds/footer.jpg");
+  background-image: url("../images/backgrounds/footer.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
