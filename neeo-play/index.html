@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Neeo</title>
+	<!--	<script src="./js/vendor/lottie_canvas.min.js" type="text/javascript"></script>-->
+	<script src="./js/vendor/lottie_svg.min.js" type="text/javascript"></script>
+	<script src="./js/main.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+<div class="main-block">
+	<a id="link1" class="main-block__link main-block__link_play1" href="/play1"></a>
+	<a id="link2" class="main-block__link main-block__link_play2" href="/play2"></a>
+	<div class="main-block__wrap-video">
+		<video class="main-block__video" autoplay loop="loop">
+			<source src="./assets/bg.mp4" type="video/mp4">
+		</video>
+	</div>
+	<div id="neeoCome" class="main-block__neeo main-block__neeo_come"></div>
+	<div id="neeoStill" class="main-block__neeo main-block__neeo_still hidden"></div>
+	<div id="neeoDisappear" class="main-block__neeo main-block__neeo_disappear hidden"></div>
+	<div id="foreground" class="main-block_foreground"></div>
+</div>
+</body>
+</html>
