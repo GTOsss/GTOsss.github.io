@@ -15,7 +15,7 @@ function ready() {
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'neeo-play/src/assets/foreground/data.json',
+    path: 'src/assets/foreground/data.json',
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
     }
@@ -26,7 +26,7 @@ function ready() {
     renderer: 'svg',
     loop: false,
     autoplay: false,
-    path: 'neeo-play/src/assets/neeo-come/data.json',
+    path: 'src/assets/neeo-come/data.json',
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
     }
@@ -37,7 +37,7 @@ function ready() {
     renderer: 'svg',
     loop: true,
     autoplay: false,
-    path: 'neeo-play/src/assets/neeo-still/data.json',
+    path: 'src/assets/neeo-still/data.json',
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
     }
@@ -48,7 +48,7 @@ function ready() {
     renderer: 'svg',
     loop: false,
     autoplay: false,
-    path: 'neeo-play/src/assets/neeo-disappear/data.json',
+    path: 'src/assets/neeo-disappear/data.json',
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
     }
