@@ -1,21 +1,38 @@
 function ready() {
+  var url1 = '/play1';
+  var url2 = '/play2';
+
   var foregroundNode = document.getElementById('foreground');
   var link1 = document.getElementById('link1');
   var link2 = document.getElementById('link2');
 
+  var neeoCame = false;
+  var neeoStartDisappear = false;
+
   var neeoComeNode = document.getElementById('neeoCome');
   var neeoStillNode = document.getElementById('neeoStill');
-  var neeoDisappearNode = document.getElementById('neeoDisappear');
+  var neeoDisappear1Node = document.getElementById('neeoDisappear1');
+  var neeoDisappear2Node = document.getElementById('neeoDisappear2');
+  var neeoDisappearStartNode = document.getElementById('neeoDisappearStart');
+  // var backgroundNode = document.getElementById('background');
 
   link1.addEventListener('click', onClick1);
   link2.addEventListener('click', onClick2);
+
+  // var background = bodymovin.loadAnimation({
+  //   wrapper: backgroundNode,
+  //   renderer: 'canvas',
+  //   loop: true,
+  //   autoplay: true,
+  //   path: '../src/assets/background/data.json',
+  // });
 
   var foreground = bodymovin.loadAnimation({
     wrapper: foregroundNode,
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'src/assets/foreground/data.json',
+    path: '../src/assets/foreground/data.json',
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
     }
@@ -26,7 +43,7 @@ function ready() {
     renderer: 'svg',
     loop: false,
     autoplay: false,
-    path: 'src/assets/neeo-come/data.json',
+    path: '../src/assets/neeo-come/data.json',
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
     }
@@ -37,18 +54,40 @@ function ready() {
     renderer: 'svg',
     loop: true,
     autoplay: false,
-    path: 'src/assets/neeo-still/data.json',
+    path: '../src/assets/neeo-still/data.json',
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
     }
   });
 
-  var neeoDisappear = bodymovin.loadAnimation({
-    wrapper: neeoDisappearNode,
+  var neeoDisappearStart = bodymovin.loadAnimation({
+    wrapper: neeoDisappearStartNode,
     renderer: 'svg',
     loop: false,
     autoplay: false,
-    path: 'src/assets/neeo-disappear/data.json',
+    path: '../src/assets/neeo-disappear-start/data.json',
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    }
+  });
+
+  var neeoDisappear1 = bodymovin.loadAnimation({
+    wrapper: neeoDisappear1Node,
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: '../src/assets/neeo-disappear1/data.json',
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    }
+  });
+
+  var neeoDisappear2 = bodymovin.loadAnimation({
+    wrapper: neeoDisappear2Node,
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: '../src/assets/neeo-disappear2/data.json',
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
     }
@@ -58,23 +97,45 @@ function ready() {
 
   function onClick1(e) {
     e.preventDefault();
-    console.log('1');
-    neeoDisappearNode.classList.toggle('main-block__neeo_anim_Disappear1');
-    neeoStillNode.classList.toggle('hidden');
-    neeoDisappearNode.classList.toggle('hidden');
-    neeoStill.destroy();
-    neeoCome.destroy();
-    neeoDisappear.play();
+
+    if (neeoCame && !neeoStartDisappear) {
+      neeoStartDisappear = true;
+      neeoStillNode.classList.toggle('hidden');
+      neeoDisappearStartNode.classList.toggle('hidden');
+
+      neeoDisappearStart.addEventListener('complete', function() {
+        neeoDisappearStartNode.classList.toggle('hidden');
+        neeoDisappear1Node.classList.toggle('hidden');
+        neeoDisappearStart.destroy();
+        neeoDisappear1.addEventListener('complete', function () {
+          redirect(url1);
+        });
+        neeoDisappear1.play();
+      });
+
+      neeoDisappearStart.play();
+    }
   }
 
   function onClick2(e) {
     e.preventDefault();
+    if (neeoCame && !neeoStartDisappear) {
+      neeoStartDisappear = true;
+      neeoStillNode.classList.toggle('hidden');
+      neeoDisappearStartNode.classList.toggle('hidden');
 
-    neeoStillNode.classList.toggle('hidden');
-    neeoDisappearNode.classList.toggle('hidden');
-    neeoStill.destroy();
-    neeoCome.destroy();
-    neeoDisappear.play();
+      neeoDisappearStart.addEventListener('complete', function() {
+        neeoDisappearStartNode.classList.toggle('hidden');
+        neeoDisappear2Node.classList.toggle('hidden');
+        neeoDisappearStart.destroy();
+        neeoDisappear2.addEventListener('complete', function () {
+          redirect(url2);
+        });
+        neeoDisappear2.play();
+      });
+
+      neeoDisappearStart.play();
+    }
   }
 
   function completeCome() {
@@ -82,11 +143,17 @@ function ready() {
     neeoStillNode.classList.toggle('hidden');
     neeoCome.destroy();
     neeoStill.play();
+    neeoCame = true;
+  }
+
+  function redirect(url) {
+    console.log(url);
+    window.location = url;
   }
 
   setTimeout(() => {
     neeoCome.play();
-  }, 5000)
+  }, 0)
 }
 
 document.addEventListener('DOMContentLoaded', ready, false);

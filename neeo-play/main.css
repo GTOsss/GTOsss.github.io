@@ -106,14 +106,14 @@ html, body {
 	width: 100%;
 }
 
-.main-block__neeo_still {
-	position: absolute;
-	left: 47.5%;
-	top: auto;
-	bottom: 31px;
-	width: 146px;
-	height: 191px;
-}
+/*.main-block__neeo_still {*/
+/*	position: absolute;*/
+/*	left: 47.5%;*/
+/*	top: auto;*/
+/*	bottom: 31px;*/
+/*	width: 146px;*/
+/*	height: 191px;*/
+/*}*/
 
 .main-block__neeo_anim_Disappear1 {
 	animation: neeoDisappear1 2200ms linear;
