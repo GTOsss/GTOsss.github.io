@@ -128,9 +128,12 @@ function ready() {
         neeoDisappearStartNode.classList.toggle('hidden');
         neeoDisappear2Node.classList.toggle('hidden');
         neeoDisappearStart.destroy();
-        neeoDisappear2.addEventListener('complete', function () {
+        // neeoDisappear2.addEventListener('complete', function () {
+        //   redirect(url2);
+        // });
+        setTimeout(function() {
           redirect(url2);
-        });
+        }, 4200);
         neeoDisappear2.play();
       });
 
