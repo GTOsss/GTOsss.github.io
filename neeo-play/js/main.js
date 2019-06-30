@@ -239,10 +239,10 @@
       }
 
       function completeCome() {
-        neeoComeNode.classList.toggle('hidden');
         neeoStillNode.classList.toggle('hidden');
-        neeoCome.destroy();
+        neeoComeNode.classList.toggle('hidden');
         neeoStill.play();
+        neeoCome.destroy();
         neeoCame = true;
       }
 
