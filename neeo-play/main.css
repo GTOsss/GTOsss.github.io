@@ -8,6 +8,9 @@ html, body {
 
 .hidden {
 	opacity: 0;
+	height: 0;
+	width: 0;
+	overflow: hidden;
 }
 
 /* ========================================= links ========================================= */
@@ -127,4 +130,66 @@ html, body {
 	100% {
 		left: -23vw;
 	}
+}
+
+/* ========================================= loading block ========================================= */
+
+.loading-block {
+	position: fixed;
+	/*background-color: black;*/
+	background-color: #50C0EA;
+	height: 36.2vw;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	transition: 1000ms ease-out opacity;
+}
+
+.loading-block_hidden {
+	opacity: 0;
+}
+
+.loading-block__loader {
+	height: auto;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform-origin: center;
+	transform: translateY(-50%) translateX(-50%);
+	width: 10vw;
+	animation: loader 2000ms infinite linear;
+}
+
+.loading-block__loader:nth-child(2) {
+	width: 13vw;
+	opacity: 0.5;
+	transform: translateY(-50%) translateX(-50%);
+	animation: loader 4000ms infinite linear;
+}
+
+.loading-block__loader:nth-child(3) {
+	width: 16vw;
+	opacity: 0.25;
+	transform: translateY(-50%) translateX(-50%);
+	animation: loader 8000ms infinite linear;
+}
+
+@keyframes loader {
+	0% {
+		transform: translateY(-50%) translateX(-50%) rotate(0);
+	}
+	100% {
+		transform: translateY(-50%) translateX(-50%) rotate(360deg);
+	}
+}
+
+.loading-block__progress-text {
+	font-size: 60px;
+	position: absolute;
+	bottom: 20px;
+	color: white;
+	left: 50%;
+	transform: translateX(-50%);
 }
