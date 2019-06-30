@@ -86,7 +86,7 @@
       //   renderer: 'canvas',
       //   loop: true,
       //   autoplay: true,
-      //   path: 'assets/background/data.json',
+      //   path: '../src/assets/background/data.json',
       // });
 
       function readyAnimation() {
@@ -98,7 +98,7 @@
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: 'assets/foreground/data.json',
+        path: '../src/assets/foreground/data.json',
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice',
         },
@@ -115,7 +115,7 @@
         renderer: 'svg',
         loop: false,
         autoplay: false,
-        path: 'assets/neeo-come/data.json',
+        path: '../src/assets/neeo-come/data.json',
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice',
         }
@@ -131,7 +131,7 @@
         renderer: 'svg',
         loop: true,
         autoplay: false,
-        path: 'assets/neeo-still/data.json',
+        path: '../src/assets/neeo-still/data.json',
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice',
         }
@@ -147,7 +147,7 @@
         renderer: 'svg',
         loop: false,
         autoplay: false,
-        path: 'assets/neeo-disappear-start/data.json',
+        path: '../src/assets/neeo-disappear-start/data.json',
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice',
         }
@@ -163,7 +163,7 @@
         renderer: 'svg',
         loop: false,
         autoplay: false,
-        path: 'assets/neeo-disappear1/data.json',
+        path: '../src/assets/neeo-disappear1/data.json',
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice',
         }
@@ -179,7 +179,7 @@
         renderer: 'svg',
         loop: false,
         autoplay: false,
-        path: 'assets/neeo-disappear2/data.json',
+        path: '../src/assets/neeo-disappear2/data.json',
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice',
         }
@@ -205,7 +205,11 @@
             neeoDisappear1Node.classList.toggle('hidden');
             neeoDisappearStart.destroy();
             neeoDisappear1.addEventListener('complete', function () {
-              redirect(url1);
+              mainBlockNode.classList.add('main-block_animation_portal1');
+              mainBlockNode.parentElement.classList.add('main-wrap_animation-zoom-portal');
+              setTimeout(function () {
+                redirect(url1);
+              }, 300)
             });
             neeoDisappear1.play();
           });
@@ -225,12 +229,13 @@
             neeoDisappearStartNode.classList.toggle('hidden');
             neeoDisappear2Node.classList.toggle('hidden');
             neeoDisappearStart.destroy();
-            // neeoDisappear2.addEventListener('complete', function () {
-            //   redirect(url2);
-            // });
             setTimeout(function () {
-              redirect(url2);
-            }, 4200);
+              mainBlockNode.classList.add('main-block_animation_portal2');
+              mainBlockNode.parentElement.classList.add('main-wrap_animation-zoom-portal');
+              setTimeout(function () {
+                redirect(url2);
+              }, 300)
+            }, 4100);
             neeoDisappear2.play();
           });
 
