@@ -110,12 +110,12 @@ html, body {
 }
 
 .main-block_animation_portal1 {
-	transform: scale(6) translateX(530px) translateY(-155px);
+	transform: scale(6) translateX(34%) translateY(-27%);
 	opacity: 0;
 }
 
 .main-block_animation_portal2 {
-	transform: scale(6) translateX(182px) translateY(-155px);
+	transform: scale(6) translateX(12%) translateY(-27%);
 	opacity: 0;
 }
 

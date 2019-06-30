@@ -86,7 +86,7 @@
       //   renderer: 'canvas',
       //   loop: true,
       //   autoplay: true,
-      //   path: '../src/assets/background/data.json',
+      //   path: 'assets/background/data.json',
       // });
 
       function readyAnimation() {
@@ -98,7 +98,7 @@
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: '../src/assets/foreground/data.json',
+        path: 'assets/foreground/data.json',
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice',
         },
@@ -115,7 +115,7 @@
         renderer: 'svg',
         loop: false,
         autoplay: false,
-        path: '../src/assets/neeo-come/data.json',
+        path: 'assets/neeo-come/data.json',
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice',
         }
@@ -131,7 +131,7 @@
         renderer: 'svg',
         loop: true,
         autoplay: false,
-        path: '../src/assets/neeo-still/data.json',
+        path: 'assets/neeo-still/data.json',
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice',
         }
@@ -147,7 +147,7 @@
         renderer: 'svg',
         loop: false,
         autoplay: false,
-        path: '../src/assets/neeo-disappear-start/data.json',
+        path: 'assets/neeo-disappear-start/data.json',
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice',
         }
@@ -163,7 +163,7 @@
         renderer: 'svg',
         loop: false,
         autoplay: false,
-        path: '../src/assets/neeo-disappear1/data.json',
+        path: 'assets/neeo-disappear1/data.json',
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice',
         }
@@ -179,7 +179,7 @@
         renderer: 'svg',
         loop: false,
         autoplay: false,
-        path: '../src/assets/neeo-disappear2/data.json',
+        path: 'assets/neeo-disappear2/data.json',
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice',
         }
