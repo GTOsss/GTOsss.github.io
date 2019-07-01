@@ -1,7 +1,6 @@
 (function () {
     function readyDOM() {
       try {
-        document.getElementById('debug').innerHTML = 'test build 0.0.3';
         var neeoCome;
         var videoBackground;
 
@@ -261,46 +260,48 @@
         var scriptLottie = document.getElementById('scriptLottie');
         videoBackground = document.getElementById('videoBackground');
 
-        function nextLoadState() {
-          if (loadProgress.value < 2) {
-            loadProgress.value += 1;
-          }
-
-          if (loadProgress.value === 2) {
-            readyLottieJS();
-          }
-        }
+        // function nextLoadState() {
+        //   if (loadProgress.value < 2) {
+        //     loadProgress.value += 1;
+        //   }
+        //
+        //   if (loadProgress.value === 2) {
+        //     readyLottieJS();
+        //   }
+        // }
 
         scriptLottie.addEventListener('load', function () {
-          nextLoadState();
+          loadProgress.value += 1;
+          readyLottieJS();
         });
 
         function startObserveProgressVideo() {
           var intervalId = setInterval(updateLoadVideoPercent, 200);
+          var timer = 0;
 
           function updateLoadVideoPercent() {
+            if (videoBackground.buffered.length) {
+              var maxLengthVideo = Math.round(videoBackground.duration);
+              var currentLengthVideo = videoBackground.buffered.end(0);
+              loadVideoPercent = Math.floor(currentLengthVideo / maxLengthVideo * 100);
+              loadVideoPercent = loadVideoPercent > 100 ? 100 : loadVideoPercent;
+            } else {
+              loadVideoPercent = 0;
+            }
 
-            try {
-              if (videoBackground.buffered.length) {
-                var maxLengthVideo = Math.round(videoBackground.duration);
-                var currentLengthVideo = videoBackground.buffered.end(0);
-                loadVideoPercent = Math.floor(currentLengthVideo / maxLengthVideo * 100);
-                loadVideoPercent = loadVideoPercent > 100 ? 100 : loadVideoPercent;
-                document.getElementById('debug').innerHTML = JSON.stringify({
-                  maxLengthVideo,
-                  currentLengthVideo,
-                  loadVideoPercent
-                });
-              } else {
-                loadVideoPercent = 0;
-              }
+            timer += 200;
 
-              if (loadVideoPercent === 100) {
-                clearInterval(intervalId);
-                nextLoadState();
+            if (timer >= 3000) {
+              loadVideoPercent = 0;
+
+              if (videoBackground.readyState >= 3) {
+                loadVideoPercent = 100;
               }
-            } catch (e) {
-              document.getElementById('debug').innerHTML = e.message;
+            }
+
+            if (loadVideoPercent === 100) {
+              loadProgress.value += 1;
+              clearInterval(intervalId);
             }
           }
         }
