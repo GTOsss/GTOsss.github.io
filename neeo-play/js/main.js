@@ -35,7 +35,7 @@
               loadingBlockNode.remove();
             }, 1000);
 
-            // videoBackground.play();
+            videoBackground.play();
             setTimeout(function () {
               neeoCome.play();
             }, 2500);
