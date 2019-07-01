@@ -282,7 +282,8 @@
 
             try {
               if (videoBackground.buffered.length) {
-                var maxLengthVideo = videoBackground.duration;
+                console.log(videoBackground.buffered.end(0));
+                var maxLengthVideo = Math.round(videoBackground.duration);
                 var currentLengthVideo = videoBackground.buffered.end(0);
                 loadVideoPercent = Math.floor(currentLengthVideo / maxLengthVideo * 100);
                 loadVideoPercent = loadVideoPercent > 100 ? 100 : loadVideoPercent;
