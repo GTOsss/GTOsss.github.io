@@ -280,6 +280,8 @@
           var timer = 0;
 
           function updateLoadVideoPercent() {
+            document.getElementById('debug').innerHTML = 'timer=' + timer + ' readyState= ' + videoBackground.readyState;
+
             if (videoBackground.buffered.length) {
               var maxLengthVideo = Math.round(videoBackground.duration);
               var currentLengthVideo = videoBackground.buffered.end(0);
