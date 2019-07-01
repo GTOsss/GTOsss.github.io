@@ -314,6 +314,7 @@
         }
 
         startObserveProgressVideo();
+        videoBackground.load();
 
       } catch (e) {
         document.getElementById('debug').innerHTML = e.message;
