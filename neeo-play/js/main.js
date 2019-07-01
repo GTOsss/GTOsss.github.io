@@ -293,13 +293,17 @@
 
             timer += 200;
 
-            if (timer >= 3000) {
-              loadVideoPercent = 0;
+            if ((timer >= 3000) && (loadVideoPercent === 0) && videoBackground.readyState >= 3) {
+
               document.getElementById('debug').innerHTML = 'timer=' + timer + ' readyState= ' + videoBackground.readyState;
 
               if (videoBackground.readyState >= 3) {
                 loadVideoPercent = 100;
               }
+            }
+
+            if ((timer >= 15*1000) && (loadVideoPercent === 0)) {
+              document.getElementById('debug').innerHTML = 'timer=' + timer + ' readyState= ' + videoBackground.readyState + ' видео не загружалось и readyState не изменился в течении 15 сек';
             }
 
             if (loadVideoPercent === 100) {
