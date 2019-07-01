@@ -282,16 +282,18 @@
 
             try {
               if (videoBackground.buffered.length) {
-                console.log(videoBackground.buffered.end(0));
                 var maxLengthVideo = Math.round(videoBackground.duration);
                 var currentLengthVideo = videoBackground.buffered.end(0);
                 loadVideoPercent = Math.floor(currentLengthVideo / maxLengthVideo * 100);
                 loadVideoPercent = loadVideoPercent > 100 ? 100 : loadVideoPercent;
+                document.getElementById('debug').innerHTML = JSON.stringify({
+                  maxLengthVideo,
+                  currentLengthVideo,
+                  loadVideoPercent
+                });
               } else {
                 loadVideoPercent = 0;
               }
-
-              document.getElementById('debug').innerHTML = loadVideoPercent;
 
               if (loadVideoPercent === 100) {
                 clearInterval(intervalId);
