@@ -195,8 +195,8 @@
 
             if (neeoCame && !neeoStartDisappear) {
               neeoStartDisappear = true;
-              neeoStillNode.classList.toggle('hidden');
               neeoDisappearStartNode.classList.toggle('hidden');
+              neeoStillNode.classList.toggle('hidden');
 
               neeoDisappearStart.addEventListener('complete', function () {
                 neeoDisappearStartNode.classList.toggle('hidden');
@@ -220,8 +220,8 @@
             e.preventDefault();
             if (neeoCame && !neeoStartDisappear) {
               neeoStartDisappear = true;
-              neeoStillNode.classList.toggle('hidden');
               neeoDisappearStartNode.classList.toggle('hidden');
+              neeoStillNode.classList.toggle('hidden');
 
               neeoDisappearStart.addEventListener('complete', function () {
                 neeoDisappearStartNode.classList.toggle('hidden');
