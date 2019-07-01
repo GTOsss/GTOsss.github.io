@@ -294,7 +294,6 @@
           }
         }
 
-        videoBackground.play();
         startObserveProgressVideo();
       } catch (e) {
         document.getElementById('debug').innerHTML = e.message;
