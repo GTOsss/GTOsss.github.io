@@ -243,8 +243,8 @@
 
           function completeCome() {
             neeoStillNode.classList.toggle('hidden');
-            neeoComeNode.classList.toggle('hidden');
             neeoStill.play();
+            neeoComeNode.classList.toggle('hidden');
             neeoCome.destroy();
             neeoCame = true;
           }
