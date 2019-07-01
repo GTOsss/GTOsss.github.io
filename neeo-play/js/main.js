@@ -293,6 +293,7 @@
 
             if (timer >= 3000) {
               loadVideoPercent = 0;
+              document.getElementById('debug').innerHTML = 'timer=' + timer + ' readyState= ' + videoBackground.readyState;
 
               if (videoBackground.readyState >= 3) {
                 loadVideoPercent = 100;
