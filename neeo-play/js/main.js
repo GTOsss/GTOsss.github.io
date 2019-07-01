@@ -1,7 +1,7 @@
 (function () {
     function readyDOM() {
       try {
-        document.getElementById('debug').innerHTML = 'test build 0.0.1';
+        document.getElementById('debug').innerHTML = 'test build 0.0.2';
         var neeoCome;
         var videoBackground;
 
