@@ -35,7 +35,7 @@
               loadingBlockNode.remove();
             }, 1000);
 
-            videoBackground.play();
+            // videoBackground.play();
             setTimeout(function () {
               neeoCome.play();
             }, 2500);
@@ -313,9 +313,8 @@
           }
         }
 
+        videoBackground.play();
         startObserveProgressVideo();
-        videoBackground.load();
-
       } catch (e) {
         document.getElementById('debug').innerHTML = e.message;
       }
