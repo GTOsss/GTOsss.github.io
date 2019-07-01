@@ -44,9 +44,6 @@
 
         setLoading(true);
 
-        // script
-        // video
-        // 6*3 animations
         var maxLoadProgress = 26;
 
         var loadVideoPercent = 0;
@@ -260,16 +257,6 @@
         var scriptLottie = document.getElementById('scriptLottie');
         videoBackground = document.getElementById('videoBackground');
 
-        // function nextLoadState() {
-        //   if (loadProgress.value < 2) {
-        //     loadProgress.value += 1;
-        //   }
-        //
-        //   if (loadProgress.value === 2) {
-        //     readyLottieJS();
-        //   }
-        // }
-
         scriptLottie.addEventListener('load', function () {
           loadProgress.value += 1;
           readyLottieJS();
@@ -292,14 +279,8 @@
             }
 
             timer += 200;
-
-            if ((timer >= 3000) && (loadVideoPercent === 0) && videoBackground.readyState >= 3) {
-
-              document.getElementById('debug').innerHTML = 'timer=' + timer + ' readyState= ' + videoBackground.readyState;
-
-              if (videoBackground.readyState >= 3) {
-                loadVideoPercent = 100;
-              }
+            if ((timer >= 3000) && (loadVideoPercent === 0) && (videoBackground.readyState >= 3)) {
+              loadVideoPercent = 100;
             }
 
             if ((timer >= 15*1000) && (loadVideoPercent === 0)) {
