@@ -2,7 +2,6 @@
     function readyDOM() {
       try {
         document.getElementById('debug').innerHTML = 'test build 0.0.1';
-
         var neeoCome;
         var videoBackground;
 
@@ -290,6 +289,8 @@
               } else {
                 loadVideoPercent = 0;
               }
+
+              document.getElementById('debug').innerHTML = loadVideoPercent;
 
               if (loadVideoPercent === 100) {
                 clearInterval(intervalId);
