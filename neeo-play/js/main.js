@@ -21,7 +21,7 @@
         var neeoDisappear1Node = document.getElementById('neeoDisappear1');
         var neeoDisappear2Node = document.getElementById('neeoDisappear2');
         var neeoDisappearStartNode = document.getElementById('neeoDisappearStart');
-        // var backgroundNode = document.getElementById('background');
+        var backgroundNode = document.getElementById('background');
 
         var mainBlockNode = document.getElementById('mainBlock');
         var loadingBlockNode = document.getElementById('loadingBlock');
@@ -35,7 +35,7 @@
               loadingBlockNode.remove();
             }, 1000);
 
-            videoBackground.play();
+            // videoBackground.play();
             setTimeout(function () {
               neeoCome.play();
             }, 2500);
@@ -44,7 +44,7 @@
 
         setLoading(true);
 
-        var maxLoadProgress = 26;
+        var maxLoadProgress = 29;
 
         var loadVideoPercent = 0;
 
@@ -63,6 +63,7 @@
             this._value = value;
 
             loadingProgressTextNode.innerHTML = this.percent + '%';
+            document.getElementById('debug').innerText = 'iteration ' + this._value;
 
             if ((this.percent === 100) && (this.loaded === false)) {
               this.loaded = true;
@@ -79,17 +80,23 @@
           link1.addEventListener('click', onClick1);
           link2.addEventListener('click', onClick2);
 
-          // var background = bodymovin.loadAnimation({
-          //   wrapper: backgroundNode,
-          //   renderer: 'canvas',
-          //   loop: true,
-          //   autoplay: true,
-          //   path: 'assets/background/data.json',
-          // });
-
           function readyAnimation() {
             loadProgress.value += 1;
           }
+
+          var background = bodymovin.loadAnimation({
+            wrapper: backgroundNode,
+            renderer: 'canvas',
+            loop: true,
+            autoplay: true,
+            path: 'assets/background/data.json',
+          });
+
+          background.addEventListener('config_ready', readyAnimation);
+          background.addEventListener('data_ready', readyAnimation);
+          background.addEventListener('DOMLoaded', readyAnimation);
+          background.addEventListener('segmentStart', readyAnimation);
+          background.addEventListener('loaded_images', readyAnimation);
 
           var foreground = bodymovin.loadAnimation({
             wrapper: foregroundNode,
@@ -262,40 +269,44 @@
           readyLottieJS();
         });
 
-        function startObserveProgressVideo() {
-          var intervalId = setInterval(updateLoadVideoPercent, 200);
-          var timer = 0;
+        // function startObserveProgressVideo() {
+        //   var intervalId = setInterval(updateLoadVideoPercent, 200);
+        //   var timer = 0;
+        //
+        //   function updateLoadVideoPercent() {
+        //     document.getElementById('debug').innerHTML = 'timer=' + timer + ' readyState= ' + videoBackground.readyState;
+        //
+        //     if (videoBackground.buffered.length) {
+        //       var maxLengthVideo = Math.round(videoBackground.duration);
+        //       var currentLengthVideo = videoBackground.buffered.end(0);
+        //       loadVideoPercent = Math.floor(currentLengthVideo / maxLengthVideo * 100);
+        //       loadVideoPercent = loadVideoPercent > 100 ? 100 : loadVideoPercent;
+        //     } else {
+        //       loadVideoPercent = 0;
+        //     }
+        //
+        //     timer += 200;
+        //     if ((timer >= 5000) && (loadVideoPercent === 0)) {
+        //       videoBackground.play();
+        //       loadVideoPercent = 100;
+        //     }
+        //
+        //
+        //
+        //     if ((timer >= 15*1000) && (loadVideoPercent === 0)) {
+        //       document.getElementById('debug').innerHTML = 'timer=' + timer + ' readyState= ' + videoBackground.readyState + ' видео не загружалось и readyState не изменился в течении 15 сек';
+        //     }
+        //
+        //
+        //
+        //     if (loadVideoPercent === 100) {
+        //       loadProgress.value += 1;
+        //       clearInterval(intervalId);
+        //     }
+        //   }
+        // }
 
-          function updateLoadVideoPercent() {
-            document.getElementById('debug').innerHTML = 'timer=' + timer + ' readyState= ' + videoBackground.readyState;
-
-            if (videoBackground.buffered.length) {
-              var maxLengthVideo = Math.round(videoBackground.duration);
-              var currentLengthVideo = videoBackground.buffered.end(0);
-              loadVideoPercent = Math.floor(currentLengthVideo / maxLengthVideo * 100);
-              loadVideoPercent = loadVideoPercent > 100 ? 100 : loadVideoPercent;
-            } else {
-              loadVideoPercent = 0;
-            }
-
-            timer += 200;
-            if ((timer >= 5000) && (loadVideoPercent === 0)) {
-              videoBackground.play();
-              loadVideoPercent = 100;
-            }
-
-            if ((timer >= 15*1000) && (loadVideoPercent === 0)) {
-              document.getElementById('debug').innerHTML = 'timer=' + timer + ' readyState= ' + videoBackground.readyState + ' видео не загружалось и readyState не изменился в течении 15 сек';
-            }
-
-            if (loadVideoPercent === 100) {
-              loadProgress.value += 1;
-              clearInterval(intervalId);
-            }
-          }
-        }
-
-        startObserveProgressVideo();
+        // startObserveProgressVideo();
       } catch (e) {
         document.getElementById('debug').innerHTML = e.message;
       }
