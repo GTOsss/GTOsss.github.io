@@ -279,7 +279,8 @@
             }
 
             timer += 200;
-            if ((timer >= 3000) && (loadVideoPercent === 0) && (videoBackground.readyState >= 3)) {
+            if ((timer >= 5000) && (loadVideoPercent === 0)) {
+              videoBackground.play();
               loadVideoPercent = 100;
             }
 
