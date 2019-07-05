@@ -91,6 +91,11 @@ html, body {
 	width: 100%;
 }
 
+.main-block__background-gif {
+	width: 100%;
+	height: auto;
+}
+
 .main-block__video {
 	height: auto;
 	position: absolute;

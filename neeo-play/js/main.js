@@ -44,7 +44,7 @@
 
         setLoading(true);
 
-        var maxLoadProgress = 29;
+        var maxLoadProgress = 25;
 
         var loadVideoPercent = 0;
 
@@ -84,19 +84,19 @@
             loadProgress.value += 1;
           }
 
-          var background = bodymovin.loadAnimation({
-            wrapper: backgroundNode,
-            renderer: 'canvas',
-            loop: true,
-            autoplay: true,
-            path: 'assets/background/data.json',
-          });
-
-          background.addEventListener('config_ready', readyAnimation);
-          background.addEventListener('data_ready', readyAnimation);
-          background.addEventListener('DOMLoaded', readyAnimation);
-          background.addEventListener('segmentStart', readyAnimation);
-          background.addEventListener('loaded_images', readyAnimation);
+          // var background = bodymovin.loadAnimation({
+          //   wrapper: backgroundNode,
+          //   renderer: 'canvas',
+          //   loop: true,
+          //   autoplay: true,
+          //   path: 'assets/background/data.json',
+          // });
+          //
+          // background.addEventListener('config_ready', readyAnimation);
+          // background.addEventListener('data_ready', readyAnimation);
+          // background.addEventListener('DOMLoaded', readyAnimation);
+          // background.addEventListener('segmentStart', readyAnimation);
+          // background.addEventListener('loaded_images', readyAnimation);
 
           var foreground = bodymovin.loadAnimation({
             wrapper: foregroundNode,
