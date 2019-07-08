@@ -8,8 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="./main.css">
 </head>
 <body>
-<div style="z-index: 99999999; position: absolute; top: 0; color: red;">test build 1.0.9</div>
-<div id="debug" style="z-index: 99999999; position: absolute; top: 20px; color: red;"></div>
 
 <div id="loadingBlock" class="loading-block">
 	<div class="loading-block__loader">
@@ -31,10 +29,9 @@
 		<a id="link1" class="main-block__link main-block__link_play1" href="/play1"></a>
 		<a id="link2" class="main-block__link main-block__link_play2" href="/play2"></a>
 		<div id="background" class="main-block__wrap-video">
-			<img class="main-block__background-gif" src="./assets/bg.gif" alt="background">
-<!--			<video id="videoBackground" class="main-block__video" muted loop="loop" preload="auto">-->
-<!--				<source src="./assets/bg.mp4" type="video/mp4">-->
-<!--			</video>-->
+			<video id="videoBackground" class="main-block__video" muted loop="loop" preload="auto">
+				<source src="./assets/bg.mp4" type="video/mp4">
+			</video>
 		</div>
 		<div id="neeoCome" class="main-block__neeo main-block__neeo_come"></div>
 		<div id="neeoStill" class="main-block__neeo main-block__neeo_still hidden"></div>
@@ -45,7 +42,6 @@
 	</div>
 </div>
 
-<script id="scriptCanvid" src="./js/vendor/canvid.js" type="text/javascript"></script>
 <script src="./js/main.js" type="text/javascript"></script>
 <script id="scriptLottie" src="./js/vendor/lottie.min.js" type="text/javascript" async></script>
 </body>
