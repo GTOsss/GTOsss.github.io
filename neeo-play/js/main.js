@@ -1,29 +1,50 @@
 (function () {
   function readyDOM() {
-    var neeoCome;
-    var videoBackground;
+    function debugMode() {
+      var cursor = 0;
+
+      function updateAnimation(value) {
+        cursor += value;
+        console.log(value, cursor);
+        debugNode.innerText = 'Animation segment: ' + cursor;
+        neeo.playSegments([cursor - 1, cursor], true);
+      }
+
+      document.addEventListener('keydown', function (e) {
+        if (e.code === 'ArrowLeft') {
+          updateAnimation(-1);
+        } else if (e.code === 'ArrowRight') {
+          updateAnimation(1);
+        }
+      });
+    }
+
+    debugMode();
+
+    var segmetsMap = {
+      come: [0, 150],
+      still: [150, 222],
+      portal1: [422, 580],
+      portal2: [222, 330],
+    };
+
+    var maxLoadProgress = 13;
 
     var url1 = '/play1';
     var url2 = '/play2';
 
-    var loadingProgressTextNode = document.getElementById('loadingProgressText');
-
-    var foregroundNode = document.getElementById('foreground');
-    var link1 = document.getElementById('link1');
-    var link2 = document.getElementById('link2');
-
     var neeoCame = false;
     var neeoStartDisappear = false;
 
-    var neeoComeNode = document.getElementById('neeoCome');
-    var neeoStillNode = document.getElementById('neeoStill');
-    var neeoDisappear1Node = document.getElementById('neeoDisappear1');
-    var neeoDisappear2Node = document.getElementById('neeoDisappear2');
-    var neeoDisappearStartNode = document.getElementById('neeoDisappearStart');
-    // var backgroundNode = document.getElementById('background');
+    var neeo;
 
+    var foregroundNode = document.getElementById('foreground');
+    var neeoNode = document.getElementById('neeo');
     var mainBlockNode = document.getElementById('mainBlock');
     var loadingBlockNode = document.getElementById('loadingBlock');
+    var loadingProgressTextNode = document.getElementById('loadingProgressText');
+    var debugNode = document.getElementById('debug');
+    var backgroundNode = document.getElementById('background');
 
     function setLoading(value) {
       if (value) {
@@ -34,18 +55,21 @@
           loadingBlockNode.remove();
         }, 1000);
 
-        videoBackground.play();
         setTimeout(function () {
-          neeoCome.play();
+          neeo.addEventListener('complete', completeCome);
+          neeo.playSegments(segmetsMap.come, true);
         }, 2500);
       }
     }
 
+    function completeCome() {
+      neeo.loop = true;
+      neeo.removeEventListener('complete', completeCome);
+      neeo.playSegments(segmetsMap.still, true);
+      neeoCame = true;
+    }
+
     setLoading(true);
-
-    var maxLoadProgress = 26;
-
-    var loadVideoPercent = 0;
 
     var loadProgress = {
       max: maxLoadProgress,
@@ -62,6 +86,7 @@
         this._value = value;
 
         loadingProgressTextNode.innerHTML = this.percent + '%';
+        debugNode.innerHTML = this.percent + '%' + '  ' + this._value;
 
         if ((this.percent === 100) && (this.loaded === false)) {
           this.loaded = true;
@@ -74,178 +99,92 @@
       },
     };
 
+    function incrementProgress() {
+      loadProgress.value += 1;
+    }
+
     function readyLottieJS() {
-      link1.addEventListener('click', onClick1);
-      link2.addEventListener('click', onClick2);
+      document.getElementById('link1').addEventListener('click', onClick1);
+      document.getElementById('link2').addEventListener('click', onClick2);
 
-      // var background = bodymovin.loadAnimation({
-      //   wrapper: backgroundNode,
-      //   renderer: 'canvas',
-      //   loop: true,
-      //   autoplay: true,
-      //   path: 'assets/background/data.json',
-      // });
-
-      function readyAnimation() {
-        loadProgress.value += 1;
-      }
+      var background = bodymovin.loadAnimation({
+        wrapper: backgroundNode,
+        renderer: 'canvas',
+        loop: true,
+        autoplay: true,
+        path: '../src/assets/background/data.json',
+      });
+      background.addEventListener('config_ready', incrementProgress);
+      background.addEventListener('data_ready', incrementProgress);
+      background.addEventListener('DOMLoaded', incrementProgress);
+      background.addEventListener('segmentStart', incrementProgress);
+      background.addEventListener('loaded_images', incrementProgress);
 
       var foreground = bodymovin.loadAnimation({
         wrapper: foregroundNode,
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: 'assets/foreground/data.json',
+        path: '../src/assets/foreground/data.json',
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice',
         },
       });
+      foreground.addEventListener('config_ready', incrementProgress);
+      foreground.addEventListener('data_ready', incrementProgress);
+      foreground.addEventListener('DOMLoaded', incrementProgress);
+      background.addEventListener('segmentStart', incrementProgress);
+      foreground.addEventListener('loaded_images', incrementProgress);
 
-      foreground.addEventListener('config_ready', readyAnimation);
-      foreground.addEventListener('data_ready', readyAnimation);
-      foreground.addEventListener('DOMLoaded', readyAnimation);
-      foreground.addEventListener('segmentStart', readyAnimation);
-      foreground.addEventListener('loaded_images', readyAnimation);
-
-      neeoCome = bodymovin.loadAnimation({
-        wrapper: neeoComeNode,
+      neeo = bodymovin.loadAnimation({
+        wrapper: neeoNode,
         renderer: 'svg',
         loop: false,
         autoplay: false,
-        path: 'assets/neeo-come/data.json',
+        path: '../src/assets/neeo/data.json',
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice',
-        }
+        },
       });
-
-      neeoCome.addEventListener('config_ready', readyAnimation);
-      neeoCome.addEventListener('data_ready', readyAnimation);
-      neeoCome.addEventListener('DOMLoaded', readyAnimation);
-      neeoCome.addEventListener('loaded_images', readyAnimation);
-
-      var neeoStill = bodymovin.loadAnimation({
-        wrapper: neeoStillNode,
-        renderer: 'svg',
-        loop: true,
-        autoplay: false,
-        path: 'assets/neeo-still/data.json',
-        rendererSettings: {
-          preserveAspectRatio: 'xMidYMid slice',
-        }
-      });
-
-      neeoStill.addEventListener('config_ready', readyAnimation);
-      neeoStill.addEventListener('data_ready', readyAnimation);
-      neeoStill.addEventListener('DOMLoaded', readyAnimation);
-      neeoStill.addEventListener('loaded_images', readyAnimation);
-
-      var neeoDisappearStart = bodymovin.loadAnimation({
-        wrapper: neeoDisappearStartNode,
-        renderer: 'svg',
-        loop: false,
-        autoplay: false,
-        path: 'assets/neeo-disappear-start/data.json',
-        rendererSettings: {
-          preserveAspectRatio: 'xMidYMid slice',
-        }
-      });
-
-      neeoDisappearStart.addEventListener('config_ready', readyAnimation);
-      neeoDisappearStart.addEventListener('data_ready', readyAnimation);
-      neeoDisappearStart.addEventListener('DOMLoaded', readyAnimation);
-      neeoDisappearStart.addEventListener('loaded_images', readyAnimation);
-
-      var neeoDisappear1 = bodymovin.loadAnimation({
-        wrapper: neeoDisappear1Node,
-        renderer: 'svg',
-        loop: false,
-        autoplay: false,
-        path: 'assets/neeo-disappear1/data.json',
-        rendererSettings: {
-          preserveAspectRatio: 'xMidYMid slice',
-        }
-      });
-
-      neeoDisappear1.addEventListener('config_ready', readyAnimation);
-      neeoDisappear1.addEventListener('data_ready', readyAnimation);
-      neeoDisappear1.addEventListener('DOMLoaded', readyAnimation);
-      neeoDisappear1.addEventListener('loaded_images', readyAnimation);
-
-      var neeoDisappear2 = bodymovin.loadAnimation({
-        wrapper: neeoDisappear2Node,
-        renderer: 'svg',
-        loop: false,
-        autoplay: false,
-        path: 'assets/neeo-disappear2/data.json',
-        rendererSettings: {
-          preserveAspectRatio: 'xMidYMid slice',
-        }
-      });
-
-      neeoDisappear2.addEventListener('config_ready', readyAnimation);
-      neeoDisappear2.addEventListener('data_ready', readyAnimation);
-      neeoDisappear2.addEventListener('DOMLoaded', readyAnimation);
-      neeoDisappear2.addEventListener('loaded_images', readyAnimation);
-
-      neeoCome.addEventListener('complete', completeCome);
+      neeo.addEventListener('config_ready', incrementProgress);
+      neeo.addEventListener('data_ready', incrementProgress);
+      neeo.addEventListener('DOMLoaded', incrementProgress);
+      neeo.addEventListener('loaded_images', incrementProgress);
 
       function onClick1(e) {
         e.preventDefault();
 
         if (neeoCame && !neeoStartDisappear) {
           neeoStartDisappear = true;
-          neeoStillNode.classList.toggle('hidden');
-          neeoDisappearStartNode.classList.toggle('hidden');
-
-          neeoDisappearStart.addEventListener('complete', function () {
-            neeoDisappearStartNode.classList.toggle('hidden');
-            neeoDisappear1Node.classList.toggle('hidden');
-            neeoDisappearStart.destroy();
-            neeoDisappear1.addEventListener('complete', function () {
-              mainBlockNode.classList.add('main-block_animation_portal1');
-              mainBlockNode.parentElement.classList.add('main-wrap_animation-zoom-portal');
-              setTimeout(function () {
-                redirect(url1);
-              }, 300)
-            });
-            neeoDisappear1.play();
+          neeo.loop = false;
+          neeo.addEventListener('complete', function () {
+            mainBlockNode.classList.add('main-block_animation_portal1');
+            mainBlockNode.parentElement.classList.add('main-wrap_animation-zoom-portal');
+            setTimeout(function () {
+              redirect(url1);
+            }, 300)
           });
 
-          neeoDisappearStart.play();
+          neeo.playSegments(segmetsMap.portal1, true);
         }
       }
 
       function onClick2(e) {
         e.preventDefault();
+
         if (neeoCame && !neeoStartDisappear) {
           neeoStartDisappear = true;
-          neeoStillNode.classList.toggle('hidden');
-          neeoDisappearStartNode.classList.toggle('hidden');
-
-          neeoDisappearStart.addEventListener('complete', function () {
-            neeoDisappearStartNode.classList.toggle('hidden');
-            neeoDisappear2Node.classList.toggle('hidden');
-            neeoDisappearStart.destroy();
+          neeo.loop = false;
+          neeo.addEventListener('complete', function () {
+            mainBlockNode.classList.add('main-block_animation_portal2');
+            mainBlockNode.parentElement.classList.add('main-wrap_animation-zoom-portal');
             setTimeout(function () {
-              mainBlockNode.classList.add('main-block_animation_portal2');
-              mainBlockNode.parentElement.classList.add('main-wrap_animation-zoom-portal');
-              setTimeout(function () {
-                redirect(url2);
-              }, 300)
-            }, 4100);
-            neeoDisappear2.play();
+              redirect(url2);
+            }, 300)
           });
 
-          neeoDisappearStart.play();
+          neeo.playSegments(segmetsMap.portal2, true);
         }
-      }
-
-      function completeCome() {
-        neeoStillNode.classList.toggle('hidden');
-        neeoStill.play();
-        neeoComeNode.classList.toggle('hidden');
-        neeoCome.destroy();
-        neeoCame = true;
       }
 
       function redirect(url) {
@@ -253,51 +192,10 @@
       }
     }
 
-    var scriptLottie = document.getElementById('scriptLottie');
-    videoBackground = document.getElementById('videoBackground');
-
-    // function nextLoadState() {
-    //   if (loadProgress.value < 2) {
-    //     loadProgress.value += 1;
-    //   }
-    //
-    //   if (loadProgress.value === 2) {
-    //     readyLottieJS();
-    //   }
-    // }
-
-    scriptLottie.addEventListener('load', function () {
-      loadProgress.value += 1;
+    document.getElementById('scriptLottie').addEventListener('load', function () {
+      incrementProgress();
       readyLottieJS();
     });
-
-    function startObserveProgressVideo() {
-      var intervalId = setInterval(updateLoadVideoPercent, 200);
-      var timer = 0;
-
-      function updateLoadVideoPercent() {
-        if (videoBackground.buffered.length) {
-          var maxLengthVideo = Math.round(videoBackground.duration);
-          var currentLengthVideo = videoBackground.buffered.end(0);
-          loadVideoPercent = Math.floor(currentLengthVideo / maxLengthVideo * 100);
-          loadVideoPercent = loadVideoPercent > 100 ? 100 : loadVideoPercent;
-        } else {
-          loadVideoPercent = 0;
-        }
-
-        timer += 200;
-        if ((timer >= 5000) && (loadVideoPercent === 0) && (videoBackground.readyState >= 3)) {
-          loadVideoPercent = 100;
-        }
-
-        if (loadVideoPercent === 100) {
-          loadProgress.value += 1;
-          clearInterval(intervalId);
-        }
-      }
-    }
-
-    startObserveProgressVideo();
   }
 
   document.addEventListener('DOMContentLoaded', readyDOM, false);

@@ -9,6 +9,9 @@
 </head>
 <body>
 
+<div id="" style="z-index: 99999999; position: absolute; top: 0; color: red;">test build 1.0.9</div>
+<div id="debug" style="z-index: 99999999; position: absolute; top: 20px; color: red;"></div>
+
 <div id="loadingBlock" class="loading-block">
 	<div class="loading-block__loader">
 		<img src="./assets/loader.svg" alt="loader">
@@ -29,15 +32,11 @@
 		<a id="link1" class="main-block__link main-block__link_play1" href="/play1"></a>
 		<a id="link2" class="main-block__link main-block__link_play2" href="/play2"></a>
 		<div id="background" class="main-block__wrap-video">
-			<video id="videoBackground" class="main-block__video" muted loop="loop" preload="auto">
-				<source src="./assets/bg.mp4" type="video/mp4">
-			</video>
+<!--			<video id="videoBackground" class="main-block__video" muted loop="loop" preload="auto">-->
+<!--				<source src="./assets/bg.mp4" type="video/mp4">-->
+<!--			</video>-->
 		</div>
-		<div id="neeoCome" class="main-block__neeo main-block__neeo_come"></div>
-		<div id="neeoStill" class="main-block__neeo main-block__neeo_still hidden"></div>
-		<div id="neeoDisappearStart" class="main-block__neeo main-block__neeo_disappear hidden"></div>
-		<div id="neeoDisappear1" class="main-block__neeo main-block__neeo_disappear hidden"></div>
-		<div id="neeoDisappear2" class="main-block__neeo main-block__neeo_disappear hidden"></div>
+		<div id="neeo" class="main-block__neeo"></div>
 		<div id="foreground" class="main-block_foreground"></div>
 	</div>
 </div>
