@@ -112,7 +112,7 @@
         renderer: 'canvas',
         loop: true,
         autoplay: true,
-        path: '../src/assets/background/data.json',
+        path: 'assets/background/data.json',
       });
       background.addEventListener('config_ready', incrementProgress);
       background.addEventListener('data_ready', incrementProgress);
@@ -125,7 +125,7 @@
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: '../src/assets/foreground/data.json',
+        path: 'assets/foreground/data.json',
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice',
         },
@@ -141,7 +141,7 @@
         renderer: 'svg',
         loop: false,
         autoplay: false,
-        path: '../src/assets/neeo/data.json',
+        path: 'assets/neeo/data.json',
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice',
         },
