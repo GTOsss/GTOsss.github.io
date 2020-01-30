@@ -48,19 +48,19 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\projects\GTOsss.github.io\neeo-play\js\vendor" />
-      <recent name="E:\projects\GTOsss.github.io\neeo-play\src\assets" />
-      <recent name="E:\projects\GTOsss.github.io\neeo-play\src" />
-      <recent name="E:\projects\GTOsss.github.io" />
-      <recent name="E:\projects\GTOsss.github.io\trezor-test" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\projects-archive\GTOsss.github.io" />
       <recent name="E:\projects-archive\GTOsss.github.io\webstap" />
       <recent name="E:\projects\GTOsss.github.io\neeo-play\assets" />
       <recent name="E:\projects\GTOsss.github.io\neeo-play\assets\foreground" />
       <recent name="E:\projects\GTOsss.github.io\neeo-play" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\projects\GTOsss.github.io\neeo-play\js\vendor" />
+      <recent name="E:\projects\GTOsss.github.io\neeo-play\src\assets" />
+      <recent name="E:\projects\GTOsss.github.io\neeo-play\src" />
+      <recent name="E:\projects\GTOsss.github.io" />
+      <recent name="E:\projects\GTOsss.github.io\trezor-test" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -161,20 +161,7 @@
       <workItem from="1580248360045" duration="2075000" />
       <workItem from="1580345041937" duration="230000" />
       <workItem from="1580399852771" duration="816000" />
-    </task>
-    <task id="LOCAL-00133" summary="Update.">
-      <created>1561990201775</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1561990201777</updated>
-    </task>
-    <task id="LOCAL-00134" summary="Update.">
-      <created>1561990588072</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1561990588072</updated>
+      <workItem from="1580417882526" duration="720000" />
     </task>
     <task id="LOCAL-00135" summary="Update.">
       <created>1561990875306</created>
@@ -505,7 +492,21 @@
       <option name="project" value="LOCAL" />
       <updated>1580399869792</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="Update.">
+      <created>1580417919071</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1580417919071</updated>
+    </task>
+    <task id="LOCAL-00183" summary="Update.">
+      <created>1580417940376</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1580417940376</updated>
+    </task>
+    <option name="localTasksCounter" value="184" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,10 +557,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Update." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="356" y="8" key="CommitChangelistDialog2" timestamp="1580417934050">
+    <state x="356" y="8" key="CommitChangelistDialog2" timestamp="1580419960833">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="356" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1580417934050" />
+    <state x="356" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1580419960833" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1580294236787">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
