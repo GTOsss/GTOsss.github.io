@@ -43,24 +43,24 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/for-sharing-files" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\projects-test\GTOsss.github.io" />
-      <recent name="E:\projects-archive\GTOsss.github.io" />
-      <recent name="E:\projects-archive\GTOsss.github.io\webstap" />
-      <recent name="E:\projects\GTOsss.github.io\neeo-play\assets" />
-      <recent name="E:\projects\GTOsss.github.io\neeo-play\assets\foreground" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\projects\GTOsss.github.io\neeo-play\js\vendor" />
       <recent name="E:\projects\GTOsss.github.io\neeo-play\src\assets" />
       <recent name="E:\projects\GTOsss.github.io\neeo-play\src" />
       <recent name="E:\projects\GTOsss.github.io" />
       <recent name="E:\projects\GTOsss.github.io\trezor-test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\projects-test\GTOsss.github.io\for-sharing-files" />
+      <recent name="E:\projects-test\GTOsss.github.io" />
+      <recent name="E:\projects-archive\GTOsss.github.io" />
+      <recent name="E:\projects-archive\GTOsss.github.io\webstap" />
+      <recent name="E:\projects\GTOsss.github.io\neeo-play\assets" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -164,13 +164,7 @@
       <workItem from="1580417882526" duration="1342000" />
       <workItem from="1583956147473" duration="720000" />
       <workItem from="1584048406398" duration="731000" />
-    </task>
-    <task id="LOCAL-00139" summary="Update.">
-      <created>1561999694752</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1561999694752</updated>
+      <workItem from="1584799391252" duration="694000" />
     </task>
     <task id="LOCAL-00140" summary="Update.">
       <created>1561999703372</created>
@@ -508,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584048430738</updated>
     </task>
-    <option name="localTasksCounter" value="188" />
+    <task id="LOCAL-00188" summary="Update.">
+      <created>1584799470211</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1584799470212</updated>
+    </task>
+    <option name="localTasksCounter" value="189" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,17 +560,17 @@
     <option name="LAST_COMMIT_MESSAGE" value="Update." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="356" y="8" key="CommitChangelistDialog2" timestamp="1584048428313">
+    <state x="356" y="8" key="CommitChangelistDialog2" timestamp="1584799469381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="356" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584048428313" />
+    <state x="356" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584799469381" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1580294236787">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580294236787" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1584048432223">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1584799471985">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584048432223" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584799471985" />
   </component>
 </project>
