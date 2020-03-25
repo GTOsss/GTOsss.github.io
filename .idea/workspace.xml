@@ -3,212 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="50c64bcc-ec1d-4e22-aa2d-72df8357aee9" name="Default" comment="Update.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/404/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-1299c21eda1232d2d4ac.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-65eb7ebcf3c2eb962cc4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-93b65353ad5aae67e0d4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chunk-map.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons-9e7ce3416cb323076e51.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons-a060020196a1a808b5c1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/component---src-pages-404-tsx-cb8e0a01281acd926862.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/component---src-pages-404-tsx-cc7aa05bb1f9e77d848c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/component---src-pages-index-tsx-215734b4d133acbe2fdf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/component---src-pages-index-tsx-336570dc20dedf0ccf31.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/component---src-pages-index-tsx-3b3733a90c0f3e566f03.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/component---src-pages-index-tsx-4333c9cc95c5d4e57f34.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/component---src-pages-index-tsx-6243a6a30d18f023b5eb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/component---src-pages-index-tsx-d0228d67ab11113f2934.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/component---src-pages-index-tsx-e3aa4374d943e523a892.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manifest.webmanifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/087008d9b0b0083087a9e83e3fa0df4f/2301e/phone-origin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/087008d9b0b0083087a9e83e3fa0df4f/287f4/phone-origin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/087008d9b0b0083087a9e83e3fa0df4f/c2f97/phone-origin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/087008d9b0b0083087a9e83e3fa0df4f/f3907/phone-origin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/13ae9062cf7d364ce4b06dab31455fff/0143c/girl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/13ae9062cf7d364ce4b06dab31455fff/287f4/girl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/13ae9062cf7d364ce4b06dab31455fff/36609/girl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/13ae9062cf7d364ce4b06dab31455fff/3ab52/girl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/24a4209b64ab050f0153d95e5de1b08f/2301e/iphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/24a4209b64ab050f0153d95e5de1b08f/6d6e6/iphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/24a4209b64ab050f0153d95e5de1b08f/c2f97/iphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/32cb71de0312510856d16e88a83504ae/248e4/phone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/32cb71de0312510856d16e88a83504ae/3792c/phone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/32cb71de0312510856d16e88a83504ae/b55a4/phone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/6d91c86c0fde632ba4cd01062fd9ccfa/19787/gatsby-astronaut.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/6d91c86c0fde632ba4cd01062fd9ccfa/59d48/gatsby-astronaut.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/6d91c86c0fde632ba4cd01062fd9ccfa/78d2a/gatsby-astronaut.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/6d91c86c0fde632ba4cd01062fd9ccfa/a54c6/gatsby-astronaut.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/6d91c86c0fde632ba4cd01062fd9ccfa/c6a2b/gatsby-astronaut.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/6d91c86c0fde632ba4cd01062fd9ccfa/eea35/gatsby-astronaut.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/79b6229e929944311691b14286c1019b/9d794/lilubags-background-layer-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/79b6229e929944311691b14286c1019b/9eaca/lilubags-background-layer-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/79b6229e929944311691b14286c1019b/e3396/lilubags-background-layer-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/104e9/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/1283a/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/19787/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/1b006/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/1f3e6/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/1f6bf/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/24785/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/27766/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/367e2/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/37077/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/59084/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/59d48/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/5d61d/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/60074/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/6aef7/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/73a69/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/78d2a/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/850e4/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/851f9/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/8f1fd/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/90bd5/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/9629b/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/9d794/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/9eaca/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/b33d3/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/b7046/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/bfce5/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/c6a2b/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/d8b15/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/eea35/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/8187fe6f7fde0d7759993e83d641f423/f5e85/lilubags1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/83ac586d83e25d4303536cb2c1325600/1aca4/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/83ac586d83e25d4303536cb2c1325600/55571/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/83ac586d83e25d4303536cb2c1325600/ede52/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/83ac586d83e25d4303536cb2c1325600/fd83b/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/88f7c07d283949290a8cf33d75d9b0f7/248e4/mail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/88f7c07d283949290a8cf33d75d9b0f7/3792c/mail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/88f7c07d283949290a8cf33d75d9b0f7/b55a4/mail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-Bold-6a2d68cbcdff4f8d3695c89a05c32d76.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-Bold-ad9bdc2f67578069f4f79fa459cb9882.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-BoldItalic-99a756d8b3715ea7d36195fca17665f7.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-BoldItalic-adfc62b925dc0b17d1b3c567b5c52b50.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-ExtraBold-5d5e333ff1a8a222a4a822dc1006bd85.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-ExtraBold-de1ede2abd52de26b0d0cb892578e5c8.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-ExtraBoldItalic-44be5cdff02e519f92ceb6e801bd05af.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-ExtraBoldItalic-f624d813adb9116aa137aaffb73d702e.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-ExtraLight-64cc564086f15fe6440bf1965c318089.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-ExtraLight-9021f7de80583c79ec7b5a0dc36c3d18.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-ExtraLightItalic-122b896ceec0fbc2e01d2d76416d45af.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-ExtraLightItalic-f798ee03da6a1f42f04dc9d2d22ba7b4.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-Heavy-39fb4faf54508e615f30cdce75911fd2.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-Heavy-91c7c839d2278cb2459798f5fe380dd5.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-HeavyItalic-9a481b64fef8b9151cb498a0e7d0a08f.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-HeavyItalic-d82cccd88650f9b7d00ac7be0ed37539.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-Italic-2a06edfda1d88d53f7c523b44383f29e.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-Italic-af360536f002c2c751717878639d9bdb.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-Light-3b720d17447b3ac97ad796e5ac6fc344.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-Light-4cf610c15ec5e40bfbfbaddf00d875f6.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-LightItalic-3e81456fcbc13b20884df5bbb6d0d503.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-LightItalic-93fbe12fdace9ba74553c2bab48dc2fb.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-Medium-9f7fb58c638cc9b3c08d335a68573f66.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-Medium-a37d1450e428e3ed5d302dc06ecfff35.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-MediumItalic-266b2814f150d6cdcdfef3811fb41f0d.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-MediumItalic-e9c63feb2cf5c9d367588241e8adefcb.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-Thin-c9de940e6948a8ce3083561cca2a8127.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-Thin-fd118c18bb7709d0dee4865fa9411ea9.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-ThinItalic-0a10fdc388bfd075a037e8733442a7a5.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-ThinItalic-b3492d4e6e0131c4b378c73148815c5a.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-bec00f0e0e032b088d4a7ba36d17b4e5.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Geometria-cea184d2ec56abb9ab522f0146fa2ba7.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/b8f8aa7f278fbbc947a39f1818d49919/0143c/girl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/b8f8aa7f278fbbc947a39f1818d49919/1f6bf/girl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/b8f8aa7f278fbbc947a39f1818d49919/2e39c/girl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/b8f8aa7f278fbbc947a39f1818d49919/36609/girl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/b8f8aa7f278fbbc947a39f1818d49919/3ab52/girl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/b8f8aa7f278fbbc947a39f1818d49919/9d794/girl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/b8f8aa7f278fbbc947a39f1818d49919/9eaca/girl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/c8c4932cd64dada49225ade3cceff7d5/2301e/iphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/c8c4932cd64dada49225ade3cceff7d5/2301e/phone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/c8c4932cd64dada49225ade3cceff7d5/287f4/iphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/c8c4932cd64dada49225ade3cceff7d5/287f4/phone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/c8c4932cd64dada49225ade3cceff7d5/c2f97/iphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/c8c4932cd64dada49225ade3cceff7d5/c2f97/phone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/c8c4932cd64dada49225ade3cceff7d5/f3907/iphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/c8c4932cd64dada49225ade3cceff7d5/f3907/phone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/1102764632.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/1113042052.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/1482918333.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/1499272939.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/1675119316.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/2052827352.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/2066121120.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/2417117884.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/2451091940.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/2576911289.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/2643072299.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/2670467642.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/2726206728.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/2753989682.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/2897549970.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/2907884066.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/2936777602.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/2969191536.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/3107524473.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/3160821086.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/316788572.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/3321799675.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/3477644967.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/3664195176.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/3837175820.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/3869572228.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/3983817752.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/554229590.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/624801946.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/709839471.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/738674466.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/802425396.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/910067429.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/927179984.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d/99174933.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d0e84b58748913ea29506c29d044e067/1f6bf/lilubags_1000_420.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d0e84b58748913ea29506c29d044e067/9d794/lilubags_1000_420.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d0e84b58748913ea29506c29d044e067/9eaca/lilubags_1000_420.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d17b64ddc54a661ad678673a2b17debf/0143c/skyscraper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d17b64ddc54a661ad678673a2b17debf/24e2f/skyscraper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d17b64ddc54a661ad678673a2b17debf/36609/skyscraper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d17b64ddc54a661ad678673a2b17debf/3ab52/skyscraper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d17b64ddc54a661ad678673a2b17debf/83a7b/skyscraper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d17b64ddc54a661ad678673a2b17debf/ba4d7/skyscraper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/d17b64ddc54a661ad678673a2b17debf/c3853/skyscraper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/de2daee777f58fd2ea265fca90ccf945/83a7b/skyscraper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/de2daee777f58fd2ea265fca90ccf945/ad179/skyscraper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/de2daee777f58fd2ea265fca90ccf945/ba4d7/skyscraper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/de2daee777f58fd2ea265fca90ccf945/c3853/skyscraper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dfe69175eb4d3a32d0caf4352afe4813/0143c/brior-background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dfe69175eb4d3a32d0caf4352afe4813/36609/brior-background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dfe69175eb4d3a32d0caf4352afe4813/3ab52/brior-background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dfe69175eb4d3a32d0caf4352afe4813/9d794/brior-background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dfe69175eb4d3a32d0caf4352afe4813/9eaca/brior-background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dfe69175eb4d3a32d0caf4352afe4813/e3396/brior-background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/e8ce668cac9f9282f04f67fa5924c314/9d794/lilubags-background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/e8ce668cac9f9282f04f67fa5924c314/9eaca/lilubags-background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/e8ce668cac9f9282f04f67fa5924c314/e3396/lilubags-background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/f81a507afa451d82cf1d77050c61e0e9/1f3e6/lilubags1_blur.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/f81a507afa451d82cf1d77050c61e0e9/1f6bf/lilubags1_blur.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/f81a507afa451d82cf1d77050c61e0e9/850e4/lilubags1_blur.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/f81a507afa451d82cf1d77050c61e0e9/9d794/lilubags1_blur.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/f81a507afa451d82cf1d77050c61e0e9/9eaca/lilubags1_blur.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ff024af47f35fa2ebac5f7b862753d5c/83a7b/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ff024af47f35fa2ebac5f7b862753d5c/ba4d7/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ff024af47f35fa2ebac5f7b862753d5c/e3396/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/logo-24ab2a67939091b2d2838d87c38bd76d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/stage-layers-2dc32a46bee2f22072b0df182f506315.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles-44769803019d917c33d0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles-760632ecb6a7593a33c6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.27f84d6b9e58f2c80468.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-runtime-5a6c6dbf7e3c8ac9ce87.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-runtime-80a39435c32dbc1022b6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-runtime-9ac594bf3e5ef1f87857.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-runtime-a3f10f1300584c0b0908.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-runtime-c04ec53c278757ae9d63.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-runtime-c93280ce84ceb1f9182f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-runtime-cfdebdd2efcf7bbcfe7d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.stats.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,19 +48,19 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\projects-test\GTOsss.github.io" />
-      <recent name="E:\projects-test\GTOsss.github.io\for-sharing-files" />
-      <recent name="E:\projects-archive\GTOsss.github.io" />
-      <recent name="E:\projects-archive\GTOsss.github.io\webstap" />
-      <recent name="E:\projects\GTOsss.github.io\neeo-play\assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\projects\GTOsss.github.io\neeo-play\js\vendor" />
       <recent name="E:\projects\GTOsss.github.io\neeo-play\src\assets" />
       <recent name="E:\projects\GTOsss.github.io\neeo-play\src" />
       <recent name="E:\projects\GTOsss.github.io" />
       <recent name="E:\projects\GTOsss.github.io\trezor-test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\projects-test\GTOsss.github.io" />
+      <recent name="E:\projects-test\GTOsss.github.io\for-sharing-files" />
+      <recent name="E:\projects-archive\GTOsss.github.io" />
+      <recent name="E:\projects-archive\GTOsss.github.io\webstap" />
+      <recent name="E:\projects\GTOsss.github.io\neeo-play\assets" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -372,13 +166,7 @@
       <workItem from="1584048406398" duration="731000" />
       <workItem from="1584799391252" duration="694000" />
       <workItem from="1585157143300" duration="1007000" />
-    </task>
-    <task id="LOCAL-00141" summary="Update.">
-      <created>1561999749662</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1561999749662</updated>
+      <workItem from="1585158462631" duration="846000" />
     </task>
     <task id="LOCAL-00142" summary="Update.">
       <created>1562001479293</created>
@@ -716,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585157196227</updated>
     </task>
-    <option name="localTasksCounter" value="190" />
+    <task id="LOCAL-00190" summary="Update.">
+      <created>1585158534970</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1585158534970</updated>
+    </task>
+    <option name="localTasksCounter" value="191" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -767,17 +562,17 @@
     <option name="LAST_COMMIT_MESSAGE" value="Update." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="356" y="8" key="CommitChangelistDialog2" timestamp="1585157249913">
+    <state x="356" y="8" key="CommitChangelistDialog2" timestamp="1585158533663">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="356" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585157249913" />
+    <state x="356" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585158533663" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1580294236787">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580294236787" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1585157251729">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1585158708588">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585157251729" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585158708588" />
   </component>
 </project>
