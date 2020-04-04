@@ -183,12 +183,12 @@ __webpack_require__.r(__webpack_exports__);
 $(document).ready(function () {
   var $window = $(window);
   var resizeObserver = new _utils_observers_index__WEBPACK_IMPORTED_MODULE_1__["ResizeObserver"]($window);
-  var scrollRevealObserver = new _utils_observers_index__WEBPACK_IMPORTED_MODULE_1__["ScrollRevealObserver"]($window);
-  Object(_info_inputs__WEBPACK_IMPORTED_MODULE_4__["default"])($window, resizeObserver, scrollRevealObserver);
-  Object(_info_stamp__WEBPACK_IMPORTED_MODULE_5__["default"])($window, resizeObserver, scrollRevealObserver);
-  Object(_js_level_scale__WEBPACK_IMPORTED_MODULE_2__["default"])($window, resizeObserver, scrollRevealObserver);
-  Object(_js_level_counter__WEBPACK_IMPORTED_MODULE_3__["default"])($window, resizeObserver, scrollRevealObserver);
-  Object(_skills__WEBPACK_IMPORTED_MODULE_6__["default"])($window, resizeObserver, scrollRevealObserver);
+  var scrollRevealObserver = new _utils_observers_index__WEBPACK_IMPORTED_MODULE_1__["ScrollRevealObserver"]($window); // infoInputs($window, resizeObserver, scrollRevealObserver);
+  // infoStamp($window, resizeObserver, scrollRevealObserver);
+  // jsLevelScale($window, resizeObserver, scrollRevealObserver);
+  // jsLevelCounter($window, resizeObserver, scrollRevealObserver);
+  // skills($window, resizeObserver, scrollRevealObserver);
+
   Object(_portfolio_sliders__WEBPACK_IMPORTED_MODULE_7__["default"])();
 });
 
