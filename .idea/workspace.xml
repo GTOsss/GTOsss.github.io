@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="50c64bcc-ec1d-4e22-aa2d-72df8357aee9" name="Default" comment="Update.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,24 +43,24 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/portfolio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test-desktop" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\projects-test\GTOsss.github.io\portfolio" />
+      <recent name="E:\projects-test\GTOsss.github.io" />
+      <recent name="E:\projects-test\GTOsss.github.io\for-sharing-files" />
+      <recent name="E:\projects-archive\GTOsss.github.io" />
+      <recent name="E:\projects-archive\GTOsss.github.io\webstap" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\projects\GTOsss.github.io\neeo-play\js\vendor" />
       <recent name="E:\projects\GTOsss.github.io\neeo-play\src\assets" />
       <recent name="E:\projects\GTOsss.github.io\neeo-play\src" />
       <recent name="E:\projects\GTOsss.github.io" />
       <recent name="E:\projects\GTOsss.github.io\trezor-test" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\projects-test\GTOsss.github.io" />
-      <recent name="E:\projects-test\GTOsss.github.io\for-sharing-files" />
-      <recent name="E:\projects-archive\GTOsss.github.io" />
-      <recent name="E:\projects-archive\GTOsss.github.io\webstap" />
-      <recent name="E:\projects\GTOsss.github.io\neeo-play\assets" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -170,14 +169,7 @@
       <workItem from="1585158462631" duration="846000" />
       <workItem from="1585179642217" duration="650000" />
       <workItem from="1585224795967" duration="634000" />
-      <workItem from="1586013008653" duration="606000" />
-    </task>
-    <task id="LOCAL-00145" summary="Update.">
-      <created>1562002158560</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1562002158560</updated>
+      <workItem from="1586013008653" duration="1356000" />
     </task>
     <task id="LOCAL-00146" summary="Update.">
       <created>1562005582399</created>
@@ -515,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585224827236</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="Update.">
+      <created>1586013759592</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1586013759592</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,17 +565,17 @@
     <option name="LAST_COMMIT_MESSAGE" value="Update." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="356" y="8" key="CommitChangelistDialog2" timestamp="1585224825814">
+    <state x="356" y="8" key="CommitChangelistDialog2" timestamp="1586013758833">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="356" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585224825814" />
+    <state x="356" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586013758833" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1586013280321">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586013280321" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1585224829856">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1586013762118">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585224829856" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586013762118" />
   </component>
 </project>
