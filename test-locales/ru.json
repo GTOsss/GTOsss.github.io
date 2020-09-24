@@ -1,0 +1,67 @@
+{
+	"addToCart": "В корзину",
+	"attributes": {
+		"LENGTH": "Длина"
+	},
+	"brands": {
+		"title": "Бренды"
+	},
+	"cart": {
+		"label": "Ваш заказ",
+		"pcs": "позиций"
+	},
+	"catalog": "Catalog",
+	"categories": {
+		"title": "Категории"
+	},
+	"description": "Заголовок по умолчанию для next-app",
+	"header": {
+		"catalog": "Каталог",
+		"search": "Поиск"
+	},
+	"lead": {
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.",
+		"progressBarInner": {
+			"text": "онлайн магазин"
+		},
+		"progressBarOuter": {
+			"text": "покупка запчастей онлайн"
+		},
+		"title": "Покупка и продажа автозапчастей оптом и в розницу"
+	},
+	"login": {
+		"buttonCreateAccount": "создать аккаунт",
+		"or": "или",
+		"title": "Войти"
+	},
+	"ourCatalog": {
+		"title": "Каталог"
+	},
+	"ourPartners": {
+		"title": "Партнёры"
+	},
+	"pagination": {
+		"nextLabel": "Вперёд",
+		"previousLabel": "Назад"
+	},
+	"points": {
+		"desc": "это сетевая платформа, специально разработанная для предприятий, занимающихся запчастями для машин.\n  Он объединяет трейдеров, оптовиков и производителей в одном месте.",
+		"item1": "Заявок",
+		"item2": "Номеров деталей",
+		"item3": "Поставщиков",
+		"item4": "Успешных сделок",
+		"title": "Наш продукт"
+	},
+	"product": {
+		"cross": "Cross-референсы",
+		"desription": "Описание товара"
+	},
+	"seo": {
+		"description": "Фильтры, коронки, гидроцилиндры, ковшевые пальцы и втулки, ходовка, ремкомплекты для экскаваторов и бульдозеров. Подбор по каталогам.",
+		"keywords": "запчасти,гусеничные,бульдозеры,ходовка,фильтры,гидроцилиндры,для,бокорезы,hitachi,komatsu,спецтехника,hyundai,caterpillar,volvo,doosan,shantui,jcb,трубоукладчик,ходовая,пальцы,втулки,экскаваторы,коронки,гидравлика",
+		"siteName": "PartsStore",
+		"siteSlogan": "лёгкий путь тяжёлых машин",
+		"title": "Запчасти для спецтехники Hitachi, Komatsu, Hyundai и других"
+	},
+	"tags": "Теги"
+}

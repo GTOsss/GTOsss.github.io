@@ -1,0 +1,67 @@
+{
+	"addToCart": "Add to cart",
+	"attributes": {
+		"LENGTH": "Length"
+	},
+	"brands": {
+		"title": "Brands"
+	},
+	"cart": {
+		"label": "Your order",
+		"pcs": "positions"
+	},
+	"catalog": "Каталог",
+	"categories": {
+		"title": "Categories"
+	},
+	"description": "Default description for next-app",
+	"header": {
+		"catalog": "Catalog",
+		"search": "Search"
+	},
+	"lead": {
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.",
+		"progressBarInner": {
+			"text": "online store"
+		},
+		"progressBarOuter": {
+			"text": "buying spare parts online"
+		},
+		"title": "Buying and selling auto parts wholesale and retail"
+	},
+	"login": {
+		"buttonCreateAccount": "create an account",
+		"or": "or",
+		"title": "Log in"
+	},
+	"ourCatalog": {
+		"title": "Catalog"
+	},
+	"ourPartners": {
+		"title": "Our partners"
+	},
+	"pagination": {
+		"nextLabel": "Next",
+		"previousLabel": "Previous"
+	},
+	"points": {
+		"desc": "is a network centric platform, specially designed for machinery parts businesses.\n It bring traders, wholesalers and brands on to a single place.",
+		"item1": "Requests",
+		"item2": "Known part numbers",
+		"item3": "Suppliers",
+		"item4": "Successful deals",
+		"title": "The Project"
+	},
+	"product": {
+		"cross": "Cross reference",
+		"desription": "Product description"
+	},
+	"seo": {
+		"description": "Filters, crowns, hydraulic cylinders, bucket pins and bushings, hoists, repair kits for excavators and bulldozers. Selection according to catalogs.",
+		"keywords": "spare parts, tracked, bulldozers, hodovka, filters, hydraulic cylinders, for, side cutters, hitachi, komatsu, special equipment, hyundai, caterpillar, volvo, doosan, shantui, jcb, pipelayer, undercarriage, fingers, bushings, excavators, crowns, hydraulics",
+		"siteName": "PartsStore",
+		"siteSlogan": "easy path of heavy vehicles",
+		"title": "Spare parts for special equipment Hitachi, Komatsu, Hyundai and others"
+	},
+	"tags": "Tags"
+}
