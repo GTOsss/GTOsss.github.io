@@ -20,19 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50c64bcc-ec1d-4e22-aa2d-72df8357aee9" name="Default" comment="Update.">
-      <change afterPath="$PROJECT_DIR$/component---src-pages-index-tsx-59801bd71b6a756280b2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-index-tsx-59801bd71b6a756280b2.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-index-tsx-e812c153793b0bc9d135.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-index-tsx-e812c153793b0bc9d135.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-runtime-1087a67b21ab345fb5b3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-runtime-8d9946db2e030dd47ec6.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/404/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/404/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chunk-map.json" beforeDir="false" afterPath="$PROJECT_DIR$/chunk-map.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page-data/app-data.json" beforeDir="false" afterPath="$PROJECT_DIR$/page-data/app-data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.stats.json" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.stats.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/npm-install/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/npm-install/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,14 +185,8 @@
       <workItem from="1604349615312" duration="707000" />
       <workItem from="1605351351692" duration="49000" />
       <workItem from="1607372466737" duration="1470000" />
-      <workItem from="1608038678489" duration="297000" />
-    </task>
-    <task id="LOCAL-00158" summary="Update.">
-      <created>1562009637761</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1562009637762</updated>
+      <workItem from="1608038678489" duration="1291000" />
+      <workItem from="1609198137556" duration="577000" />
     </task>
     <task id="LOCAL-00159" summary="Update.">
       <created>1562009742515</created>
@@ -541,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607373714696</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="Update.">
+      <created>1608039160601</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1608039160602</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

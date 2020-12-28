@@ -10,10 +10,17 @@
 <div class="wrap-inline">
   <textarea class="input-dependencies" name="dependencies" id="input" cols="50" rows="15"
     placeholder="Past here dependencies from package json"></textarea>
-  <div class="dev-wrap">
-    <input id="input-dev" type="checkbox">
-    <label for="input-dev">dev</label>
-  </div>
+	<div>
+		<div class="dev-wrap">
+			<input id="input-dev" type="checkbox">
+			<label for="input-dev">dev</label>
+		</div>
+		<br>
+		<div class="dev-wrap">
+			<input id="input-yarn" type="checkbox">
+			<label for="input-yarn">yarn</label>
+		</div>
+	</div>
   <div id="screen" class="output-screen" title="Click for copy"></div>
 </div>
 <div class="wrap-buttons">
@@ -25,6 +32,7 @@
 	const screen = document.getElementById('screen');
 	const input = document.getElementById('input');
 	const inputDev = document.getElementById('input-dev');
+	const inputYarn = document.getElementById('input-yarn');
 	const buttonCopy = document.getElementById('button-copy');
 	const regExp = /"(.\w.+)":/gi;
 
@@ -37,26 +45,31 @@
 		document.body.removeChild(aux);
 	};
 
-	const updateScreen = (value, dev) => {
+	const updateScreen = (value, dev, yarn) => {
 		let result;
 		let strings = [];
 		while (result = regExp.exec(value)) {
 			strings.push(result[1]);
 		}
-		screen.innerHTML = `npm i --save${dev ? '-dev' : ''} ${strings.join(' ')}`;
+		screen.innerHTML = `${yarn ? 'yarn add' : 'npm i'} ${dev ? '-D' : ''} ${strings.join(' ')}`;
 	};
 
 	const onChangeInput = ({ target: { value } }) => {
-		updateScreen(value, inputDev.checked);
+		updateScreen(value, inputDev.checked, inputYarn.checked);
 	};
 
 	const onChangeDev = ({ target }) => {
-		updateScreen(input.value, target.checked);
+		updateScreen(input.value, target.checked, inputYarn.checked);
 	};
+
+  const onChangeYarn = ({ target }) => {
+    updateScreen(input.value, inputDev.checked, target.checked);
+  };
 
 	screen.addEventListener('click', copyeText);
 	buttonCopy.addEventListener('click', copyeText);
 	inputDev.addEventListener('change', onChangeDev);
+	inputYarn.addEventListener('change', onChangeYarn);
 	input.addEventListener('keyup', onChangeInput);
 </script>
 
